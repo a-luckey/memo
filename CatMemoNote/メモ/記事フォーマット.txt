@@ -1,0 +1,42 @@
+﻿<h3>3位 〇〇</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/51cS0n3ZWGL.jpg[/tblStart]
+[tdLevel type=4][/tdLevel]
+[tdLevel type=4][/tdLevel]
+[tdLevel type=3][/tdLevel]
+[tdLevel type=3][/tdLevel]
+[tdLevel type=4][/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=282][/product_link]
+
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_30_2.jpg" name="30代女性" type="l"]
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_30_1.jpg" name="30代女性" type="r"]
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="282"][/reviewLink]

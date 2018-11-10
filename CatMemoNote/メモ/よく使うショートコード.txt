@@ -1,0 +1,15 @@
+﻿// 目次
+[toc heading_levels="2,3"]
+
+// リンク
+[kanren class="kanren2" postid="1837"]
+
+// 招待リンク
+[invite_link class="yellow_box" id1="1" id2="2" title="Check!!"][/invite_link]
+
+// ボイス
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l"][/voice]
+
+// ハピタスリンク
+<a href="https://px.a8.net/svt/ejp?a8mat=2ZS082+41V7ZM+1LP8+BXQOI" target="_blank" rel="nofollow">ハピタス</a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=2ZS082+41V7ZM+1LP8+BXQOI" alt="">

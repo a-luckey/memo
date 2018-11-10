@@ -1,0 +1,2056 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta name="robots" content="noindex,nofollow">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<link rel="stylesheet" href="./html/common.css" type="text/css">
+	<title>CatMemoNote</title>
+</head>
+<body>
+
+	<div class="mainmenu">
+		<ul>
+			<li><a href="index.html">Top</a></li>
+			<li><a href="#about">このソフトについて</a></li>
+			<li><a href="#install">インストール方法</a></li>
+			<li><a href="#howtouse">基本的な使い方</a></li>
+			<li><a href="#directory">ディレクトリ構成</a></li>
+			<li><a href="#inifile">設定ファイルについて</a></li>
+			<li><a href="#shortcutkey">ショートカットキー</a></li>
+			<li><a href="#hotkey">ホットキー</a></li>
+			<li><a href="#checklist">チェックリスト</a></li>
+			<li><a href="#edit">テキスト編集</a></li>
+			<li><a href="#calc">数式計算</a></li>
+			<li><a href="#regularexpression">正規表現</a></li>
+			<li><a href="#template">定型文</a></li>
+			<li><a href="#tool">外部ツール実行機能</a></li>
+			<li><a href="#clip">クリップ機能</a></li>
+			<li><a href="#clickablelink">リンク機能</a></li>
+			<li><a href="#password">パスワードによる保護</a></li>
+			<li><a href="#theme">テーマ機能</a></li>
+			<li><a href="#charcode">文字コードについて</a></li>
+			<li><a href="#other">その他の機能</a></li>
+			<li><a href="#copyright">免責</a></li>
+			<li><a href="#thanks">謝辞</a></li>
+			<li><a href="#faq">よくある質問</a></li>
+			<li><a href="#history">更新履歴</a></li>
+		</ul>
+	</div>
+
+	<div class="maincontents">
+		<h1 id="header"><img src="./html/icon.png" width="32" height="32"> CatMemoNote</h1>
+		<h2 id="about">このソフトについて</h2>
+		<div class="information">
+			<p>
+				これはメモを管理するためのソフトです。<br>
+			</p>
+			<table>
+				<tr><th>ソフト名</th><td>CatMemoNote</td></tr>
+				<tr><th>バージョン</th><td>2.2</td></tr>
+				<tr><th>動作確認OS</th><td>Windows 8.1/7</td></tr>
+				<tr><th>開発環境</th><td>Windows 7, Visual C++</td></tr>
+				<tr><th>ランタイム</th><td>特に必要ありません</td></tr>
+				<tr><th>ソフト種別</th><td>フリーソフトウェア</td></tr>
+				<tr><th>著作者</th><td>Pyo (PapparaSoft)</td></tr>
+				<tr><th>公開日</th><td>2008/06/01</td></tr>
+				<tr><th>更新日</th><td>2014/08/30</td></tr>
+				<tr><th>Webサイト</th><td><a href="http://www.cc9.ne.jp/~pappara/">http://www.cc9.ne.jp/~pappara/</a></td></tr>
+				<tr><th>連絡先</th><td><a href="mailto:tenku.ginga&#64;gmail.com">tenku.ginga&#64;gmail.com</a></td></tr>
+			</table>
+		</div>
+
+
+
+		<h2 id="install">インストール方法</h2>
+		<div class="information">
+			<h3 id="install_install">インストール方法</h3>
+			<div class="indent">
+				<p>
+					特別なインストール作業はありません。任意のフォルダに解凍して使用できます。「CatMemoNote.exe」の実行ファイルから起動できます。
+					解凍後のフォルダ移動やUSBメモリなどに入れて使用することも可能です。<br>
+				</p>
+			</div>
+			<h3 id="install_uninstall">アンインストール方法</h3>
+			<div class="indent">
+				<p>
+					レジストリは使用していませんのでフォルダごとごみ箱に入れてください。作成したメモは初期状態では「メモ」フォルダにテキストファイルとして保存されています。<br>
+				</p>
+			</div>
+			<h3 id="install_versionup">バージョンアップ方法</h3>
+			<div class="indent">
+				<p>
+					システムの変更により今までなかった不具合が発生することもありえます。
+					万一のデータ消失に備えバックアップをとってから移行作業を行うことをおすすめします。
+				</p>
+				<h4>Version.2.x → Version.2.2への移行</h4>
+				<div class="indent marginbottom">
+					<p>
+						解凍した新しいバージョンのフォルダを、旧バージョンのフォルダへすべて上書きで大丈夫です。<br>
+						※テーマなどをカスタマイズされている場合は上書きにご注意ください。
+					</p>
+				</div>
+				<h4>Version.1.8.3 → Version.2.2への移行</h4>
+				<div class="indent marginbottom">
+					Version.2.0からシステムが大幅に変更されました。<br>
+					【移行の留意点】<br>
+					<div class="indentline">※上書きバージョンアップでの移行も可能ですが、新しいバージョンへメモのデータを移動するほうが問題が少ないと思います。</div>
+					<div class="indentline">※旧バージョンの全角パスワードの暗号化メモを復号化できません。旧バージョンでパスワードを解除してから新バージョンで再度パスワードを設定してください。半角のパスワードであれば問題ありません。（新しいバージョンで暗号化したメモは古いバージョンでは読み込めません。）</div>
+					<div class="indentline">※Windows 9x系は非対応となりました。（Windows 9x系などで動作させたい場合は旧バージョンをお使いください。）</div>
+					<div class="indentline">※旧メモのカーソル位置が後方へずれることがあります。（内部文字列処理のUnicode化により、バイト単位から文字単位で処理するようになりました。）</div>
+					<div class="indentline">※メモの保存時の文字コードがShift_JISからBOM付きのUTF-8に変更されました。文字コードを自動判別するようになっていますので旧バージョンのShift_JISのメモも問題なく編集できると思いますが、文字コード変換ソフトを使ってメモの文字コードを統一しておいても良いでしょう（※その際は拡張子が「.txt」の暗号化ファイルにご注意ください）。詳しくは「<a href="#charcode">文字コードについて</a>」をご覧ください。</div>
+					<div class="indentline">※テーマの仕様を一部変更しています。変更点は「<a href="./html/theme.html">テーマ仕様</a>」をご覧ください。（旧バージョンのテーマやカスタマイズしたテーマを使う場合は一部修正する必要があります。また、メインウィンドウ内のフォントを「メイリオ」に変更しましたので、Windows Vista以前で動作させる場合は少し文字位置がずれることがあります。）</div>
+				</div>
+				<h4>Version.1.8.2 → Version.1.8.3への移行</h4>
+				<div class="indent marginbottom">
+					<p>
+						実行ファイル「CatMemoNote.exe」の上書きで大丈夫です。
+					</p>
+				</div>
+				<h4>Version.1.8.1 → Version.1.8.2への移行</h4>
+				<div class="indent marginbottom">
+					<p>
+						実行ファイル「CatMemoNote.exe」の上書きで大丈夫です。
+					</p>
+				</div>
+				<h4>Version.1.8 → Version.1.8.1への移行</h4>
+				<div class="indent marginbottom">
+					<p>
+						実行ファイル「CatMemoNote.exe」の上書きで大丈夫です。
+					</p>
+				</div>
+				<h4>Version.1.7.2 → Version.1.8への移行</h4>
+				<div class="indent marginbottom">
+					システムが大幅に変更されました。旧バージョンを削除してから新しく設定し直してください。<br>
+					【移行の留意点】<br>
+					<div class="indentline">※テーマの互換性がなくなりました。旧バージョンのテーマは正しく表示されません。</div>
+					<div class="indentline">※システム設定ファイルの互換性がなくなりました。旧バージョンの「system.ini」を残しておくと正しく動作しません。</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<h2 id="howtouse">基本的な使い方</h2>
+		<div class="information">
+			<img src="./html/001.png" width=428 height=298 alt="画像サンプル１：メインウィンドウ" style="float: right; margin-left: 0.5em;">
+			<p>
+				「CatMemoNote.exe」を起動すると次のようなウィンドウが現れます。通常のウィンドウ操作とほぼ同じように操作できます。左側がメモの一覧で、右側がメモを編集するテキストエディタになっています。
+			</p>
+			<p>
+				アプリケーションの操作は、タイトルバーやタブ、メモ一覧、テキスト編集エリア部分などそれぞれの場所を右クリックして表示されるメニューから行えます。
+			</p>
+			<p>
+				タイトルバーのボタンは右から終了ボタン、最大化ボタン、最小化ボタン、最前面ボタンの4つが表示されています。最前面ボタンは画面を常に手前に表示するかを切り替えるボタンです。
+				タブの横にある検索ボックスから編集中のメモ内の文字を検索できます。ウィンドウの下部分のステータスバーには、編集中のメモの文字数などが表示されます。
+			</p>
+			<p>
+				メモ一覧の右クリックメニューや空白部分のダブルクリックでメモを作成することができます。メモをマウスでドラッグして順番を入れ替えたり、ツリー状に表示したりすることができます。
+			</p>
+			<p>
+				タスクトレイのアイコンをクリックすると、ウィンドウの表示/非表示を切り替えることができます。
+			</p>
+			<p>
+				終了するときは通常のウィンドウと同じように右上の×ボタンから終了できます。編集したメモは自動的に保存されます。
+			</p>
+			<p style="clear: both;"></p>
+		</div>
+
+
+
+		<h2 id="directory">ディレクトリ構成</h2>
+		<div class="information">
+			<h3>ディレクトリ構成</h3>
+			<img src="./html/003.png" width=352 height=350 alt="画像サンプル３：ディレクトリ構成" style="float: right; margin-left: 0.5em;">
+			<p>
+				実行ファイルを起動すると管理フォルダ（初期状態では「メモ」フォルダ）の中のテキストファイルを検索してメモ一覧に表示します。
+				アプリケーションによって作成されたメモや編集したメモは自動的にテキストファイルとして管理フォルダへ保存されます。具体的なテキストファイル上書きのタイミングは以下です。<br>
+			</p>
+			<ul>
+				<li>アプリケーションを終了するとき</li>
+				<li>最小化するとき</li>
+				<li>別のメモを読み込むとき</li>
+				<li>パスワードを設定するとき</li>
+				<li>タブを切り替えたとき</li>
+			</ul>
+			<p>
+				Ctrl+Sなどに割り振られているショートカットキーでも上書き保存が可能です。
+				テキストが変更されていない場合には上書き保存は行わないようになっています。
+			</p>
+			<p>
+				アプリケーションを終了するときにソフト全体の設定が保存される「system.ini」が作成されます。「system.ini」は定期的に「system_backup.ini」へバックアップされます。
+				オプション画面からキーワードを変更すると「keyword.ini」が作成されます。
+				これらの拡張子が「.ini」のファイルは削除してもメモ本文には影響はありませんが、それまでの設定は初期化されます。
+			</p>
+			<p>
+				メモ（テキストファイル）やタブ（管理フォルダ）を削除するとWindowsのごみ箱に入ります。
+			</p>
+			<p style="clear: both;"></p>
+			<h3>管理フォルダについて</h3>
+			<p>
+				このソフトではメモ（テキストファイル）の保存や参照を行うフォルダを「管理フォルダ」と呼んでいます。
+				初期状態では実行ファイルと同じ場所にある「メモ」フォルダが管理フォルダに設定されています。
+			</p>
+			<p>
+				管理フォルダは画面上部のタブに一覧表示されます。タブの右クリックメニューや空白部分のダブルクリックでタブ（管理フォルダ）を作成できます。
+				初期状態ではタブを新しく作成すると実行ファイルと同じフォルダに管理フォルダが作成されます。オプション画面の「タブ」の「保存先フォルダ」から保存先を変更することもできます。
+			</p>
+			<img src="./html/002.png" width=493 height=327 alt="画像サンプル２：管理フォルダ" style="float: right; margin-left: 0.5em;">
+			<p>
+				また、図のようにフォルダをドラッグ＆ドロップしてタブに登録することができます。
+			</p>
+			<p>
+				フォルダ内にある拡張子が「.txt」のテキストファイルをメモとして認識し、メモ一覧に表示します。（※その他のファイルやサブフォルダの中のファイルは表示されません。）
+			</p>
+			<p style="clear: both;"></p>
+		</div>
+
+
+
+		<h2 id="inifile">設定ファイルについて</h2>
+		<div class="information">
+			<p>
+				このソフトでは次の種類のファイルに設定を保存します。
+			</p>
+			<h3 id="inifile_system">システム設定ファイル「system.ini」</h3>
+			<div class="indent">
+				<p>
+					ソフト全体の設定を保存しておくためのファイルです。
+					アプリケーション終了時に実行ファイルと同じフォルダに自動的に作成され、起動時に読み込まれます。
+					このファイルには、タブやメモの順番や各メモのフォント情報などが記録されていますので定期的にバックアップすることをおすすめします。
+					（初期状態では「system_backup.ini」という名前で1週間経過ごとにバックアップが自動的に作成されるようになっています。）
+				</p>
+				<p>
+					詳細については以下をご覧ください。
+				</p>
+				<p>
+					<a href="./html/system.html">システム設定ファイル仕様</a>
+				</p>
+			</div>
+			<h3 id="inifile_keyword">キーワード定義ファイル「keyword.ini」</h3>
+			<div class="indent">
+				<p>
+					キーワード定義ファイルはテキストエディタのキーワード色分けを定義するためのファイルです。
+					オプション画面からキーワードを変更するとキーワード定義ファイル「keyword.ini」が作成されます。
+					ファイルの書式は以下のようになります。
+				</p>
+				<p class="syntax">
+					☆<br>
+					★<br>
+					○<br>
+					<br>
+					&#60;<br>
+					&#62;<br>
+					#<br>
+				</p>
+				<p>
+					キーワードは一行ずつ指定されます。各キーワードの長さが63文字を超える場合は63文字以内に収めて読み込まれます。
+					空行はキーワードグループの区切りになっています。
+				</p>
+			</div>
+		</div>
+
+
+
+		<h2 id="shortcutkey">ショートカットキー</h2>
+		<div class="information">
+			<p>
+				初期設定では以下のショートカットキーが定義されています。<br>
+			</p>
+			<table>
+				<tr><th>種類</th><th>操作</th><th>ショートカットキー</th></tr>
+				<tr><th rowspan="14">ウィンドウ操作</th>
+					<td>[ウィンドウ] 終了</td>							<td>Alt + F4</td></tr>
+				<tr><td>[ウィンドウ] 最大化</td>						<td>F11</td></tr>
+				<tr><td>[ウィンドウ] 最小化</td>						<td>F12</td></tr>
+				<tr><td>[ウィンドウ] 最前面表示</td>					<td>Ctrl + T</td></tr>
+				<tr><td>[ウィンドウ] 半透明化</td>						<td>Alt + Q</td></tr>
+				<tr><td>[ウィンドウ] シェード</td>						<td>Alt + W</td></tr>
+				<tr><td>[ウィンドウ] リサイズ</td>						<td>Alt + R</td></tr>
+				<tr><td>[ウィンドウ] 自動的に隠す</td>					<td></td></tr>
+				<tr><td>[ウィンドウ] メモ一覧表示</td>					<td>Alt + M</td></tr>
+				<tr><td>[ウィンドウ] タブ表示</td>						<td>Alt + T</td></tr>
+				<tr><td>[ウィンドウ] ステータスバー表示</td>			<td>Alt + S</td></tr>
+				<tr><td>[ウィンドウ] フォーカス移動</td>				<td>Ctrl + Tab</td></tr>
+				<tr><td>[ウィンドウ] タスク表示切り替え</td>			<td>Ctrl + Shift + T</td></tr>
+				<tr><td>[ウィンドウ] オプション</td>					<td>Ctrl + O</td></tr>
+				<tr><th rowspan="9">メニュー表示</th>
+					<td>[メニュー] タイトルバーメニュー</td>			<td>Alt + Space</td></tr>
+				<tr><td>[メニュー] メモ一覧メニュー</td>				<td></td></tr>
+				<tr><td>[メニュー] タブメニュー</td>					<td></td></tr>
+				<tr><td>[メニュー] 検索メニュー</td>					<td></td></tr>
+				<tr><td>[メニュー] メモ選択</td>						<td>Alt + D</td></tr>
+				<tr><td>[メニュー] タブ選択</td>						<td>Alt + F</td></tr>
+				<tr><td>[メニュー] 定型文</td>							<td>Alt + I</td></tr>
+				<tr><td>[メニュー] ツール</td>							<td>Alt + G</td></tr>
+				<tr><td>[メニュー] よく使うフォント</td>				<td></td></tr>
+				<tr><th rowspan="46">メモ操作</th>
+					<td>[メモ] 前に追加</td>							<td>Ctrl + N</td></tr>
+				<tr><td>[メモ] 後に追加</td>							<td></td></tr>
+				<tr><td>[メモ] 下の階層に追加</td>						<td></td></tr>
+				<tr><td>[メモ] リスト先頭に追加</td>					<td></td></tr>
+				<tr><td>[メモ] リスト末尾に追加</td>					<td></td></tr>
+				<tr><td>[メモ] 名前の変更</td>							<td>F2</td></tr>
+				<tr><td>[メモ] 削除</td>								<td>Ctrl + Delete</td></tr>
+				<tr><td>[メモ] 前のメモ</td>							<td>Ctrl + ↑</td></tr>
+				<tr><td>[メモ] 次のメモ</td>							<td>Ctrl + ↓</td></tr>
+				<tr><td>[メモ] 上にスクロール</td>						<td></td></tr>
+				<tr><td>[メモ] 下にスクロール</td>						<td></td></tr>
+				<tr><td>[メモ] １番目のメモを開く</td>					<td>Ctrl + 1</td></tr>
+				<tr><td>[メモ] ２番目のメモを開く</td>					<td>Ctrl + 2</td></tr>
+				<tr><td>[メモ] ３番目のメモを開く</td>					<td>Ctrl + 3</td></tr>
+				<tr><td>[メモ] ４番目のメモを開く</td>					<td>Ctrl + 4</td></tr>
+				<tr><td>[メモ] ５番目のメモを開く</td>					<td>Ctrl + 5</td></tr>
+				<tr><td>[メモ] ６番目のメモを開く</td>					<td>Ctrl + 6</td></tr>
+				<tr><td>[メモ] ７番目のメモを開く</td>					<td>Ctrl + 7</td></tr>
+				<tr><td>[メモ] ８番目のメモを開く</td>					<td>Ctrl + 8</td></tr>
+				<tr><td>[メモ] ９番目のメモを開く</td>					<td>Ctrl + 9</td></tr>
+				<tr><td>[メモ] １０番目のメモを開く</td>				<td>Ctrl + 0</td></tr>
+				<tr><td>[メモ] アイコン１に変更</td>					<td>Alt + 1</td></tr>
+				<tr><td>[メモ] アイコン２に変更</td>					<td>Alt + 2</td></tr>
+				<tr><td>[メモ] アイコン３に変更</td>					<td>Alt + 3</td></tr>
+				<tr><td>[メモ] アイコン４に変更</td>					<td>Alt + 4</td></tr>
+				<tr><td>[メモ] アイコン５に変更</td>					<td>Alt + 5</td></tr>
+				<tr><td>[メモ] アイコン切り替え↑</td>					<td></td></tr>
+				<tr><td>[メモ] アイコン切り替え↓</td>					<td></td></tr>
+				<tr><td>[メモ] 上に移動</td>							<td>Alt + ↑</td></tr>
+				<tr><td>[メモ] 下に移動</td>							<td>Alt + ↓</td></tr>
+				<tr><td>[メモ] 左に移動</td>							<td>Alt + ←</td></tr>
+				<tr><td>[メモ] 右に移動</td>							<td>Alt + →</td></tr>
+				<tr><td>[メモ] ツリーの開閉</td>						<td>Alt + Num +</td></tr>
+				<tr><td>[メモ] すべてのツリーを開く</td>				<td>Alt + Num *</td></tr>
+				<tr><td>[メモ] すべてのツリーを閉じる</td>				<td>Alt + Num /</td></tr>
+				<tr><td>[メモ] 編集ロック</td>							<td>Ctrl + Shift + L</td></tr>
+				<tr><td>[メモ] パスワード設定</td>						<td>Ctrl + P</td></tr>
+				<tr><td>[メモ] 結合</td>								<td>Ctrl + Shift + J</td></tr>
+				<tr><td>[メモ] 一行目をメモ名に設定</td>				<td>Ctrl + L</td></tr>
+				<tr><td>[メモ] 選択テキストをメモ名に設定</td>			<td>Ctrl + K</td></tr>
+				<tr><td>[メモ] 現在メモの上書き保存</td>				<td>Ctrl + S</td></tr>
+				<tr><td>[メモ] メモ一覧更新</td>						<td>F5</td></tr>
+				<tr><td>[メモ] 名前をコピー</td>						<td>Alt + ,</td></tr>
+				<tr><td>[メモ] パスをコピー</td>						<td>Alt + .</td></tr>
+				<tr><td>[メモ] プロパティ</td>							<td>Ctrl + Enter</td></tr>
+				<tr><td>[メモ] クリップON/OFF</td>						<td></td></tr>
+				<tr><th rowspan="29">タブ操作</th>
+					<td>[タブ] 新規タブ作成</td>						<td>Ctrl + Shift + N</td></tr>
+				<tr><td>[タブ] 名前の変更</td>							<td>Ctrl + F2</td></tr>
+				<tr><td>[タブ] 削除</td>								<td>Ctrl + Shift + Delete</td></tr>
+				<tr><td>[タブ] 前のタブ</td>							<td>Ctrl + ←</td></tr>
+				<tr><td>[タブ] 次のタブ</td>							<td>Ctrl + →</td></tr>
+				<tr><td>[タブ] 左に移動</td>							<td>Ctrl + Alt + ←</td></tr>
+				<tr><td>[タブ] 右に移動</td>							<td>Ctrl + Alt + →</td></tr>
+				<tr><td>[タブ] 左にスクロール</td>						<td></td></tr>
+				<tr><td>[タブ] 右にスクロール</td>						<td></td></tr>
+				<tr><td>[タブ] １番目のタブを開く</td>					<td>Ctrl + Shift + 1</td></tr>
+				<tr><td>[タブ] ２番目のタブを開く</td>					<td>Ctrl + Shift + 2</td></tr>
+				<tr><td>[タブ] ３番目のタブを開く</td>					<td>Ctrl + Shift + 3</td></tr>
+				<tr><td>[タブ] ４番目のタブを開く</td>					<td>Ctrl + Shift + 4</td></tr>
+				<tr><td>[タブ] ５番目のタブを開く</td>					<td>Ctrl + Shift + 5</td></tr>
+				<tr><td>[タブ] ６番目のタブを開く</td>					<td>Ctrl + Shift + 6</td></tr>
+				<tr><td>[タブ] ７番目のタブを開く</td>					<td>Ctrl + Shift + 7</td></tr>
+				<tr><td>[タブ] ８番目のタブを開く</td>					<td>Ctrl + Shift + 8</td></tr>
+				<tr><td>[タブ] ９番目のタブを開く</td>					<td>Ctrl + Shift + 9</td></tr>
+				<tr><td>[タブ] １０番目のタブを開く</td>				<td>Ctrl + Shift + 0</td></tr>
+				<tr><td>[タブ] 選択テキストをタブ名に設定</td>			<td>Ctrl + Shift + K</td></tr>
+				<tr><td>[タブ] 名前をコピー</td>						<td>Ctrl + Alt + ,</td></tr>
+				<tr><td>[タブ] パスをコピー</td>						<td>Ctrl + Alt + .</td></tr>
+				<tr><td>[タブ] タブを登録</td>							<td></td></tr>
+				<tr><td>[タブ] タブを閉じる</td>						<td></td></tr>
+				<tr><td>[タブ] パスを変更</td>							<td>Ctrl + Shift + \</td></tr>
+				<tr><td>[タブ] 保存フォルダを開く</td>					<td>Ctrl + \</td></tr>
+				<tr><td>[タブ] すべてのタブを閉じる</td>				<td></td></tr>
+				<tr><td>[タブ] 左のタブを閉じる</td>					<td></td></tr>
+				<tr><td>[タブ] 右のタブを閉じる</td>					<td></td></tr>
+				<tr><th rowspan="20">テキスト編集</th>
+					<td>[編集] 元に戻す</td>							<td>Ctrl + Z</td></tr>
+				<tr><td>[編集] やり直す</td>							<td>Ctrl + Y</td></tr>
+				<tr><td>[編集] 切り取り</td>							<td>Ctrl + X</td></tr>
+				<tr><td>[編集] コピー</td>								<td>Ctrl + C</td></tr>
+				<tr><td>[編集] 貼り付け</td>							<td>Ctrl + V</td></tr>
+				<tr><td>[編集] 削除</td>								<td>Delete</td></tr>
+				<tr><td>[編集] すべて選択</td>							<td>Ctrl + A</td></tr>
+				<tr><td>[編集] 行の先頭へ移動</td>						<td>Home</td></tr>
+				<tr><td>[編集] 行の末尾へ移動</td>						<td>End</td></tr>
+				<tr><td>[編集] １ページ上へ移動</td>					<td>PageUp</td></tr>
+				<tr><td>[編集] １ページ下へ移動</td>					<td>PageDown</td></tr>
+				<tr><td>[編集] テキストの先頭へ移動</td>				<td>Ctrl + Home</td></tr>
+				<tr><td>[編集] テキストの末尾へ移動</td>				<td>Ctrl + End</td></tr>
+				<tr><td>[編集] 単語の先頭へ移動</td>					<td></td></tr>
+				<tr><td>[編集] 単語の末尾へ移動</td>					<td></td></tr>
+				<tr><td>[編集] 単語の先頭まで削除</td>					<td></td></tr>
+				<tr><td>[編集] 単語の末尾まで削除</td>					<td></td></tr>
+				<tr><td>[編集] 上にスクロール</td>						<td></td></tr>
+				<tr><td>[編集] 下にスクロール</td>						<td></td></tr>
+				<tr><td>[編集] チェックリスト</td>						<td>Ctrl + Space</td></tr>
+				<tr><th rowspan="24">テキスト変換</th>
+					<td>[変換] 大文字/小文字の反転</td>					<td>F6</td></tr>
+				<tr><td>[変換] 小文字</td>								<td>F7</td></tr>
+				<tr><td>[変換] 大文字</td>								<td>F8</td></tr>
+				<tr><td>[変換] ひらがな</td>							<td></td></tr>
+				<tr><td>[変換] カタカナ</td>							<td></td></tr>
+				<tr><td>[変換] 半角</td>								<td></td></tr>
+				<tr><td>[変換] 全角</td>								<td></td></tr>
+				<tr><td>[変換] タブをスペースに変換</td>				<td>Ctrl + F7</td></tr>
+				<tr><td>[変換] スペースをタブに変換</td>				<td>Ctrl + F8</td></tr>
+				<tr><td>[変換] タブ揃え</td>							<td>F9</td></tr>
+				<tr><td>[変換] インデント</td>							<td>Ctrl + ]</td></tr>
+				<tr><td>[変換] アンインデント</td>						<td>Ctrl + [</td></tr>
+				<tr><td>[変換] 行の昇順ソート</td>						<td>Ctrl + Shift + A</td></tr>
+				<tr><td>[変換] 行の降順ソート</td>						<td>Ctrl + Shift + D</td></tr>
+				<tr><td>[変換] 行の数値昇順ソート</td>					<td>Ctrl + Shift + Alt + A</td></tr>
+				<tr><td>[変換] 行の数値降順ソート</td>					<td>Ctrl + Shift + Alt + D</td></tr>
+				<tr><td>[変換] 行のシャッフル</td>						<td></td></tr>
+				<tr><td>[変換] 行の逆並べ</td>							<td></td></tr>
+				<tr><td>[変換] 連続する重複行の削除</td>				<td>Ctrl + Alt + U</td></tr>
+				<tr><td>[変換] 重複行の削除</td>						<td>Ctrl + Shift + U</td></tr>
+				<tr><td>[変換] 重複行のカウント</td>					<td>Ctrl + Shift + Alt + U</td></tr>
+				<tr><td>[変換] 数式計算</td>							<td>F10</td></tr>
+				<tr><td>[変換] 合計</td>								<td>Ctrl + F10</td></tr>
+				<tr><td>[変換] 計算結果の合計</td>						<td>Ctrl + Shift + F10</td></tr>
+				<tr><th rowspan="17">書式変更</th>
+					<td>[書式] フォント変更</td>						<td>Ctrl + @</td></tr>
+				<tr><td>[書式] 文字サイズ＋</td>						<td>Ctrl + +</td></tr>
+				<tr><td>[書式] 文字サイズ－</td>						<td>Ctrl + -</td></tr>
+				<tr><td>[書式] 行間＋</td>								<td>Ctrl + Shift + +</td></tr>
+				<tr><td>[書式] 行間－</td>								<td>Ctrl + Shift + -</td></tr>
+				<tr><td>[書式] 折り返し切り替え</td>					<td>Ctrl + U</td></tr>
+				<tr><td>[書式] 縦書き</td>								<td>Ctrl + I</td></tr>
+				<tr><td>[書式] タブ幅＋</td>							<td>Shift + Num +</td></tr>
+				<tr><td>[書式] タブ幅－</td>							<td>Shift + Num -</td></tr>
+				<tr><td>[書式] ソフトタブ</td>							<td></td></tr>
+				<tr><td>[書式] オートインデント</td>					<td></td></tr>
+				<tr><td>[書式] 行番号の表示</td>						<td>Ctrl + :</td></tr>
+				<tr><td>[書式] ページ番号の表示</td>					<td>Ctrl + Shift + :</td></tr>
+				<tr><td>[書式] 空白の表示</td>							<td>Ctrl + ;</td></tr>
+				<tr><td>[書式] 改行の表示</td>							<td>Ctrl + Shift + ;</td></tr>
+				<tr><td>[書式] ガイドラインの表示</td>					<td></td></tr>
+				<tr><td>[書式] 壁紙切り替え</td>						<td>Ctrl + B</td></tr>
+				<tr><th rowspan="8">検索と置換</th>
+					<td>[検索] 検索</td>								<td>Ctrl + F</td></tr>
+				<tr><td>[検索] 前へ検索</td>							<td>Shift + F3</td></tr>
+				<tr><td>[検索] 次へ検索</td>							<td>F3</td></tr>
+				<tr><td>[検索] 選択テキストを前へ検索</td>				<td>Ctrl + Shift + Alt + F</td></tr>
+				<tr><td>[検索] 選択テキストを次へ検索</td>				<td>Ctrl + Shift + F</td></tr>
+				<tr><td>[検索] 置換</td>								<td>Ctrl + R</td></tr>
+				<tr><td>[検索] 全検索ウィンドウ表示</td>				<td>Ctrl + G</td></tr>
+				<tr><td>[検索] 指定行へ移動</td>						<td>Ctrl + J</td></tr>
+			</table>
+			<h3>テキストエディタ</h3>
+			<p>
+				テキスト編集エリアにキーボードフォーカスがある場合は上記のショートカットキーに加えて次のキー操作が可能です。<br>
+			</p>
+			<table>
+				<tr><th>種類</th><th>操作</th><th>キー</th></tr>
+				<tr><th rowspan="21">テキスト編集</th>
+						<td>切り取り（非選択状態で行切り取り）</td>		<td>Ctrl + X, Shift + Delete</td></tr>
+				<tr><td>コピー（非選択状態で行コピー）</td>				<td>Ctrl + C, Ctrl + Insert</td></tr>
+				<tr><td>貼り付け</td>									<td>Ctrl + V, Shift + Insert</td></tr>
+				<tr><td>すべて選択</td>									<td>Ctrl + A</td></tr>
+				<tr><td>元に戻す</td>									<td>Ctrl + Z</td></tr>
+				<tr><td>やり直す</td>									<td>Ctrl + Y, Ctrl + Shift + Z</td></tr>
+				<tr><td>行の先頭へ移動</td>								<td>Home</td></tr>
+				<tr><td>行の末尾へ移動</td>								<td>End</td></tr>
+				<tr><td>１ページ上へ移動</td>							<td>PageUp</td></tr>
+				<tr><td>１ページ下へ移動</td>							<td>PageDown</td></tr>
+				<tr><td>テキストの先頭へ移動</td>						<td>Ctrl + Home</td></tr>
+				<tr><td>テキストの末尾へ移動</td>						<td>Ctrl + End</td></tr>
+				<tr><td>単語の先頭へ移動</td>							<td>Ctrl + ←</td></tr>
+				<tr><td>単語の末尾へ移動</td>							<td>Ctrl + →</td></tr>
+				<tr><td>単語の先頭まで削除</td>							<td>Ctrl + BackSpace</td></tr>
+				<tr><td>単語の末尾まで削除</td>							<td>Ctrl + Delete</td></tr>
+				<tr><td>オートインデント実行（または回避）</td>			<td>Shift + Enter</td></tr>
+				<tr><td>数式計算（数式の「=」がある場合）</td>			<td>Enter</td></tr>
+				<tr><td>数式計算の回避</td>								<td>Shift + Enter</td></tr>
+				<tr><td>再変換</td>										<td>変換</td></tr>
+				<tr><td>メニュー表示</td>								<td>アプリケーションキー（Shift + F10）</td></tr>
+			</table>
+			<h3>メモ一覧</h3>
+			<p>
+				メモ一覧にキーボードフォーカスがある場合は次のキー操作が可能です。（初期状態ではメモ一覧へのフォーカス移動が無効になっています。フォーカス移動を有効にするにはオプション画面の「その他」タブの「メモ一覧のキーボードフォーカスを有効にする」から設定できます。）<br>
+			</p>
+			<table>
+				<tr><th>種類</th><th>操作</th><th>キー</th></tr>
+				<tr><th rowspan="11">メモ操作</th>
+						<td>メモを作成</td>								<td>Insert</td></tr>
+				<tr><td>後に追加</td>									<td>Enter</td></tr>
+				<tr><td>メモの削除</td>									<td>Delete</td></tr>
+				<tr><td>前のメモ</td>									<td>↑</td></tr>
+				<tr><td>次のメモ</td>									<td>↓</td></tr>
+				<tr><td>リスト先頭のメモを開く</td>						<td>Home</td></tr>
+				<tr><td>リスト末尾のメモを開く</td>						<td>End</td></tr>
+				<tr><td>ツリー開閉</td>									<td>←, →</td></tr>
+				<tr><td>すべて選択</td>									<td>Ctrl + A</td></tr>
+				<tr><td>フォーカス移動</td>								<td>Tab</td></tr>
+				<tr><td>メニュー表示</td>								<td>アプリケーションキー（Shift + F10）</td></tr>
+			</table>
+			<h3>検索ボックス</h3>
+			<p>
+				検索ボックスにキーボードフォーカスがある場合は次のキー操作が可能です。
+			</p>
+			<table>
+				<tr><th>操作</th><th>キー</th></tr>
+				<tr><td>前の検索履歴</td>								<td>↑</td></tr>
+				<tr><td>次の検索履歴</td>								<td>↓</td></tr>
+				<tr><td>検索実行</td>									<td>Enter</td></tr>
+				<tr><td>フォーカス移動</td>								<td>Tab</td></tr>
+				<tr><td>メニュー表示</td>								<td>アプリケーションキー（Shift + F10）</td></tr>
+			</table>
+		</div>
+
+
+
+		<h2 id="hotkey">ホットキー</h2>
+		<div class="information">
+			<p>
+				ホットキーはCatMemoNoteのウィンドウが隠れている場合やアクティブになっていない状態でも有効なキーボード操作です。ショートカットキーよりも優先されて実行されます。初期状態では次のホットキーが設定されています。
+			</p>
+			<table>
+				<tr><th>処理内容</th><th>ホットキー</th></tr>
+				<tr><td>ウィンドウ表示/非表示</td><td>Ctrl + Caps Lock</td></tr>
+				<tr><td>メモを作成</td><td>Ctrl × 2回</td></tr>
+				<tr><td>クリップボードを現在メモに貼り付け</td><td>Ctrl + F12</td></tr>
+				<tr><td>クリップボードを新規メモに貼り付け</td><td>Ctrl + Shift + F12</td></tr>
+				<tr><td>オートクリップON/OFF</td><td>Ctrl + Shift + Alt + F12</td></tr>
+				<tr><td>ツールメニュー</td><td>Ctrl + Shift + 無変換</td></tr>
+			</table>
+			<p>
+				ホットキーはオプション画面の「操作」タブから変更することができます。
+			</p>
+		</div>
+
+
+
+		<h2 id="checklist">チェックリスト</h2>
+		<div class="information">
+			<p>
+				Unicode文字の「<span class="checklistmark">☑</span>」と「<span class="checklistmark">☐</span>」を使ってチェックリストを作成できます。
+			</p>
+			<p class="syntax">
+				<span style="checkmark">☑</span>リスト１<br>
+				<span style="checkmark">☑</span>リスト２<br>
+				<span style="checkmark">☐</span>リスト３<br>
+				<span style="checkmark">☐</span>リスト４<br>
+			</p>
+			<p>
+				チェックマークのクリックや「Ctrl + Space」に割り当てられているショートカットキーでチェック状態を切り替えることができます。複数行を選択してまとめてチェック状態を変更することも可能です。
+			</p>
+			<ul>
+				<li>複数行の状態の変更は先頭のチェック状態により全体の状態が決定されます。</li>
+				<li>チェックリスト行でEnterキーを押し、改行すると次の行の先頭にチェックマークが自動的に付きます。Shift + Enterでキャンセルして通常の改行を挿入することができます。</li>
+				<li>チェックマークに使う文字は ○× ◆◇ ✔☐ などに変更することができます。</li>
+				<li>メモの文字コードをShift_JISなどで保存する設定にしている場合は、Unicodeの ☑☐ が文字化けして「?」のような表示になりますのでご注意ください。（チェックマークに使う文字をその文字コードで扱える記号等に変更すれば問題ありません。）</li>
+			</ul>
+		</div>
+
+
+
+		<h2 id="edit">テキスト編集</h2>
+		<div class="information">
+			<h3 id="edit_tabformat">タブ揃え</h3>
+			<div class="indent">
+				<p>
+					タブまたは2つ以上の半角スペースで区切られた文字列を列の項目と見なし、タブを挿入して整えます。
+				</p>
+				<p class="syntax" style="font-family: 'ＭＳ ゴシック';">
+					にんじん&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;198円<br>
+					玉ねぎ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;250円<br>
+					キャベツ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;150円<br>
+					ヨーグルト&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;130円<br>
+					食パン&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;158円<br>
+				</p>
+				<p>
+					↓
+				</p>
+				<p class="syntax" style="font-family: 'ＭＳ ゴシック';">
+					にんじん&nbsp;&nbsp;&nbsp;&nbsp;198円<br>
+					玉ねぎ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;250円<br>
+					キャベツ&nbsp;&nbsp;&nbsp;&nbsp;150円<br>
+					ヨーグルト&nbsp;&nbsp;130円<br>
+					食パン&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;158円<br>
+				</p>
+				<p>
+					テキストが選択されていない場合はカーソルがある一行を対象として実行されます。
+				</p>
+			</div>
+			<h3 id="edit_sort">行のソート</h3>
+			<div class="indent">
+				<p>
+					行の文字列の各文字コード（Unicode）の大小により並び替えを行います。
+				</p>
+				<p>
+					「行の数値昇順ソート」と「行の数値降順ソート」では、文字列を数値と見なす並び替えができます。（こちらのソート方法では半角英字の大文字と小文字の区別はしません。）
+				</p>
+			</div>
+			<h3 id="edit_shuffle">行のシャッフル</h3>
+			<div class="indent">
+				<p>
+					行をランダムに並べ替えます。
+				</p>
+			</div>
+			<h3 id="edit_reverse">行の逆並べ</h3>
+			<div class="indent">
+				<p>
+					行を行単位で逆順に並べ替えます。
+				</p>
+			</div>
+			<h3 id="edit_uniq">連続する重複行の削除</h3>
+			<div class="indent">
+				<p>
+					隣接した同じ行を一行にまとめます。
+				</p>
+			</div>
+			<h3 id="edit_uniq">重複行の削除</h3>
+			<div class="indent">
+				<p>
+					同じ行を削除します。
+				</p>
+				<p class="syntax">
+					<span class="ringo">りんご</span><br>
+					<span class="mikan">みかん</span><br>
+					<span class="ringo">りんご</span><br>
+					<span class="meron">メロン</span><br>
+					<span class="grape">グレープ</span><br>
+					<span class="meron">メロン</span><br>
+					<span class="mikan">みかん</span><br>
+					<span class="ringo">りんご</span><br>
+				</p>
+				<p>
+					↓
+				</p>
+				<p class="syntax">
+					<span class="ringo">りんご</span><br>
+					<span class="mikan">みかん</span><br>
+					<span class="meron">メロン</span><br>
+					<span class="grape">グレープ</span><br>
+				</p>
+				<p>
+					「連続する重複行の削除」と少し異なり、ソートされていなくても同じ行は削除されます。
+				</p>
+			</div>
+			<h3 id="edit_uniq">重複行のカウント</h3>
+			<div class="indent">
+				<p>
+					同じ行を削除します。さらに、行頭に重複した数を挿入します。
+				</p>
+				<p class="syntax">
+					<span class="ringo">りんご</span><br>
+					<span class="mikan">みかん</span><br>
+					<span class="ringo">りんご</span><br>
+					<span class="meron">メロン</span><br>
+					<span class="grape">グレープ</span><br>
+					<span class="meron">メロン</span><br>
+					<span class="mikan">みかん</span><br>
+					<span class="ringo">りんご</span><br>
+				</p>
+				<p>
+					↓
+				</p>
+				<p class="syntax">
+					3&nbsp;&nbsp;&nbsp;<span class="ringo">りんご</span><br>
+					2&nbsp;&nbsp;&nbsp;<span class="mikan">みかん</span><br>
+					2&nbsp;&nbsp;&nbsp;<span class="meron">メロン</span><br>
+					1&nbsp;&nbsp;&nbsp;<span class="grape">グレープ</span><br>
+				</p>
+				<p>
+					数値のあとはタブがひとつ付きます。
+				</p>
+			</div>
+			<h3 id="edit_other">その他の仕様</h3>
+			<div class="indent">
+				<ul>
+					<li>これらのテキスト変換処理は論理行（改行コードまでを一行と見なす）単位で動作します。</li>
+					<li>ソート、シャッフル、逆並べ、重複行の削除・カウントの実行時にテキストが選択されていない場合はすべての行を対象として実行されます。</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<h2 id="calc">数式計算</h2>
+		<div class="information">
+			<h3 id="calc_autocalc">数式の自動計算</h3>
+			<div class="indent">
+				<p>
+					イコール「=」で終わる数式を入力してEnterキーを押すと自動的に式の解析が始まり計算されます。
+				</p>
+			</div>
+			<h3 id="calc_continuity">連続計算</h3>
+			<div class="indent">
+				<p>
+					式を入力してEnterキーまたは右クリックメニューの「数式計算」を実行し、出力された答えにさらに計算式を追加して計算することができます。
+				</p>
+				<p class="syntax">
+					1+2+3=<br>
+				</p>
+				<p class="syntax">
+					1+2+3=6<br>
+				</p>
+				<p class="syntax">
+					1+2+3=6*10=<br>
+				</p>
+				<p class="syntax">
+					1+2+3=6*10=60<br>
+				</p>
+				<p class="syntax">
+					1+2+3=6*10=60/5=<br>
+				</p>
+				<p class="syntax">
+					1+2+3=6*10=60/5=12<br>
+				</p>
+			</div>
+			<h3 id="calc_select">まとめて計算</h3>
+			<div class="indent">
+				<p>
+					次のような複数行の式を選択して一度に計算させることも可能です。
+				</p>
+				<p class="syntax">
+					(1 + 2) * (3 + 4) =<br>
+					5 * (2 + 4) / (3 * (7 - (+3))) =<br>
+					500 * 1.08<br>
+					1 / 3<br>
+					３６÷（４＋８）×８＝<br>
+					りんご：150円×5個＝<br>
+				</p>
+				<p>
+					上記テキストを選択してエディタの右クリックメニューから「数式計算」を行うと以下の結果になります。
+				</p>
+				<p class="syntax">
+					(1 + 2) * (3 + 4) =21<br>
+					5 * (2 + 4) / (3 * (7 - (+3))) =2.5<br>
+					500 * 1.08=540<br>
+					1 / 3=0.33333333333333331<br>
+					３６÷（４＋８）×８＝24<br>
+					りんご：150円×5個＝750<br>
+				</p>
+				<p>
+					式にイコール「=」がなくても計算されて答えが入力されます。
+				</p>
+			</div>
+			<h3 id="calc_ng">計算できない例</h3>
+			<div class="indent">
+				<p>
+					次のような数式は正しく計算できません。
+				</p>
+				<p class="syntax">
+					(3+1)/2)=　<span class="detail">※括弧が対応していない場合</span><br>
+					10/0=　<span class="detail">※0で除算したときはエラーになります</span><br>
+					10*[3*{(10-4)/2}]=　<span class="detail">※括弧は ( ) のみ使えます</span><br>
+					三×四＝　<span class="detail">※漢数字は認識しません</span><br>
+					99999999999999999999999999999999999+1=　<span class="detail">※桁数が多すぎる場合</span><br>
+					x = 10; y = 20; x * y =　<span class="detail">※変数には対応していません</span><br>
+				</p>
+			</div>
+			<h3 id="calc_operator">演算子</h3>
+			<div class="indent">
+				<table width="100%">
+					<tr><th colspan="2" width="30%">演算子</th><th width="40%">説明</th><th width="30%">計算例</th></tr>
+					<tr><th rowspan="2" width="15%">符号</th>
+							<td><span class="operator">+</span></td><td>正数</td><td>+2 = 2</td></tr>
+					<tr><td><span class="operator">-</span></td><td>負数</td><td>-(2 + 3) = -5</td></tr>
+					<tr><th rowspan="7">算術演算</th>
+							<td><span class="operator">+</span></td><td>加算（足し算の和を求める）</td><td>1 + 2 = 3</td></tr>
+					<tr><td><span class="operator">-</span></td><td>減算（引き算の差を求める）</td><td>5 - 3 = 2</td></tr>
+					<tr><td><span class="operator">*</span></td><td>乗算（掛け算の積を求める）</td><td>3 * 2 = 6</td></tr>
+					<tr><td><span class="operator">/</span></td><td>除算（割り算の商を求める）</td><td>7 / 2 = 3.5</td></tr>
+					<tr><td><span class="operator">%</span></td><td>剰余（割り算の余りを求める）</td><td>7 % 3 = 1</td></tr>
+					<tr><td><span class="operator">^</span></td><td>累乗（べき乗）</td><td>2 ^ 3 = 8</td></tr>
+					<tr><td><span class="operator">!</span></td><td>階乗</td><td>5 ! = 120</td></tr>
+				</table>
+				<p>
+					演算子には優先順位があり、優先度の高い演算子の式が先に計算されます。同じ優先度の場合は左から順に計算されます。括弧 ( ) を使って計算の順序を指定することができます。
+				</p>
+					<table>
+						<tr><th>優先度</th><th>演算子</th><th>説明</th></tr>
+						<tr><td>1（高い） </td><td>+ - !</td><td>+-符号、階乗</td></tr>
+						<tr><td>2</td><td>* / % ^</td><td>乗算、除算、剰余、累乗</td></tr>
+						<tr><td>3（低い）</td><td>+ -</td><td>加算、減算</td></tr>
+					</table>
+			</div>
+			<h3 id="calc_function">関数</h3>
+			<div class="indent">
+				<table width="100%">
+					<tr><th colspan="2">関数</th><th>説明</th><th>計算例</th></tr>
+					<tr><th rowspan="4">算術関数</th>
+							<td><span class="function">ABS</span>(数値)</td><td>数値の絶対値を返す</td><td>ABS(-5)=5</td></tr>
+					<tr><td><span class="function">SQRT</span>(数値)</td><td>正の平方根を返す</td><td>SQRT(2)=1.414213562373095</td></tr>
+					<tr><td><span class="function">MOD</span>(数値, 数値)</td><td>剰余（演算子「%」と同じ）</td><td>MOD(9,4)=1</td></tr>
+					<tr><td><span class="function">POW</span>(数値, 指数)</td><td>累乗（演算子「^」と同じ）</td><td>POW(2,3)=8</td></tr>
+					<tr><th rowspan="3">三角関数</th>
+							<td><span class="function">SIN</span>(ラジアン)</td><td>正弦（サイン）</td><td>SIN(30*PI/180)=0.49999999999999994</td></tr>
+					<tr><td><span class="function">COS</span>(ラジアン)</td><td>余弦（コサイン）</td><td>COS(30*PI/180)=0.86602540378443871</td></tr>
+					<tr><td><span class="function">TAN</span>(ラジアン)</td><td>正接（タンジェント）</td><td>TAN(30*PI/180)=0.57735026918962573</td></tr>
+					<tr><th rowspan="1">定数</th>
+							<td><span class="function">PI</span></td><td>円周率（π）を返す</td><td>PI=3.1415926535897931</td></tr>
+				</table>
+				<ul>
+					<li>大文字と小文字の区別はありません。</li>
+				</ul>
+			</div>
+			<h3 id="calc_number">2進数・8進数・16進数</h3>
+			<div class="indent">
+				<p>
+					数値の先頭にプレフィックス（接頭辞や接頭子と呼ばれます）を付けることで2進数・8進数・16進数を表現できます。
+				</p>
+				<table>
+					<tr><th>記数法</th><th>プレフィックス</th><th>例</th><th>10進数の値</th></tr>
+					<tr><td>2進		</td><td><span class="prefix">0b</span> または <span class="prefix">0B</span>				</td><td>0b00000101			</td><td>5				</td></tr>
+					<tr><td>8進		</td><td><span class="prefix">0o</span> または <span class="prefix">0O</span>				</td><td>0o052				</td><td>42				</td></tr>
+					<tr><td>16進	</td><td><span class="prefix">0x</span> または <span class="prefix">0X</span>				</td><td>0xa2fd				</td><td>41725			</td></tr>
+				</table>
+				<p>
+					次のような計算ができます。
+				</p>
+				<p class="syntax">
+					0b1010 =<br>
+					0o12 =<br>
+					0xa =<br>
+					0xbe + 0x90 =<br>
+					0x3A.C =<br>
+					0x7e * (0b0101.1 - -0o3.4) =<br>
+				</p>
+				<p>
+					計算結果は次のようになります。
+				</p>
+				<p class="syntax">
+					0b1010 =10<br>
+					0o12 =10<br>
+					0xa =10<br>
+					0xbe + 0x90 =334<br>
+					0x3A.C =58.75<br>
+					0x7e * (0b0101.1 - -0o3.4) =1134<br>
+				</p>
+				<ul>
+					<li>負数の場合はマイナス符号「-」を付けます。補数表現は行われません。</li>
+					<li>16進数の大文字と小文字の区別はありません。</li>
+				</ul>
+			</div>
+			<h3 id="calc_sumandavg">合計</h3>
+			<div class="indent">
+				<p>
+					次のような数値を合計します。
+				</p>
+				<p class="syntax">
+					11&nbsp;&nbsp;&nbsp;137&nbsp;&nbsp;&nbsp;41&nbsp;&nbsp;&nbsp;19<br>
+					48&nbsp;&nbsp;&nbsp;49&nbsp;&nbsp;&nbsp;21&nbsp;&nbsp;&nbsp;-30<br>
+					68&nbsp;&nbsp;&nbsp;-97&nbsp;&nbsp;&nbsp;127.5&nbsp;&nbsp;&nbsp;5<br>
+					72&nbsp;&nbsp;&nbsp;48&nbsp;&nbsp;&nbsp;117&nbsp;&nbsp;&nbsp;-13.25<br>
+				</p>
+				<p>
+					結果は次の行に入力されます。
+				</p>
+				<p class="syntax">
+					11&nbsp;&nbsp;&nbsp;137&nbsp;&nbsp;&nbsp;41&nbsp;&nbsp;&nbsp;19<br>
+					48&nbsp;&nbsp;&nbsp;49&nbsp;&nbsp;&nbsp;21&nbsp;&nbsp;&nbsp;-30<br>
+					68&nbsp;&nbsp;&nbsp;-97&nbsp;&nbsp;&nbsp;127.5&nbsp;&nbsp;&nbsp;5<br>
+					72&nbsp;&nbsp;&nbsp;48&nbsp;&nbsp;&nbsp;117&nbsp;&nbsp;&nbsp;-13.25<br>
+					合計：623.25<br>
+				</p>
+				<ul>
+					<li>半角の数値のみ合計されるようになっています。全角の数字や2・8・16進数表記は数値として認識されません。</li>
+					<li>数値以外の文字が含まれる場合でも計算が可能です。</li>
+				</ul>
+			</div>
+			<h3 id="calc_sumandavg">計算結果の合計</h3>
+			<div class="indent">
+				<p>
+					各行の計算式を解いてその合計を求めます。こちらは「合計」機能と異なり行単位で合計します。
+				</p>
+				<table>
+					<tr><th width="300">変換前</th><th width="300">変換後</th></tr>
+					<tr>
+						<td valign="top">
+							にんじん：198円<br>
+							玉ねぎ：250円<br>
+							キャベツ：150円×2<br>
+							ヨーグルト：130円<br>
+							食パン：158円<br>
+						</td>
+						<td valign="top">
+							にんじん：198円<br>
+							玉ねぎ：250円<br>
+							キャベツ：150円×2<br>
+							ヨーグルト：130円<br>
+							食パン：158円<br>
+							合計：1036<br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							100 + 200 + 300 =<br>
+							5 * (2 + 6) =<br>
+							2 / 4 =<br>
+							0xfe5a - 0xffb6 =<br>
+							sqrt(7 - (10 - 7)) * 3 =<br>
+						</td>
+						<td valign="top">
+							100 + 200 + 300 =600<br>
+							5 * (2 + 6) =40<br>
+							2 / 4 =0.5<br>
+							0xfe5a - 0xffb6 =-348<br>
+							sqrt(7 - (10 - 7)) * 3 =6<br>
+							合計：298.5
+						</td>
+					</tr>
+				</table>
+				<ul>
+					<li>１行の中に複数の数値や式がある場合は、一番右側の数値や式の答えが合計の対象となります。</li>
+					<li>「=」がない式は計算結果が表示されずに合計されます。</li>
+				</ul>
+			</div>
+			<h3 id="calc_other">その他の仕様・注意点</h3>
+			<div class="indent">
+				<ul>
+					<li>2進数の浮動小数点方式で計算しているため小数点を含む計算で誤差が出ることがあります。</li>
+					<li>１行が長い場合は式の解析に失敗することがあります。</li>
+					<li>式の途中に空白やその他の文字を入れても入れなくても計算は可能です。</li>
+					<li>数字や演算子は全角でも計算ができます。（※関数や「合計」機能は半角でないと認識しません）</li>
+					<li>計算過程の情報などはステータスバーに表示されます。</li>
+					<li>「=」の直後にShift + Enterを押すと計算をキャンセルして通常の改行入力になります。</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<h2 id="regularexpression">正規表現</h2>
+		<div class="information">
+			<p>
+				正規表現は文字列をパターン化して表現する手法です。CatMemoNoteでは以下のメタ文字を使えます。
+			</p>
+			<h3 id="regularexpression_metachar">メタ文字</h3>
+			<div class="indent">
+				<table>
+					<tr><th>メタ文字</th><th>説明</th><th>備考・使用例</th></tr>
+					<tr><td><span class="re_meta">^</span></td>																	<td>行頭</td><td></td></tr>
+					<tr><td><span class="re_meta">$</span></td>																	<td>行末</td><td></td></tr>
+					<tr><td><span class="re_meta">.</span></td>																	<td>改行を除く任意の1文字（ワイルドカード）</td><td></td></tr>
+					<tr><td><span class="re_meta">*</span></td>																	<td>直前のパターンの0回以上の繰り返し</td><td></td></tr>
+					<tr><td><span class="re_meta">+</span></td>																	<td>直前のパターンの1回以上の繰り返し</td><td></td></tr>
+					<tr><td><span class="re_meta">?</span></td>																	<td>直前のパターンの0回または1回の繰り返し</td><td></td></tr>
+					<tr><td><span class="re_meta">{</span>n<span class="re_meta">}</span></td>									<td>直前のパターンのn回の繰り返し</td><td>n は数字です。例えば a{3} で aaa にマッチ</td></tr>
+					<tr><td><span class="re_meta">{</span>n<span class="re_meta">,}</span></td>									<td>直前のパターンのn回以上の繰り返し</td><td>b{2,} で bb bbb bbb bbbb bbbbb… にマッチ</td></tr>
+					<tr><td><span class="re_meta">{</span>n<span class="re_meta">,</span>m<span class="re_meta">}</span></td>	<td>直前のパターンのn回からm回の繰り返し</td><td>c{1,3} で c cc ccc にマッチ</td></tr>
+					<tr><td><span class="re_meta">*?</span></td>																<td>直前のパターンの0回以上の最短一致</td><td></td></tr>
+					<tr><td><span class="re_meta">+?</span></td>																<td>直前のパターンの1回以上の最短一致</td><td></td></tr>
+					<tr><td><span class="re_meta">??</span></td>																<td>直前のパターンの0回または1回の最短一致</td><td></td></tr>
+					<tr><td><span class="re_meta">{</span>n<span class="re_meta">}?</span></td>									<td>直前のパターンのn回の最短一致</td><td></td></tr>
+					<tr><td><span class="re_meta">{</span>n<span class="re_meta">,}?</span></td>								<td>直前のパターンのn回以上の最短一致</td><td></td></tr>
+					<tr><td><span class="re_meta">{</span>n<span class="re_meta">,</span>m<span class="re_meta">}?</span></td>	<td>直前のパターンのn回からm回の最短一致</td><td></td></tr>
+					<tr><td><span class="re_meta">( )</span></td>																<td>グループ化</td><td>パターンをまとめます。さらに一致した文字列を記憶します</td></tr>
+					<tr><td><span class="re_meta">\1</span> ～ <span class="re_meta">\9</span></td>								<td>後方参照</td><td>( ) で記憶した文字列を取り出します（※置換でのみ使用可） </td></tr>
+					<tr><td><span class="re_meta">|</span></td>																	<td>選択一致</td><td>あ|い|う で あ、い、う にマッチ</td></tr>
+					<tr><td><span class="re_meta">[ ]</span></td>																<td>[ ]の中の任意の1文字（キャラクタクラス） </td><td>[a-zA-Z] でa～z、A～Zにマッチ</td></tr>
+					<tr><td><span class="re_meta">[^ ]</span></td>																<td>[^ ]の中以外の任意の1文字</td><td>[^a-zA-Z] でアルファベット以外にマッチ</td></tr>
+					<tr><td><span class="re_meta">-</span></td>																	<td>範囲指定</td><td>[ ] の中で使います。[a-f] [あ-お] など</td></tr>
+					<tr><td><span class="re_meta">\n</span></td>																<td>改行</td><td>\x0c\x0d|[\x0c\x0d] と同じ</td></tr>
+					<tr><td><span class="re_meta">\t</span></td>																<td>タブ</td><td>\x09と同じ（水平タブ）</td></tr>
+					<tr><td><span class="re_meta">\s</span></td>																<td>空白</td><td>[\t 　] と同じ（タブと半角/全角スペース）</td></tr>
+					<tr><td><span class="re_meta">\S</span></td>																<td>空白以外</td><td>[^\t 　] と同じ（タブと半角/全角スペース以外）</td></tr>
+					<tr><td><span class="re_meta">\d</span></td>																<td>数字</td><td>[0-9] と同じ（半角の数字にマッチ）</td></tr>
+					<tr><td><span class="re_meta">\D</span></td>																<td>数字以外</td><td>[^0-9] と同じ</td></tr>
+					<tr><td><span class="re_meta">\w</span></td>																<td>英数アンダーバー</td><td>[a-zA-Z0-9_] と同じ</td></tr>
+					<tr><td><span class="re_meta">\W</span></td>																<td>英数アンダーバー以外</td><td>[^a-zA-Z0-9_] と同じ</td></tr>
+					<tr><td><span class="re_meta">\x</span>と16進数</td>														<td>文字コード指定（Unicode）</td><td>\x20 \x5b57 \xFF21 など（1～4桁以内）</td></tr>
+					<tr><td><span class="re_meta">\</span></td>																	<td>直後のメタ文字をエスケープ</td><td>例えば \. で . を通常の文字として扱います</td></tr>
+				</table>
+				<p>
+					置換文字列に使えるメタ文字は \1～\9 \n \t \ です。
+				</p>
+			</div>
+			<h3 id="regularexpression_example">正規表現の例</h3>
+			<div class="indent">
+				<table>
+					<tr><th colspan="2">操作</th><th>検索文字列</th><th>置換文字列</th></tr>
+					<tr><th rowspan="14">検索</th>
+						<td>OR検索</td><td>文字列1|文字列2</td><td></td></tr>
+					<tr><td>任意の文字列に囲まれた文字列</td><td>文字列1.+?文字列2</td><td></td></tr>
+					<tr><td>URL<span class="comment detail" title="簡易的な正規表現です。ftp://～などにはマッチしません。">※</span></td><td>https?://[\w\d/%#\$&amp;\?\(\)~\.=\+\-]+ </td><td></td></tr>
+					<tr><td>メールアドレス<span class="comment detail" title="簡易的な正規表現です。厳密なメールアドレスのチェックには使えません。">※</span> </td><td>[\w\.\-]+@[\w\.\-]+</td><td></td></tr>
+					<tr><td>電話番号<span class="comment detail" title="簡易的な正規表現です。">※</span></td><td>\d{2,4}-\d{2,4}-\d{4}</td><td></td></tr>
+					<tr><td>日付<span class="comment detail" title="簡易的な正規表現です。全角の日付などにはマッチしません。">※</span></td><td>\d{4}[/\.年]\d{1,2}[/\.月]\d{1,2}日</td><td></td></tr>
+					<tr><td>複数行の検索</td><td>1行目\n2行目</td><td></td></tr>
+					<tr><td>ひらがな</td><td>[ぁ-ん]</td><td></td></tr>
+					<tr><td>カタカナ</td><td>[ァ-ヴー]</td><td></td></tr>
+					<tr><td>半角ｶﾀｶﾅ</td><td>[｡-ﾟ]</td><td></td></tr>
+					<tr><td>全角の英数とアンダーバー</td><td>[ａ-ｂＡ-Ｂ０-９＿]</td><td></td></tr>
+					<tr><td>漢字<span class="comment detail" title="簡易的な正規表現です。その他の合成文字などにはマッチしません。">※</span></td><td>[\x3400-\x9FFF\xF900-\xFAFF]</td><td></td></tr>
+					<tr><td>カラーコード（#FFFFFFなど）</td><td>#[0-9a-fA-F]{3,6}</td><td></td></tr>
+					<tr><td>未チェックのチェックリスト行</td><td>^\s*?☐.*</td><td></td></tr>
+					<tr><th rowspan="16">置換</th>
+						<td>複数の文字列を一度に置換</td><td>置き換え|置換え|置きかえ</td><td>置換</td></tr>
+					<tr><td>文字列の入れ替え</td><td>(あ)(い)(う)(え)(お)</td><td>\5\4\3\2\1</td></tr>
+					<tr><td>「…」を『…』に変換</td><td>「(.+?)」</td><td>『\1』</td></tr>
+					<tr><td>改行削除（複数行を1行にする）</td><td>\n+</td><td></td></tr>
+					<tr><td>空行削除</td><td>^\n+</td><td></td></tr>
+					<tr><td>行頭空白削除</td><td>^\s+</td><td></td></tr>
+					<tr><td>行末空白削除</td><td>\s+$</td><td></td></tr>
+					<tr><td>連続する空行を1行にまとめる</td><td>^\n+</td><td>\n</td></tr>
+					<tr><td>連続するタブを1つにまとめる</td><td>\t+</td><td>\t</td></tr>
+					<tr><td>カンマ「,」をタブに置換</td><td>,</td><td>\t</td></tr>
+					<tr><td>行頭文字列追加</td><td>^</td><td>（追加したい文字）</td></tr>
+					<tr><td>行末文字列追加</td><td>$</td><td>（追加したい文字）</td></tr>
+					<tr><td>ある文字列を含む行を削除</td><td>^.*文字列.*[\n]+</td><td></td></tr>
+					<tr><td>\9,999→9,999円</td><td>\\([\d]{1,3}[\,]*)+</td><td>\1円</td></tr>
+					<tr><td>HTMLタグを除去</td><td>&#60;.*?&#62;</td><td></td></tr>
+					<tr><td>yyyy年mm月dd日→yyyy/mm/dd<span class="comment detail" title="簡易的な正規表現です。">※</span></td><td>(\d{4})年(\d{2})月(\d{2})日</td><td>\1/\2/\3</td></tr>
+				</table>
+			</div>
+			<h3 id="calc_other">その他の仕様・注意点</h3>
+			<div class="indent">
+				<ul>
+					<li>正規表現にはソフトウェアごとに方言のような若干の仕様の違いがあるため、CatMemoNoteの正規表現とその他のソフトで使われる正規表現とで結果が一致しないことがあります。</li>
+					<li>検索時の後方参照「\1」～「\9」指定には対応していません。置換文字列にのみ指定可能です。</li>
+					<li>「\x」はUnicodeの16進数（\x61、\x3042、\x5b57など）で指定します。全検索では、テキストファイルごとに文字コードが異なる場合でも検索できるようにテキストファイルの文字コードを一度Unicodeに変換してから検索処理が行われます。</li>
+					<li>改行は「\n」のみで指定します。改行コードの種類が CR+LF、LF、CR のいずれかであっても「\n」でマッチするようになっています。「\r」は定義されていません。（編集中のテキストは内部ではLFで保持されているため改行コードがCR+LFであっても \x0c\x0d で改行にマッチしませんのでご注意ください。）</li>
+					<li>先読みや後読みなどの正規表現には対応していません。</li>
+					<li>複雑な正規表現を使うと稀に強制終了することがあります。</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<h2 id="template">定型文</h2>
+		<div class="information">
+			<p>
+				日時や署名などのよく使う定型文を登録しておくことができます。編集エリアの右クリックメニューから定型文を編集中のメモに挿入することができます。
+				定型文には以下の$からはじまる文字（特殊記号）を指定できます。<br>
+			</p>
+			<h3 id="template_symbol">特殊記号</h3>
+			<div class="indent">
+				<p>
+					日時の変換例は「2014年5月14日 午後6時50分3秒」を例にしています。<br>
+				</p>
+				<table>
+					<tr><th>種類</th><th>特殊記号</th><th>変換後の値</th><th>変換例・備考</th></tr>
+
+					<tr><th rowspan="9">フォーマット済み日時</th>
+						<td><span class="template_symbol">$1</span></td>		<td>日付</td>							<td>2014/05/14</td></tr>
+					<tr><td><span class="template_symbol">$2</span></td>		<td>時刻</td>							<td>18:50:03</td></tr>
+					<tr><td><span class="template_symbol">$3</span></td>		<td>日付と時刻</td>						<td>2014/05/14 18:50:03</td></tr>
+					<tr><td><span class="template_symbol">$4</span></td>		<td>年月日</td>							<td>2014年5月14日</td></tr>
+					<tr><td><span class="template_symbol">$5</span></td>		<td>年月日と曜日</td>					<td>2014年5月14日（水）</td></tr>
+					<tr><td><span class="template_symbol">$6</span></td>		<td>年月日と時刻</td>					<td>2014年5月14日 午後6時50分3秒</td></tr>
+					<tr><td><span class="template_symbol">$7</span></td>		<td>和暦</td>							<td>平成26年5月14日</td></tr>
+					<tr><td><span class="template_symbol">$8</span></td>		<td>和暦（アルファベットと数字）</td>	<td>H26.5.14</td></tr>
+					<tr><td><span class="template_symbol">$9</span></td>		<td>英語表記</td>						<td>May 14 2014</td></tr>
+
+					<tr><th rowspan="16">日付</th>
+						<td><span class="template_symbol">$Y</span></td>		<td>年</td>								<td>2014</td></tr>
+					<tr><td><span class="template_symbol">$y</span></td>		<td>年（下2桁）</td>					<td>14</td></tr>
+					<tr><td><span class="template_symbol">$m</span></td>		<td>月</td>								<td>5</td></tr>
+					<tr><td><span class="template_symbol">$M</span></td>		<td>月（2桁）</td>						<td>05</td></tr>
+					<tr><td><span class="template_symbol">$f</span></td>		<td>月（英語3文字）</td>				<td>May</td></tr>
+					<tr><td><span class="template_symbol">$F</span></td>		<td>月（英語）</td>						<td>May</td></tr>
+					<tr><td><span class="template_symbol">$d</span></td>		<td>日</td>								<td>14</td></tr>
+					<tr><td><span class="template_symbol">$D</span></td>		<td>日（2桁）</td>						<td>14</td></tr>
+					<tr><td><span class="template_symbol">$w</span></td>		<td>曜日（英語3文字）</td>				<td>Wed</td></tr>
+					<tr><td><span class="template_symbol">$W</span></td>		<td>曜日（英語）</td>					<td>Wednesday</td></tr>
+					<tr><td><span class="template_symbol">$a</span></td>		<td>曜日（日本語）</td>					<td>水</td></tr>
+					<tr><td><span class="template_symbol">$e</span></td>		<td>和暦の元号（日本語）</td>			<td>平成</td></tr>
+					<tr><td><span class="template_symbol">$E</span></td>		<td>和暦の元号（アルファベット）</td>	<td>H</td></tr>
+					<tr><td><span class="template_symbol">$j</span></td>		<td>和暦の年</td>						<td>26</td></tr>
+					<tr><td><span class="template_symbol">$J</span></td>		<td>和暦の年（2桁）</td>				<td>26</td></tr>
+					<tr><td><span class="template_symbol">$A</span></td>		<td>十二支</td>							<td>午</td></tr>
+
+					<tr><th rowspan="10">時刻</th>
+						<td><span class="template_symbol">$g</span></td>		<td>時（12時間制）</td>					<td>6</td></tr>
+					<tr><td><span class="template_symbol">$G</span></td>		<td>時（12時間制2桁）</td>				<td>06</td></tr>
+					<tr><td><span class="template_symbol">$h</span></td>		<td>時（24時間制）</td>					<td>18</td></tr>
+					<tr><td><span class="template_symbol">$H</span></td>		<td>時（24時間制2桁）</td>				<td>18</td></tr>
+					<tr><td><span class="template_symbol">$i</span></td>		<td>分</td>								<td>50</td></tr>
+					<tr><td><span class="template_symbol">$I</span></td>		<td>分（2桁）</td>						<td>50</td></tr>
+					<tr><td><span class="template_symbol">$s</span></td>		<td>秒</td>								<td>3</td></tr>
+					<tr><td><span class="template_symbol">$S</span></td>		<td>秒（2桁）</td>						<td>03</td></tr>
+					<tr><td><span class="template_symbol">$p</span></td>		<td>午前/午後</td>						<td>M</td></tr>
+					<tr><td><span class="template_symbol">$P</span></td>		<td>AM/PM</td>							<td>午後</td></tr>
+					
+					<tr><th rowspan="18">編集情報</th>
+						<td><span class="template_symbol">$@</span></td>		<td>選択テキスト</td>					<td>（選択されていない場合は文字カーソル位置の単語です）</td></tr>
+					<tr><td><span class="template_symbol">$L</span></td>		<td>１行目のテキスト</td>				<td></td></tr>
+					<tr><td><span class="template_symbol">$_</span></td>		<td>クリップボードのテキスト</td>		<td></td></tr>
+					<tr><td><span class="template_symbol">$/</span></td>		<td>総行数</td>							<td>1</td></tr>
+					<tr><td><span class="template_symbol">$,</span></td>		<td>総文字数</td>						<td>0（改行はカウントしません）</td></tr>
+					<tr><td><span class="template_symbol">$B</span></td>		<td>総文字数（全角）</td>				<td>0（改行はカウントしません）</td></tr>
+					<tr><td><span class="template_symbol">$C</span></td>		<td>総文字数（半角）</td>				<td>0（改行はカウントしません）</td></tr>
+					<tr><td><span class="template_symbol">$.</span></td>		<td>総バイト数</td>						<td>0</td></tr>
+					<tr><td><span class="template_symbol">$=</span></td>		<td>カーソル行</td>						<td>1</td></tr>
+					<tr><td><span class="template_symbol">$:</span></td>		<td>カーソル桁列</td>					<td>1</td></tr>
+					<tr><td><span class="template_symbol">$|</span></td>		<td>カーソル位置</td>					<td>0（先頭からのバイト単位です）</td></tr>
+					<tr><td><span class="template_symbol">$l</span></td>		<td>選択行数</td>						<td>0</td></tr>
+					<tr><td><span class="template_symbol">$?</span></td>		<td>選択文字数</td>						<td>0（改行はカウントしません）</td></tr>
+					<tr><td><span class="template_symbol">$b</span></td>		<td>選択文字数（全角）</td>				<td>0（改行はカウントしません）</td></tr>
+					<tr><td><span class="template_symbol">$c</span></td>		<td>選択文字数（半角）</td>				<td>0（改行はカウントしません）</td></tr>
+					<tr><td><span class="template_symbol">$[</span></td>		<td>選択開始位置</td>					<td>0（バイト単位です）</td></tr>
+					<tr><td><span class="template_symbol">$]</span></td>		<td>選択終了位置</td>					<td>0（バイト単位です）</td></tr>
+					<tr><td><span class="template_symbol">$*</span></td>		<td>選択バイト数</td>					<td>0</td></tr>
+
+					<tr><th rowspan="13">ファイル情報</th>
+						<td><span class="template_symbol">$x</span></td>		<td>メモの名前</td>						<td>新規メモ</td></tr>
+					<tr><td><span class="template_symbol">$T</span></td>		<td>メモのファイル拡張子</td>			<td>.txt</td></tr>
+					<tr><td><span class="template_symbol">$X</span></td>		<td>メモのファイルパス</td>				<td>C:\CatMemoNote\管理フォルダ\新規メモ.txt</td></tr>
+					<tr><td><span class="template_symbol">$z</span></td>		<td>メモのフォルダ名</td>				<td>管理フォルダ</td></tr>
+					<tr><td><span class="template_symbol">$Z</span></td>		<td>メモのフォルダパス</td>				<td>C:\CatMemoNote\管理フォルダ</td></tr>
+					<tr><td><span class="template_symbol">$+</span></td>		<td>メモの作成日時</td>					<td>2014/05/14 18:46:51</td></tr>
+					<tr><td><span class="template_symbol">$&#39;</span></td>	<td>メモの更新日時</td>					<td>2014/05/14 18:47:19</td></tr>
+					<tr><td><span class="template_symbol">$`</span></td>		<td>メモのアクセス日時</td>				<td>2014/05/14 18:46:51</td></tr>
+					<tr><td><span class="template_symbol">$-</span></td>		<td>メモのファイルサイズ</td>			<td>0（バイト単位です）</td></tr>
+					<tr><td><span class="template_symbol">$#</span></td>		<td>実行ファイルのフォルダパス</td>		<td>C:\CatMemoNote</td></tr>
+					<tr><td><span class="template_symbol">$^</span></td>		<td>現在テーマフォルダ名</td>			<td>CatMemoNote</td></tr>
+					<tr><td><span class="template_symbol">$~</span></td>		<td>現在テーマフォルダパス</td>			<td>C:\CatMemoNote\theme\CatMemoNote</td></tr>
+					<tr><td><span class="template_symbol">$%</span></td>		<td>現在の背景画像ファイルパス</td>		<td>C:\CatMemoNote\theme\CatMemoNote\back.bmp</td></tr>
+
+					<tr><th rowspan="6">その他</th>
+						<td><span class="template_symbol">$!</span></td>		<td>変換後のカーソル位置</td>			<td>（定型文挿入後この位置へ文字カーソルを移動します）</td></tr>
+					<tr><td><span class="template_symbol">${</span></td>		<td>変換後の選択開始位置</td>			<td>（\}と組み合わせて使用します）</td></tr>
+					<tr><td><span class="template_symbol">$}</span></td>		<td>変換後の選択終了位置</td>			<td>（\{と組み合わせて使用します）</td></tr>
+					<tr><td><span class="template_symbol">$$</span></td>		<td>$の文字</td>						<td>$</td></tr>
+					<tr><td><span class="template_symbol">$t</span></td>		<td>タブ文字</td>						<td></td></tr>
+					<tr><td><span class="template_symbol">$n</span></td>		<td>改行</td>							<td></td></tr>
+				</table>
+				<p>
+					例えば定型文を「$Y/$M/$D」にすると「2014/05/14」と変換されて挿入されます。<br>
+					特殊記号の「$!」または「${」、「$}」を使用しない場合は挿入テキストの末尾へ文字カーソルを移動します。<br>
+				</p>
+			</div>
+		</div>
+
+
+
+		<h2 id="tool">外部ツール実行機能</h2>
+		<div class="information">
+			<p>
+				外部ツール実行機能ではプログラムやファイルをCatMemoNoteから起動させることができます。
+				外部ツールのコマンド（ファイルパスやURLなど）、パラメータ（コマンドライン引数）、作業フォルダ、それぞれに「<a href="#template">定型文</a>」と同じ特殊記号を指定できます。
+			</p>
+			<p>
+				以下は外部ツールの設定例です。
+			</p>
+			<p class="syntax">
+				<strong>【Windowsの電卓を起動】</strong><br>
+				コマンド: calc<br>
+			</p>
+			<p class="syntax">
+				<strong>【選択テキストのファイルやURLを開く】</strong><br>
+				コマンド: $@<br>
+			</p>
+			<p class="syntax">
+				<strong>【選択テキストをGoogleを利用して検索】</strong><br>
+				コマンド: http://www.google.com/search?hl=ja&amp;q=$@<br>
+			</p>
+		</div>
+
+
+
+		<h2 id="clip">クリップ機能</h2>
+		<div class="information">
+			<H3>オートクリップ</h3>
+			<div class="indent">
+				<p>
+					その他のソフトでコピーされたテキストを自動的に編集中のメモに貼り付ける機能です。テキストをピックアップして後でまとめる時などに便利です。この機能は、メインメニューやステータスバーのクリップアイコンからON/OFFを切り替えることができます。
+				</p>
+				<p>
+					※「Ctrl + C」を押す時間が長いと2回貼り付けられてしまうことがありますのでご注意ください。
+				</p>
+			</div>
+			<H3>ホットキーによる貼り付け</h3>
+			<div class="indent">
+				<p>
+					現在クリップボードにあるテキストをメモに貼り付けることができるホットキーがいくつか定義されています。一覧は「<a href="#hotkey">ホットキー</a>」の項目をご覧ください。
+				</p>
+			</div>
+		</div>
+
+
+
+		<h2 id="clickablelink">リンク機能</h2>
+		<div class="information">
+			<p>
+				メモ本文のURL、メールアドレス、ファイルパスをダブルクリック（またはシングルクリック）で開くことができます。
+			</p>
+			<H3>URL</h3>
+			<div class="indent">
+				<p>
+					リンクをダブルクリックすると既定のWebブラウザを起動してURLにアクセスします。次の文字から始まるURLを認識します。
+				</p>
+				<ul>
+					<li><span class="link_url">http://</span></li>
+					<li><span class="link_url">https://</span></li>
+					<li><span class="link_url">www.</span></li>
+					<li><span class="link_url">ftp://</span></li>
+				</ul>
+			</div>
+			<H3>メールアドレス</h3>
+			<div class="indent">
+				<p>
+					リンクをダブルクリックすると既定のメールソフトにメールアドレスを渡してメールソフトを起動します。次のようなメールアドレスを認識します。
+				</p>
+				<ul>
+					<li><span class="link_mail">abc@example.com</span></li>
+					<li><span class="link_mail">abc.123@example.com</span></li>
+					<li>mailto:<span class="link_mail">abc@example.com</span></li>
+				</ul>
+			</div>
+			<H3>ファイルパス</h3>
+			<div class="indent">
+				<p>
+					リンクをダブルクリックするとファイルパスを関連付けられたアプリケーションで開きます。フォルダパスの場合はフォルダを開きます。相対パスの場合は管理フォルダがルートディレクトリになります。次のような文字から始まるファイルパスを認識します。
+				</p>
+				<ul>
+					<li><span class="link_path">C:\</span></li>
+					<li><span class="link_path">c:\</span></li>
+					<li><span class="link_path">.\</span></li>
+					<li><span class="link_path">..\</span></li>
+					<li><span class="link_path">file://</span></li>
+				</ul>
+				<p>
+					※Cドライブ以外も認識します。
+				</p>
+			</div>
+			<H3>メモリンク</h3>
+			<div class="indent">
+				<p>
+					「<span class="link_memo">memo:</span>」から始まるテキストはメモリンクとして認識されます。メモリンクは「<span class="link_memo">memo:</span>」以降の記述に従いメモやタブを開いたり、テキストの特定の位置へのカーソル移動ができます。
+					見出しへのリンクなど参照先として指定する場合などに利用できます。
+				</p>
+				<table>
+					<tr><th>記述例</th><th>動作</th></tr>
+					<tr><td><span class="link_memo">memo:○○</span></td>				<td>「○○」メモを開く</td></tr>
+					<tr><td><span class="link_memo">memo:□□/</span></td>				<td>「□□」タブを開く</td></tr>
+					<tr><td><span class="link_memo">memo:□□/○○</span></td>			<td>「□□」タブの「○○」メモを開く</td></tr>
+					<tr><td><span class="link_memo">memo:□□\○○</span></td>			<td>「□□」タブの「○○」メモを開く</td></tr>
+					<tr><td><span class="link_memo">memo:#3</span></td>					<td>現在のタブの3番目のメモを開く</td></tr>
+					<tr><td><span class="link_memo">memo:#1/#3</span></td>				<td>1番目のタブの3番目のメモを開く</td></tr>
+					<tr><td><span class="link_memo">memo:[ABC]</span></td>				<td>現在のメモの先頭から初めに見つかった「ABC」の位置へ移動</td></tr>
+					<tr><td><span class="link_memo">memo:□□/○○[ABC]</span></td>		<td>「□□」タブの「○○」メモの「ABC」の位置へ移動</td></tr>
+					<tr><td><span class="link_memo">memo:□□/#3[ABC]</span></td>		<td>「□□」タブの3番目メモの「ABC」の位置へ移動</td></tr>
+					<tr><td><span class="link_memo">memo:○○[#10]</span></td>			<td>「○○」メモの10行目へ移動</td></tr>
+					<tr><td><span class="link_memo">memo:○○[#10,#5]</span></td>		<td>「○○」メモの10行目5列へ移動</td></tr>
+					<tr><td><span class="link_memo">memo:○○[#10,#5,#7]</span></td>	<td>「○○」メモの10行目5列へ移動し7バイト目までテキスト選択</td></tr>
+				</table>
+				<p>
+					「/」または「\」で区切られた要素の数と、[ ] で囲った要素によりリンク先の解析が行われます。
+					リンク先を開く際に、リンク先がない場合や解析できない場合はなにもしません。
+					詳しい仕様については以下になります。<br>
+				</p>
+				<ul>
+					<li>ファイル名に使用できない文字（「&#62;」、「*」など）はメモリンクに含むことはできません</li>
+					<li>要素が３つ以上「/」または「\」で区切られる場合は先頭の２つの要素が有効になります</li>
+					<li>[ ] で囲った要素はメモ名に続けて記述します（メモ名を省略してもかまいません）</li>
+					<li>「#」で始まる数字で開くタブやメモの番号、行番号、列番号、文字列の長さを指定することができます</li>
+					<li>行番号、列番号、文字列の長さを指定する場合はそれぞれを半角カンマ「,」で区切ります</li>
+					<li>検索は先頭から順に行われ、検索文字列がメモリンクにあたる場合は通り越して検索します</li>
+				</ul>
+			</div>
+			<H3>その他の仕様</h3>
+			<div class="indent">
+				<ul>
+					<li>リンクをCtrlキーを押しながらクリックするとリンク全体を選択できます。</li>
+					<li>URLとメールアドレスについてはオプション画面の「キーワード」タブより起動するソフトを指定できます。なお、リンクをShiftキーを押しながら開くと起動するソフトを切り替えることができます。</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<h2 id="password">パスワードによる保護</h2>
+		<div class="information">
+			<p>
+				メモをパスワードで暗号化することができます。パスワードを知っている人だけ暗号化したファイルを開くことができます。そのため、パスワードは忘れないように管理をお願いします。
+			</p>
+			<p>
+				<span class="attention">※</span>暗号化は完全ではありませんので本当に重要なメモの管理には使用しないでください。
+			</p>
+		</div>
+
+
+
+		<h2 id="theme">テーマ機能</h2>
+		<div class="information">
+			<p>
+				テーマは、アプリケーションの外観をカスタマイズするための機能です。ウィンドウ内の文字の大きさや配色などを変更することができます。テーマは普通のテキストファイルや画像ファイルで作成することが可能です。詳細については以下をご覧ください。
+			</p>
+			<p>
+				<a href="./html/theme.html">テーマ仕様</a>
+			</p>
+		</div>
+
+
+
+		<h2 id="charcode">文字コードについて</h2>
+		<div class="information">
+			<h3 id="charcode_encoding">文字コード</h3>
+			<div class="indent">
+				<p>
+					初期状態ではメモのテキストファイルは「UTF-8 BOM付き」で保存されます。テキストファイルは、次のいずれかの文字コードで保存されていれば自動的に判別して読み込めるようになっています。
+				</p>
+				<ul>
+					<li>SJIS<span class="detail">（Shift_JIS）</span></li>
+					<li>JIS<span class="detail">（ISO-2022-JP）</span></li>
+					<li>EUC-JP</li>
+					<li>UTF-8 BOM付き</li>
+					<li>UTF-8 BOM無し</li>
+					<li>UTF-16LE</li>
+					<li>UTF-16BE</li>
+				</ul>
+				<p>
+					※「UTF-8 BOM付き」、「UTF-16LE」、「UTF-16BE」以外で保存する場合は文字コードの自動判別に失敗し文字化けが発生することがあります。
+				</p>
+			</div>
+			<h3 id="charcode_returncode">改行コード</h3>
+			<div class="indent">
+				<p>
+					初期状態では「CR + LF」で保存されます。改行コードは次の3つの種類に対応しています。クリップボードのテキストを貼り付けた時やメモを保存するときに自動的に指定した改行コードに統一されるようになっています。
+				</p>
+				<ul>
+					<li>CR + LF <span class="detail">（Windowsで一般的な改行コードです）</span></li>
+					<li>LF <span class="detail">（UNIX/Linux/Mac OS Xなどで一般的に使われています）</span></li>
+					<li>CR <span class="detail">（Mac OS 9などで使われています）</span></li>
+				</ul>
+			</div>
+			<h3 id="charcode_other">その他の仕様</h3>
+			<div class="indent">
+				<ul>
+					<li>オプション画面から既定の保存文字コードと改行コードを指定できます。</li>
+					<li>設定ファイルの「system.ini」や「keyword.ini」などは設定に関わらず常に「UTF-8 BOM付き CR+LF」で保存されます。</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<h2 id="other">その他の機能</h2>
+		<div class="information">
+			<h3 id="other_draganddrop">ドラッグ＆ドロップ操作</h3>
+			<div class="indent">
+				<p>
+					マウスのドラッグ操作により以下のような操作が可能です。<br>
+				</p>
+				<table>
+					<tr><th colspan="2">操作</th><th>説明</th></tr>
+					<tr><td rowspan="2" valign="top">メモ</td>
+						<td valign="top">左ドラッグ</td>							<td>メモの移動</td></tr>
+					<tr><td valign="top">左ドラッグ + Ctrl</td>						<td>メモのコピー</td></tr>
+					<tr><td rowspan="1" valign="top">タブ</td>
+						<td valign="top">左ドラッグ</td>							<td>タブの移動</td></tr>
+					<tr><td rowspan="2" valign="top">メモをタブへ</td>
+						<td valign="top">左ドラッグ</td>							<td>指定タブにメモを移動</td></tr>
+					<tr><td valign="top">左ドラッグ + Ctrl</td>						<td>指定タブにメモをコピー</td></tr>
+					<tr><td rowspan="1" valign="top">フォルダをタブへ</td>
+						<td valign="top">左ドラッグ</td>							<td>フォルダのタブ登録</td></tr>
+					<tr><td rowspan="1" valign="top">ファイルをメモ一覧へ</td>
+						<td valign="top">左ドラッグ</td>							<td>テキストファイル(*.txt)： メモとして作成（元のファイルはなくなりません。）<br>それ以外のファイル： なにもしない</td></tr>
+					<tr><td rowspan="2" valign="top">ファイルをエディタへ</td>
+						<td valign="top">左ドラッグ</td>							<td>単一テキストファイル(*.txt)： ファイル内容をカーソル位置に貼り付け<br>単一画像ファイル(*.png/*.jpg/...)： エディタの背景画像を変更<br>それ以外のファイルや複数ファイル： フルパスをカーソル位置に貼り付け</td></tr>
+					<tr><td valign="top">左ドラッグ + Ctrl</td>						<td>パスをカーソル位置に貼り付け</td></tr>
+				</table>
+				<p>
+					メモの移動やコピーは、ツリー構造で行われます。タブのコピーには対応していません。<br>
+					複数のファイル・フォルダのドロップに対応しています。<br>
+				</p>
+			</div>
+			<h3 id="other_other">その他</h3>
+			<div class="indent">
+				<ul>
+					<li>メモの複数選択はマウスにより可能です。通常のソフトと同じようにCtrlキーを押しながらクリックで個別選択、Shiftキーを押しながらクリックで範囲選択ができます。キーボードのみによる選択や複数選択後の個別選択解除などは現在対応していません。</li>
+					<li>スプリッター（メモ一覧とエディタの境界の部分）をドラッグしてウィンドウ端に近づけることでメモ一覧を左右に配置させることができます。スプリッターのダブルクリックでメモ一覧を非表示、中ボタンクリックでメモ一覧の幅を最小にします。</li>
+					<li>画面内のボタンや表示項目の右クリックでそれぞれの項目に関連した機能がメニュー表示されます。また、ステータスバー項目のクリックではそれぞれが持つ機能を利用できます。例えば「現在日時」で現在日時挿入など。</li>
+					<li>メモ一覧のメニュー「他のタブへ移動」は、Ctrlキーを押しながら移動先のタブを選択するとコピー操作になります。</li>
+					<li>タスクトレイアイコンを左クリックでウィンドウの表示切り替え、中ボタンクリックでウィンドウのアクティブ化が可能です。</li>
+					<li>オプション画面のショートカットキーやホットキーを設定するテキストボックスでは、右クリックメニューで、Tabキー、Enterキー、Escキーなどを入力することができます。</li>
+					<li>右クリックメニューの中の親メニューにはダブルクリックで実行できるものがあります。例えば編集エリアの右クリックメニューの「書式」をダブルクリックするとサブメニューの「フォント」が押されたと同じになります。</li>
+					<li>Ctrl + Shift + Altキーを押しながらマウスで×ボタンを押して終了すると、「system.ini」を保存しないで終了させることができます。タブを閉じるとメモの順番やアイコン情報が消去されるため、間違ってタブを閉じてしまったときなどに利用できます。</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<h2 id="copyright">免責</h2>
+		<div class="information">
+			本ソフトウェアはフリーソフトウェアです。<br>
+			以下の事項に同意できる方のみご使用頂けます。<br><br>
+			<ol>
+				<li><span>本ソフトウェアの使用により生じたいかなる損害も作者は責任を負いません。</span></li>
+				<li><span>アーカイブの再配布や転載を行う場合はファイル内容を改変してはいけません。</span></li>
+				<li><span>本ソフトウェアの作者はサポート、不具合修正の義務はありません。</span></li>
+			</ol>
+			<p>
+				プログラムの不備でメモ内容が消えてしまうなど不具合が発生するかもしれません。<br>
+				メモのバックアップはこまめにとっておくことをおすすめします。<br>
+			</p>
+		</div>
+
+
+
+		<h2 id="thanks">謝辞</h2>
+		<div class="information">
+			<div class="marginbottom">
+				<p>
+					エディタ部分は「nEdit」をカスタマイズして組み込んでいます。「nEdit」は通常のエディットコントロールとメッセージに互換性があり拡張性が高いのが魅力です。
+					また、正規表現には「regex.c」のプログラムを使用させていだたきました。
+				</p>
+				<p class="indent">
+					<strong>nEdit</strong> , <strong>regex</strong><br>
+					Copyright (C) 1996-2014 by Nakashima Tomoaki. All rights reserved.<br>
+					<a href="http://www.nakka.com/">http://www.nakka.com/</a><br>
+				</p>
+			</div>
+			<p>
+				その他、このソフトを作成するにあたり多くの書籍やインターネット上のドキュメントが参考になりました。
+				これらの優れたソフトウェアを公開してくださっている作者様、また掲示板などで情報提供をしてくださった皆様に厚くお礼申し上げます。
+			</p>
+		</div>
+
+
+
+		<h2 id="faq">よくある質問</h2>
+		<div class="information">
+
+			<h3>Q. 別のテキストエディタでメモのデータを編集することはできますか？</h3>
+			<div class="indent">
+				<p>
+					メモは普通のテキストファイルで保存されていますので可能です。CatMemoNoteの起動中にその他のソフトで編集することもできますが、ファイルの排他制御を行っていませんので一度ソフトを終了させたほうが安全です。このソフトではテキストに変更があった場合に上書き保存するようにしているため上書きされてしまう可能性があります。（オプション画面の「複数起動を許可する」にチェックを入れた場合でも同様の注意が必要です。）
+				</p>
+			</div>
+
+			<h3>Q. メモ一覧に表示されるメモがフォルダ内のテキストファイルと一致しません。</h3>
+			<div class="indent">
+				<p>
+					「F5」キーなどでメモ一覧を更新すると同じ内容になります。フォルダ内容の変更の監視は行っていませんので、エクスプローラなどでフォルダ内のファイルを変更した場合は手動で更新を行ってください。
+				</p>
+			</div>
+
+			<h3>Q. メモのバックアップはどのように行えばよいですか？</h3>
+			<div class="indent">
+				<p>
+					メモのデータはすべて管理フォルダ（初期状態では「メモ」フォルダ）にテキストファイルとして保存されていますのでフォルダごとコピーする方法が簡単です。バックアップから復旧させるにはその逆を行えば良いので手軽です。メモのツリー順番やアイコン設定などもバックアップする場合は、CatMemoNote本体のフォルダにある「system.ini」ファイルもメモのデータといっしょにバックアップを行ってください。ソフトのすべての設定は「system.ini」ファイルに保存されます。アプリケーションの突然の強制終了も起こりえますので、設定ファイルも定期的にバックアップすることをお勧めします。
+				</p>
+			</div>
+
+			<h3>Q. 間違ってメモを削除してしまいました。</h3>
+			<div class="indent">
+				<p>
+					初期設定ではメモを削除するとWindowsのごみ箱に入ります。そちらから削除したメモ（テキストファイル）を通常のファイル操作と同じように元に戻すことができます。「F5」キーなどでメモ一覧を更新すると元に戻したメモが再表示されます。タブも同様に削除されるとごみ箱に入ります。
+				</p>
+			</div>
+
+			<h3>Q. 「タブを作成または登録してください。」などのメッセージが表示されました。</h3>
+			<div class="indent">
+				<p>
+					このソフトでは、メモの保存や参照をするためのフォルダを一つ以上登録する必要があります。タブの右クリックメニューやタブの空白のダブルクリックでタブを作成することができます。詳細は「<a href="#directory">ディレクトリ構成</a>」をご覧ください。
+				</p>
+			</div>
+
+		</div>
+
+
+
+		<h2 id="history">更新履歴</h2>
+		<div class="information">
+			<h3 id="history_22">2014/08/30 Ver.2.2</h3>
+			<div class="indent">
+				[機能追加] 置換機能の拡張。（選択範囲置換、選択メモの一括置換、一つずつ置換するボタンなど）<br>
+				[機能追加] 検索ボックスの右クリックメニューに「すべて選択」の項目を追加。<br>
+				[仕様変更] 検索処理を調整。（選択範囲中の対象文字を見つけられない問題の修正など。）<br>
+					<!--
+						【変更点】
+						・選択範囲中の対象文字を見つけられない問題の修正
+						・先頭(末尾)から再検索時の適切なステータスバーメッセージ表示
+						・検索条件のチェック状態を検索・置換・全検索で連動するようにした
+					-->
+				[仕様変更] メモ内の検索で見つからないときWindowsの警告音を再生するようにした。<span class="comment" title="テーマのサウンドが設定がされている場合はテーマのサウンドを優先して再生します。">※</span><br>
+				[仕様変更] 最終行でも行を切り取り可能にした。（メニューが無効になる不具合も修正しました。）<br>
+				[仕様変更] リンクの実行方法（シングルクリックかダブルクリック）の設定をわかりやすくした。<br>
+				[バグ修正] メモの保存文字コードを「JIS」にすると保存時にメモの内容が消えてしまうバグを修正。<br>
+				[バグ修正] メモの改行コード指定に関わらず、常に「CR+LF」で保存されるバグを修正。<br>
+				[バグ修正] メモの編集ロック機能が正しく動作せずファイルが読み取り専用にならないバグを修正。<br>
+				[バグ修正] メモリンクで検索されたテキスト位置にスクロールしないバグを修正。<br>
+				[バグ修正] 水平スクロールでガイドラインなどが正しく描画されないことがあるバグを修正。<br>
+					<!--
+						【現象】
+						・縦書き編集時、カーソル行の背景色が二重に描画されてしまう
+						・文字カーソル（キャレット）が行番号や行頭余白に重なって描画されてしまうことがある
+						・ガイドラインがずれる
+					-->
+				[バグ修正] リンクの下線が描画されないことがあるバグを修正。<br>
+				[バグ修正] 文字数カウント表示で制御コードが正しく集計されないバグを修正。<br>
+				[バグ修正] 正規表現のメタ文字をメニュー選択で入力したとき検索ボタンが有効化されないバグを修正。<br>
+				[バグ修正] メモ名の大文字と小文字の変更で連番が付いてしまうバグを一部修正。<br>
+					<!--
+						【現象】
+						例えば「abc」というメモの名前を「ABC」に変更しようとすると「ABC(1)」のように連番が付いてしまう。
+						【備考】
+						今回は半角英字のみの修正です。全角ローマ字の「ａ」と「Ａ」、ギリシャ文字の「α」と「Α」なども同様に
+						OSの設定によっては同じファイル名として判断されますが、こちらの問題はそのままです。
+					-->
+				[バグ修正] 検索するごとに同じ検索文字列が検索履歴に追加されてしまうバグを修正。<br>
+				[バグ修正] 設定が初期化されるバグを再修正。読込失敗時はエラー表示して安全に終了するようにした。<br>
+				その他、検索ボックスのメニュー位置調整、初回起動時のタブのフォルダパス調整、マニュアルの修正。<br>
+			</div>
+
+			<h3 id="history_21">2014/06/12 Ver.2.1</h3>
+			<div class="indent">
+				[機能追加] ステータスバーの「現在日時」の挿入日時の書式をステータスバー設定で変更できるようにした。<br>
+				[機能追加] ステータスバーの「折り返し」メニューによく使う折り返し文字数の項目を追加。<br>
+				[機能追加] フォントと書式設定に「初期化」ボタンを追加。サブメニューから選択メモの統一も可能にした。<br>
+				[機能追加] 「=」のあとのEnterキーでの自動計算を無効化できるようにした。（要system.ini編集）<br>
+				[機能追加] 合計機能の「合計：」の文字列を変更できるようにした。（要system.ini編集）<br>
+				[仕様変更] メモ削除時にタブ移動する設定のとき同一のタブの場合はWindowsのごみ箱へ入れるようにした。<br>
+				[仕様変更] タブ名の変更でメモ名と同じように左右の半角スペースを除去するようにした。<br>
+				[仕様変更] メモやタブ名にMS-DOSデバイス名（AUX CON など）を含む場合は全角に変換するようにした。<br>
+					<!--
+						主な予約デバイス名：AUX CON PRN NUL CLOCK$ COM0～COM9 LPT0～LPT9（大文字・小文字の区別なし）
+					-->
+				[仕様変更] 折り返し文字数の最小を10文字とした。<br>
+				[バグ修正] 結合機能でメモ内容が消えてしまうバグを修正。（ロックされたメモの結合処理も調整。）<br>
+				[バグ修正] 行の切り取りでスクロールバーが再設定されず描画が乱れることがあるバグを修正。<br>
+				[バグ修正] 「スペースをタブに変換」機能が正しく変換されないバグを修正。<br>
+				[バグ修正] チェックリスト機能が無効だとオートインデント機能も無効になってしまうバグを修正。<br>
+				[バグ修正] タブと半角スペースのみの行でチェックマークが挿入されないバグを修正。<br>
+				[バグ修正] 複数行をまとめてチェック付加するとき選択位置がずれるバグを修正。<br>
+				[バグ修正] テキスト選択していないときの変換機能で、正しく1文字単位で変換されないことがあるバグを修正。<br>
+				[バグ修正] メインメニューのウィンドウ操作の一部が機能していないバグを修正。<br>
+				[バグ修正] 最小化時のメモ保存でテキストの変更を示すタイトルバーの「*」が消えないバグを修正。<br>
+				[バグ修正] Ctrlキーを押している状態で終了すると設定が保存されないバグを修正。<br>
+				[バグ修正] 起動時のウィンドウサイズによってエディタのフォントサイズが最小になるバグを修正。<br>
+				[バグ修正] 自動的に隠す動作が正しく実行されないバグを修正。<br>
+					<!--
+						【現象】
+						次のような場合に自動的に隠す動作が実行されてしまう。
+						・メッセージボックスや各ダイアログウィンドウが表示されているとき
+						・ウィンドウ移動中にマウスがウィンドウ領域から離れたとき（スナップが働いたときなど）
+						・タブやメモ一覧、エディタなどを始点としたマウスのドラッグ中にウィンドウ領域から離れたとき
+					-->
+				[バグ修正] タスクバーボタン表示で最小化するとキャレット位置にスクロールされてしまうバグを修正。<br>
+				[バグ修正] オプション設定画面のホットキー重複の警告表示が正しく行われないバグを修正。<br>
+				[バグ修正] メモを編集ロック（読み取り専用）状態にするときその他のファイル属性が消去されるバグを修正。<br>
+				[バグ修正] タブ一覧メニューのショートカットキー表示がメモ一覧メニューと同じになっているバグを修正。<br>
+				その他、定型文の特殊記号のメニュー調整、初期ツールの設定ミス修正、正規表現のマニュアル間違い修正。<br>
+			</div>
+
+			<h3 id="history_20">2014/05/14 Ver.2.0</h3>
+			<div class="indent">
+				[機能追加] Unicode対応。（外国語や特殊な文字を扱えるようになりました。）<br>
+				[機能追加] 数式計算機能の追加。（「1+2+3=」などの数式の後にEnterキーで計算できます。）<br>
+				[機能追加] チェックリスト機能の追加。（クリックや Ctrl+Space で状態の切替えができます。）<br>
+				[機能追加] 行のソート、重複行の削除・カウント、タブ揃えなどの編集機能を追加。<br>
+				[機能追加] 正規表現による検索・置換・全文検索の機能を追加。<br>
+				[機能追加] 編集関連のショートカットキー追加。（マウスジェスチャにも登録が可能になりました。）<br>
+				[機能追加] 行の切り取り、コピー、貼り付け機能を追加。（非選択状態で行の切り取りなどができます。）<br>
+				[機能追加] 行番号のクリックで行選択できるようにした。（ダブルクリックですべて選択になります。）<br>
+				[機能追加] 行番号を論理行（改行コードまでを1行とする数え方）単位で表示できるようにした。<br>
+				[機能追加] タブを半角スペースに変換して入力する機能（ソフトタブ）を追加。<br>
+				[機能追加] 日本語禁則処理と英文ワードラップのON/OFFを設定できるようにした。<br>
+				[機能追加] エディタの右余白を設定できるようにした。（縦書きの場合は下側の余白です。）<br>
+				[機能追加] 制御コードの可視化。（改ページやUnicodeの制御文字など。）<br>
+				[機能追加] メモの編集ロック機能を追加。（「読み取り専用」のファイル属性を付加して保護します。）<br>
+				[機能追加] 「メモの一行目を自動的にメモの名前にする」オプションを追加。<br>
+				[機能追加] 「メモの保存時に上書き確認する」オプションを追加。<br>
+				[機能追加] メモの削除時に指定したタブへ移動する機能を追加。<br>
+				[機能追加] メモを複数選択したときの名前やパスのコピーに対応。（階層はタブ文字に変換されます。）<br>
+				[機能追加] ウィンドウリサイズ機能を追加。（メインウィンドウを指定位置に瞬時に移動する機能です。）<br>
+				[機能追加] よく使うフォント機能を追加。（フォント設定画面から登録と削除ができます。）<br>
+				[機能追加] フォント設定画面のフォント名やサイズのダブルクリックで確定できるようにした。<br>
+				[機能追加] タブのツールチップを表示するかどうか設定できるようにした。<br>
+				[機能追加] 操作設定で重複したキーを赤く警告表示するようにした。メニューで詳細を設定可能にした。<br>
+				[機能追加] 背景画像の対応形式を増やした。（PNG/JPEG/BMP/TIFF/GIFに対応。透明度指定も追加。）<br>
+				[機能追加] エディタ内のカーソル行の背景色の透明度を指定できるようにした。<br>
+				[機能追加] ウィンドウフェードアニメーションの実装。（ちらつき軽減のため）<br>
+				[機能追加] マウスのチルトホイール（水平スクロール）に一部対応。<br>
+				[機能追加] メインウィンドウのポップアップメニューの配色をテーマで指定できるようにした。<br>
+				[機能追加] テーマのサウンド（操作音）項目の追加。<br>
+				[機能追加] ステータスバーの現在日時で挿入する日時の書式を「system.ini」で設定できるようにした。<br>
+				[機能追加] Ctrl+Shift+Altを押しながら終了で「system.ini」を保存せずに終了できるようにした。<br>
+				[仕様変更] メモの保存文字コードをUTF-8(BOM付き)に変更。（従来のShift_JISでの保存も可能です。）<br>
+				[仕様変更] クリップボードの自動貼り付け機能の仕様変更。（オートクリップ機能に改名）<br>
+				[仕様変更] ホットキーの見直し。（Ctrl×2回などのホットキーが設定できるようになりました。）<br>
+				[仕様変更] メモのプロパティ内容の変更。（文字数カウント方法やフォルダを開くボタンの追加など）<br>
+				[仕様変更] ステータスバーの一部の表示項目を変更。（全体の文字数・行数や文字コードなど）<br>
+				[仕様変更] テキスト編集の「上書きモード」を一時的に廃止。（常に挿入モードになります。）<br>
+				[仕様変更] 「カーソル位置で折り返す」機能を廃止。<br>
+				[仕様変更] 折り返し幅以降のガイドラインを描画しないようにした。<br>
+				[仕様変更] Undo/Redoでテキストの選択状態を復元するようにした。<br>
+				[仕様変更] フォントサイズやウィンドウサイズの変更時にカーソル位置へスクロールするようにした。<br>
+				[仕様変更] エディタ背景壁紙の表示位置を求めるときスクロールバーの幅を計算に含めないようにした。<br>
+				[仕様変更] ファイルやフォルダをドロップしたときにメインウィンドウがアクティブになるようにした。<br>
+				[仕様変更] 検索履歴を10個から20個に増やし、検索履歴の選択方法をループしないようにした。<br>
+				[仕様変更] 設定画面のフォントを「Meiryo UI」に変更。（Windows Vistaより前は「MS UI Gothic」）<br>
+				[仕様変更] 使用頻度の低い設定を設定画面から除外。（system.ini編集で設定が可能です。）<br>
+				[仕様変更] 「system.ini」や「keyword.ini」を同梱しないようにした。（上書きバージョンアップのため）<br>
+				[仕様変更] 高解像度ディスプレイやDPIの変更に一部対応。（少し大きなテーマの追加など。）<br>
+				[バグ修正] URLやキーワード、検索ワードが途中で折り返されると正常に色分けされないバグを修正。<br>
+				[バグ修正] プロポーショナルフォントの文字の並びによってカーソル位置がずれるバグを修正。<br>
+				[バグ修正] タブインデントやオートインデントが折り返した行の先頭を基準に実行されるバグを修正。<br>
+				[バグ修正] 全角区切りのガイドラインがフォントサイズによって全角単位にならないバグを修正。<br>
+				[バグ修正] 文字を入力したときのサウンド再生で特定のキーだけ再生されないバグを修正。<br>
+				[バグ修正] クリップボードの自動貼り付け機能で複数貼り付けられてしまうことがある問題を少し改善。<br>
+				その他、初期値やメニューの一部変更、テーマのフォント変更、バージョン情報ダイアログの追加。<br>
+			</div>
+
+			<h3 id="history_182">2014/04/04 Ver.1.8.3</h3>
+			<div class="indent">
+				[仕様変更] フォント設定のフォントが名前順になるようにした。（選択可能なフォントも拡張しました。）<br>
+				[仕様変更] 指定日付間隔で設定ファイルのバックアップ「system_backup.ini」を作成するようにした。<br>
+				[バグ修正] IME日本語入力の状態とカーソルの色が異なることがあるバグを修正。<br>
+					<!--
+						【現象】
+						メイン画面のエディタ以外のテキストボックス（メモの名前変更や設定画面のパス入力など）でIMEのON/OFFを切り替えると
+						エディタのカーソルの色や背景色が現在のIME状態と一致しなくなる。
+						【修正】
+						エディタにフォーカスが移った時点でIMEの状態を取得して反映させるようにした。
+					-->
+				[バグ修正] 行頭や行末へのカーソル移動で桁位置が記憶されないバグを修正。<br>
+					<!--
+						【現象】
+						1. 複数行ある状態で上下カーソルキーで移動
+						2. 次にHomeキーやEndキーで行頭や行末に移動
+						3. そのあと上下カーソルキーで移動するとキャレットの桁位置が記憶されず移動前の桁位置にならない
+					-->
+				[バグ修正] ステータスバーの「カーソル位置」の行が常にページ単位になっているバグを修正。<br>
+				[バグ修正] ショートカットキーのタブの左右スクロールが動作しないバグを修正。<br>
+				[バグ修正] メモのダブルクリックによる名前変更が正しく動作しないバグを修正。<br>
+					<!--
+						【現象】
+						マウス操作設定の「[メモ一覧] 左ダブルクリック」に「[メモ] 名前の変更」が設定されている場合、
+						ダブルクリックで名前変更開始し、変更中に他のメモをダブルクリックすると現在のメモが再び名前変更状態になってしまう。
+					-->
+				[バグ修正] 「&amp;」が含まれるメモ名やタブ名が正しく表示されないバグを修正。<br>
+				[バグ修正] テーマ機能でメモのアイコンの大きさとスクロールバーのタイプが設定できないバグを修正。<br>
+				[バグ修正] 設定画面にあるリストボックスのドラッグ線が項目数を超えて表示されるバグを修正。<br>
+				[バグ修正] 時々「system.ini」の保存に失敗することがある問題を改善。<br>
+					<!--
+						設定保存時に「system_new.ini」のファイルで一旦保存し、元の「system.ini」を削除してから
+						「system_new.ini」→「system.ini」にリネームして設定の消失を防ぐような方法にした。
+					-->
+				その他、エラー確認ダイアログのスペルミス修正。<br>
+			</div>
+
+			<h3 id="history_182">2012/12/23 Ver.1.8.2</h3>
+			<div class="indent">
+				[仕様変更] オプション画面の色設定リストボックスのスクロール位置を記憶して設定しやすくした。<br>
+				[バグ修正] タブを等幅で表示する設定にしたときタブをすべて削除または解除すると強制終了するバグを修正。<br>
+					<!--
+						【原因】タブの数が0になることで、等幅計算処理でゼロ除算が発生。
+					-->
+				[バグ修正] 「Win+M」「Win+↓」などで最小化後にウィンドウを再表示できないことがあるバグを修正。<br>
+				[バグ修正] プロポーショナルフォントのタブ幅と折り返し文字数をフォントの平均幅で計算するように調整。<br>
+				[バグ修正] メモ一覧を非表示にしたときエディタのマウスホイールでスクロールできないことがあるバグを修正。<br>
+				[バグ修正] フォルダ登録時に現在開いているメモの書式設定でメモが作成されてしまうバグを修正。<br>
+				その他、メニュー項目・文言の調整。<br>
+			</div>
+
+			<h3 id="history_181">2012/08/03 Ver.1.8.1</h3>
+			<div class="indent">
+				[仕様変更] 検索ボックスの入力テキストを記憶するようにした。<br>
+					<!--
+						以前は、起動時の検索ボックスは検索履歴の一番目が入力された状態になっていました。
+					-->
+				[仕様変更] <s class="comment" title="【Ver.1.8.2で見直し】">プロポーショナルフォント適用時の折り返し文字数やタブ幅を半角スペース単位にした。</s><br>
+				[仕様変更] <s class="comment" title="【Ver.2.0で実装】記載間違いです。このバージョンでは実装されていません。Ver.2.0で実装しました。">テキストファイル中の制御文字を表示するようにした。</s><br>
+				[バグ修正] 書式設定ダイアログでフォントサイズや行間が正常に設定できないバグを修正。<br>
+				[バグ修正] 検索ボックス未入力時に全検索ボタンで全検索ウィンドウが開かないバグを修正。<br>
+				[バグ修正] 前後に半角文字があるキーワードが色分けされない場合があるバグを修正。<br>
+				[バグ修正] メモ一覧の左右の配置状態が記憶されないバグを修正。<br>
+				[バグ修正] エディタのリンク機能の相対パスが実行できなくなっていたバグを修正。<br>
+				[バグ修正] タブのツールチップが正しい位置に表示されないバグを修正。<br>
+				[バグ修正] タブインデントで、選択している先頭行が空行であってもタブが付いてしまうバグを再修正。<br>
+					<!--
+						Ver.1.7.2で修正したバグが1.8で戻ってしまった。
+					-->
+				[バグ修正] 解像度変更時にウィンドウの表示が乱れるバグを修正。<br>
+				[バグ修正] マルチモニタ環境での各種問題を改善。（サブモニタへの最大化、画面端表示機能など）<br>
+				その他、初期状態のショートカットキーや外部ツールの設定ミスを修正。<br>
+			</div>
+
+			<h3 id="history_18">2012/02/19 Ver.1.8</h3>
+			<div class="indent">
+				[機能追加] 全文検索機能の追加。<br>
+				[機能追加] メモのツリー表示。（メモを複数選択して移動やコピーなどの操作が可能）<br>
+				[機能追加] メモを他のタブへ移動できるようにした。（Ctrl押しながらマウスのドラッグ操作でコピーも可能）<br>
+				[機能追加] タブの作成・名前変更・削除機能を追加。<br>
+				[機能追加] 縦書きで編集できるようにした。<br>
+				[機能追加] メモの結合機能の追加。<br>
+				[機能追加] テキスト変換機能の追加。（大文字/小文字や全角/半角の変換など）<br>
+				[機能追加] エディタのオートスクロールの実装。<br>
+				[機能追加] エディタ内のCtrlキーを押しながらマウスクリックで単語を選択できるようにした。<br>
+				[機能追加] エディタのオートインデント機能の追加。<br>
+				[機能追加] マウスが離れたときにウィンドウを隠す機能の追加。<br>
+				[機能追加] メモやタブの作成時に名前を編集状態にするオプションを追加。<br>
+				[機能追加] タブを等幅で表示するオプションを追加。<br>
+				[機能追加] リンク先をシングルクリックまたはダブルクリックで実行できるようにした。<br>
+				[機能追加] メモ一覧にもキーボードフォーカスを移動できるようにした。（初期設定ではこの機能は無効です）<br>
+				[機能追加] タブに登録されたフォルダのパスをツールチップ表示するようにした。<br>
+				[機能追加] エディタ画面にファイルをドロップする際にCtrlキーを押した状態でパスを挿入できるようにした。<br>
+				[機能追加] マウス操作のコマンドを増やした。（右ドラッグのマウスジェスチャーなど）<br>
+				[機能追加] ステータスバーのカスタマイズ機能の追加。（項目も追加しています）<br>
+				[機能追加] メモのプロパティの表示内容を詳しくした。（全角・半角、スペース、タブの文字数など）<br>
+				[機能追加] 単語単位で検索できるようにした。<br>
+				[機能追加] 指定行へ移動ダイアログからページ番号で移動できるようにした。<br>
+				[機能追加] 特殊記号「$B,$C,$l,$b,$c,$T」を追加。（各特殊記号の詳細は「<A HREF="#template">定型文</A>」をご覧ください）<br>
+					<!--
+						$B	総文字数（全角）
+						$C	総文字数（半角）
+						$l	選択行数
+						$b	選択文字数（全角）
+						$c	選択文字数（半角）
+						$T	メモのファイル拡張子
+					-->
+				[機能追加] 「<A HREF="#clickablelink">メモリンク</A>」で列番号と選択する文字列の長さを指定できるようにした。<br>
+				[仕様変更] パスワード設定ダイアログを一つに統合。<br>
+				[仕様変更] テーマ仕様の大幅な変更。（旧バージョンのテーマは使用できません）<br>
+				[仕様変更] メモを右クリックしたときにメモを開くようにした。（一時的な選択の廃止）<br>
+				[仕様変更] 実行フォルダ以下のフォルダをタブ登録するとき実行ファイルからの相対パスで登録するようにした。<br>
+				[仕様変更] 特殊記号「$x」をメモのファイル名からメモの名前に変更。<br>
+				[仕様変更] エディタ内の検索ワードを選択したときの色を文字の選択背景色との中間色で表示するようにした。<br>
+				[仕様変更] エディタ内の片方のスクロールが可能な場合はマウスホイールでスクロールできるようにした。<br>
+				[仕様変更] タブ記号の表示スタイルの一部を変更。（他、ページ番号やガイドラインなどのスタイルを追加）<br>
+				[仕様変更] メモ設定ファイル（memo.ini）の廃止。（設定はすべてsystem.iniに保存します）<br>
+				[仕様変更] 設定ファイル（system.ini、keyword.ini）を実行ファイルがあるフォルダに作成するようにした。<br>
+				[仕様変更] 「system」「theme」フォルダがない場合に自動的に作成しないようにした。<br>
+				[仕様変更] 「最小化時に使用しない物理メモリを開放する」オプションを廃止。<br>
+					<!--
+						この機能はパソコンのメモリを有効に使うためのものでした。
+						CatMemoNoteが確保しているメモリを、最小化時にハードディスクに移動させているだけなので、
+						最小化状態から復帰するときハードディスクからメモリを読み込むことになり逆に遅くなることもあります。
+						設定してもあまり効果が得られないと思うので廃止です。
+					-->
+				[仕様変更] 「スプリッター移動時にウィンドウ描画を行う」オプションを廃止。<br>
+				[仕様変更] 色設定と操作設定のインポート/エクスポート機能を廃止。<br>
+				[仕様変更] メモのフォント統一実行時に確認メッセージを表示するようにした。<br>
+				[仕様変更] 名前の変更時に「Ctrl + A」で編集中の文字列を全選択できるようにした。<br>
+				[バグ修正] Homeキーで行の先頭へ移動が正しく行われず場合によって強制終了することがあるバグを修正。<br>
+					<!--
+						テキスト先頭の空行でHOMEキーを押すとカーソルがテキスト末尾へ移動する。
+						その後文字入力をすると強制終了する。
+						また、空行でHOMEキーを押すと内容がある行の先頭へ移動する。
+					-->
+				[バグ修正] タスク表示をタスクボタンにしたとき最小化で現在メモが保存されないバグを修正。<br>
+				[バグ修正] ファイル選択ダイアログでファイルを選択するとメモが開けなくなることがあるバグを修正。<br>
+					<!--
+						オプション画面のパス指定ボタンなどのファイル選択ダイアログで発生。
+						選択したファイルのディレクトリがアプリケーションのカレントディレクトリとなってしまい、
+						相対パスで指定した管理フォルダが意図しないパスとなるため。
+					-->
+				[バグ修正] エディタのPageUpとPageDownで正しくスクロールしないバグを修正。<br>
+				[バグ修正] ショートカットキーの「タスク表示切り替え」が機能しないバグを修正。<br>
+				[バグ修正] メモ一覧を表示しないときタブのホイール操作が機能しないバグを修正。<br>
+					<!--
+						ESCキーによるタブのドラッグ移動のキャンセルも機能しない。
+					-->
+				[バグ修正] スクロールバーの右クリックメニューの一部が正しく動作しないバグを修正。<br>
+				[バグ修正] カレンダーの振替休日が正しく表示されないバグを修正。<br>
+				その他、ボタン描画の調整、オプション画面や用語の見直し。<br>
+			</div>
+
+			<h3 id="history_172">2010/02/26 Ver.1.7.2</h3>
+			<div class="indent">
+				[バグ修正] クリップボード監視機能で別の管理フォルダのメモに貼り付けると強制終了するバグを修正。<br>
+					<!--
+						【原因】
+						メモ設定ファイル書き込み処理でバッファオーバーフローが起こる。
+						メモ設定ファイルを保存しない設定にしているとこのバグは発生しない。
+					-->
+				[バグ修正] テキストエディタ画面へのファイルのドロップで正常にテキストが挿入されないバグを修正。<br>
+					<!--
+						【現象】
+						テキストが選択されていた場合、挿入したテキストの先頭にメモの名前の一部が付加されてしまう。
+						また、一度にUndoできない。このバグはパスの挿入とテキストファイル内容の貼り付けで発生する。
+						【修正】
+						正常にテキストが挿入されるようにし、一度にUndoできるようにした。
+					-->
+				[バグ修正] デフォルトのフォント情報と折り返し設定が適用されない場合があるバグを修正。<br>
+					<!--
+						【現象】
+						各メモのフォント情報を記憶しない場合に、起動時のメモのフォントがデフォルトのフォントにならない。
+						各メモの折り返し設定を記憶しない場合に、起動時のメモの折り返し設定がデフォルトの折り返し設定にならない。
+						【補足】
+						・デフォルトのフォント情報と折り返し設定について
+						デフォルトのフォント情報は新規メモ作成時や各メモのフォント情報を記憶しない場合のメモに適用される設定である。
+						フォント情報にはフォント名、フォントサイズ、フォントスタイル、行間、が含まれる。
+						また、デフォルトの折り返し設定も同様に新規メモ作成時や各メモの折り返し設定を記憶しない場合のメモに適用される設定である。
+						初期状態では「ＭＳ ゴシック」、10[pt]、スタイルなし、行間+4[px]、折り返しなし、が設定されている。
+						・各メモのフォント情報と折り返し設定を記憶しない場合の動作について
+						現在編集中のメモのフォント情報や折り返し設定を変更すると、別のメモを開いた場合でもフォント情報と折り返し設定は保持される。
+						ただし、新規メモを作成した場合やソフトの再起動を行った場合はデフォルトのフォント情報と折り返し設定で初期化される。
+					-->
+				[バグ修正] タブインデントで、選択している先頭行が空行であってもタブが付いてしまうバグを修正。<br>
+				[バグ修正] 特殊文字の選択終了位置「$]」が選択開始位置と同じ値になってしまうバグを修正。<br>
+				[バグ修正] タブインデント後にステータスバーの選択バイト数が更新されないバグを修正。<br>
+				[バグ修正] 縦と横のカレンダーの曜日に下線が付いてしまうバグを修正。<br>
+					<!--
+						【現象】
+						“今日”の次の日の曜日に下線が付いてしまう。
+					-->
+				[バグ修正] タブの両端が正しく描画されないバグを修正。<br>
+					<!--
+						【現象】
+						メモのテキスト変更→ウィンドウを最小化→最小化を元に戻すなどの操作でタブの両端（左右のウィンドウ端）の描画が行われない。
+						テーマによっては不正に描画されたことがわからない。
+					-->
+				その他、オプション画面とメニュー項目の調整、初期設定の一部変更、ドキュメントの修正。<br>
+			</div>
+
+			<h3 id="history_171">2010/01/17 Ver.1.7.1</h3>
+			<div class="indent">
+				[仕様変更] メモ一覧更新時やフォント変更時などにステータスバーに情報を表示するようにした。<br>
+				[バグ修正] 暗号化メモのカーソル位置、フォント情報、折り返し設定が正しく保存されないことがあるバグを修正。<br>
+							<!-- パスワード入力画面から管理フォルダを切り替えたとき、またはソフトを終了したときなどにメモ設定ファイルが正しく保存されない。
+							カーソル位置はテキストの先頭、フォント情報と折り返し設定は直前に編集していたメモのフォント情報と折り返し設定で保存されてしまう。 -->
+				[バグ修正] オプション画面から管理フォルダを解除したときに編集中のメモが保存されないバグを修正。<br>
+							<!-- 解除された管理フォルダの編集中のメモは保存されず、メモ設定ファイルも保存されない。
+							また、オプション画面から管理フォルダをすべて解除した場合にタイトルバーやタブが正しく更新されない。 -->
+				[バグ修正] オプション画面の「デフォルトのフォント設定」のフォントサイズが正しく表示されないバグを修正。<br>
+				[バグ修正] メモの初期フォントが「デフォルトのフォント設定」にならないことがあるバグを修正。<br>
+							<!-- 各メモのフォント情報を記憶する、かつ、メモ設定ファイルを保存しない設定でソフト再起動すると
+							エディタのフォントがデフォルトフォントで設定されない。（「ＭＳ ゴシック」の12ptになってしまう） -->
+				[バグ修正] １月と２月のカレンダーが正しく表示されないバグを修正。<br>
+				[バグ修正] ウィンドウを折りたたんだ状態から戻ったときにエディタのキャレットが表示されないバグを修正。<br>
+				[バグ修正] 文字入力位置にIME変換ウィンドウが表示されないことがあるバグを修正。<br>
+							<!-- エディタ上の見えない位置にキャレットがあるときにIMEから文字を入力しようとした場合など、
+							IME変換ウィンドウが実際の文字入力位置とは異なる位置に表示されてしまう。 -->
+				その他、表示メッセージの変更、アクセスキー重複の修正。<br>
+			</div>
+
+			<h3 id="history_17">2009/11/11 Ver.1.7</h3>
+			<div class="indent">
+				[機能追加] 定型文挿入機能の追加。（旧バージョンの日時や署名の挿入はこの機能に統合されました。）<br>
+				[機能追加] テキストエディタの行番号を表示できるようにした。<br>
+				[機能追加] 複数行選択時のタブインデント/アンインデント機能を追加。<br>
+				[機能追加] すべてのメモまたは管理フォルダ内のメモのフォントを一度に設定できるようにした。<br>
+				[機能追加] タスク表示種類に「最小化時のみタスクトレイ」を追加。<br>
+				[機能追加] リンク設定を追加。（規定のWebブラウザやメールソフト以外のソフトを指定できるようになりました。）<br>
+				[機能追加] 単語単位のカーソル移動・選択・削除のショートカットキーを追加。（キーの変更はできません。）<br>
+				[機能追加] 色設定のインポート/エクスポート機能の追加。<br>
+				[仕様変更] メモ名確定時に使用できない文字を全角に変換し、重複する場合は連番を付加するようにした。<br>
+				[仕様変更] 管理フォルダ登録時に実際のフォルダ構成でメモ一覧を更新するようにした。<br>
+				[仕様変更] Undo/Redoを入力単位にし、置換を一度でUndoできるようにした。（テキスト変更はタイトルに*表示）<br>
+				[仕様変更] 書式記号と外部ツールのパラメータ指定の記号を統合。<br>
+				[仕様変更] クリップボード監視処理にて現在メモ内でのコピーは監視対象外にした。<br>
+				[仕様変更] テーマ仕様変更。（画像配置・セクション名・キー名の変更、新しいスタイルの追加など。）<br>
+				[仕様変更] ステータスバー表示項目の変更。（テーマ設定ファイルから項目の設定ができます。）<br>
+				[仕様変更] タイトルバーボタンの並びをテーマ設定ファイルで指定するようにした。<br>
+				[仕様変更] 外部ツール設定の一覧にショートカットキーを表示するようにした。<br>
+				[仕様変更] エディタのテキストを選択しているときでもキャレット行を色分けするようにした。<br>
+				[仕様変更] 読み取り専用ファイルは編集できないようにした。（ソフトからファイル属性の変更はできません。）<br>
+				[バグ修正] プロポーショナルフォントの半角カタカナがマウスで選択できないバグを修正。<br>
+				[バグ修正] 起動時に右端で折り返し指定されたメモのスクロールバー位置が正しく設定されないバグを修正。<br>
+				[バグ修正] スクロールバーのスライダ移動でエディタの位置がずれてしまうバグを修正。<br>
+				[バグ修正] タスクバーボタンに最小化しているときに終了するとウィンドウ位置が記憶されないバグを修正。<br>
+				[バグ修正] キーボードによるボタン押下でボタンが無効化されるとフォーカス移動ができなくなるバグを修正。<br>
+				[バグ修正] オプション画面からエディタの背景色変更が行われないバグを修正。<br>
+				[バグ修正] 色設定の「キャレット(IME ON)」が未チェックだと通常時キャレットの色が変更されないバグを修正。<br>
+				[バグ修正] メモ一覧にファイルをドロップしてメモを作成したときにスクロールバーが設定されないバグを修正。<br>
+				[バグ修正] オプション画面表示ボタンの右クリックメニューの一部の項目が機能していないバグを修正。<br>
+				[バグ修正] ウィンドウがタスクバーに重なった状態から最大化するとタスクバーが更新されないバグを修正。<br>
+				[バグ修正] タスク表示切り替えでウィンドウの半透明化が無効になるバグを修正。<br>
+				[バグ修正] Cドライブ以外から始まるファイル（フォルダ）パスがクリッカブル認識されないバグを修正。<br>
+				[バグ修正] 相対パスのリンクのルートがメモがあるフォルダになっていなかったバグを修正。<br>
+				[バグ修正] ウィンドウの幅が小さいとステータスバーの文字が重なって見づらくなる不具合を改善。<br>
+				[バグ修正] ファイルがないメモの選択したときの処理を改善。（画面にメッセージを表示するようにしました。）<br>
+				その他、各選択ダイアログの変更と拡張、表示メッセージの調整。ドキュメントの書き加えと修正。<br>
+			</div>
+
+			<h3 id="history_16">2009/04/11 Ver.1.6</h3>
+			<div class="indent">
+				[機能追加] クリッカブルURL機能の追加。（URLの他、メールアドレス・ファイルパス・メモリンクがあります）<br>
+				[機能追加] タブ・半角スペース・全角スペース・改行・EOF・検索ワード背景を表示できるようにした。<br>
+				[機能追加] エディタ画面の色やキーワードをオプション画面から設定できるようにした。<br>
+				[機能追加] クリップボード貼り付け機能の「メモを指定」のメモ名に書式を指定できるようにした。<br>
+				[機能追加] メモ一覧の垂直スクロールバーの表示/非表示を設定できるようにした。<br>
+				[機能追加] ショートカットキー「選択テキストを検索」など計4つ追加。（キー設定を一部変更しています。）<br>
+				[機能追加] 「リスト選択や移動をループさせる」オプションを追加。<br>
+				[機能追加] 外部ツールの実行条件を追加。<br>
+				[機能追加] オプション画面の外部ツールの項目をマウスのドラッグで並び替えできるようにした。<br>
+				[仕様変更] 管理フォルダにメモ設定ファイル「memo.ini」がある場合はテキストファイル検索を省くようにした。<br>
+				[仕様変更] クリップボード貼り付け機能の「メモを指定」の項目に管理フォルダとメモを指定する仕様に変更。<br>
+				[仕様変更] 「メモのパスをコピー」をフルパスでコピーされるようにした。<br>
+				[仕様変更] エディタのダブルクリック＆ドラッグで単語単位に選択できるようにした。<br>
+				[仕様変更] マウス操作によるテキスト選択の改善。（行選択やタブ文字の選択など）<br>
+				[仕様変更] テーマのキャレットの表示位置をフォントのベースラインに合わせるようにした。<br>
+				[仕様変更] アプリケーションキーでのメニューをキャレット位置に表示させるようにした。<br>
+				[仕様変更] マウスホイールでの行間変更で上に回して行間をプラスする動作を初期設定にした。<br>
+				[仕様変更] 管理フォルダ設定の改善。（以前は設定キャンセル時でも初期化処理を行っていました）<br>
+				[仕様変更] メモ設定ファイルの仕様を変更。（暗号化されているかどうかの項目を追加しました）<br>
+				[仕様変更] キーワード定義ファイルの仕様を変更。（色は「system.ini」に保存するようにしました）<br>
+				[バグ修正] 相対パスで指定された管理フォルダのメモを削除すると「ごみ箱」に入らないバグを修正。<br>
+				[バグ修正] クリップボード貼り付け位置が末尾のときカーソル位置が正しく設定されない場合があるバグを修正。<br>
+				[バグ修正] クリップボード貼り付け時に新規メモ作成確認ダイアログの文字がコピーされてしまうバグを修正。<br>
+				[バグ修正] 外部ツールの作業フォルダが設定されず正しく実行されないバグを修正。<br>
+				[バグ修正] 日付が変わったときにカレンダーが更新されてしまうバグを修正。<br>
+				[バグ修正] キーワード定義ファイルの一行が長い場合に正しくキーワードが登録されないバグを修正。<br>
+				[バグ修正] タブが１つのときにタブを削除すると画面が正しく遷移しないバグを修正。<br>
+				[バグ修正] ステータスバーのカーソル位置などがメモを開いたときやすべて選択時に表示されないバグを修正。<br>
+				[バグ修正] テキストが多いメモを開くときや貼り付け時にスクロールバーが正しく設定されないバグを修正。<br>
+				[バグ修正] タスクトレイメニューが正常に表示されないバグを修正。<br>
+				[バグ修正] タブ非表示のサウンドがタブ表示と同じになっていたバグを修正。<br>
+				その他、動作速度の改善。ドキュメントの書き加えと修正。<br>
+			</div>
+
+			<h3 id="history_15">2009/01/21 Ver.1.5</h3>
+			<div class="indent">
+				[機能追加] 複数のフォルダのメモを管理できるようにした。<br>
+				[機能追加] 外部ツール実行機能の改良。（ショートカットキーやその他のオプションを追加しています。）<br>
+				[機能追加] 各種ホットキーの追加。<br>
+				[機能追加] 「ホットキーを一時的に無効にする」オプションを追加。<br>
+				[機能追加] タブ操作関係のショートカットキーやオプション、操作音を追加。<br>
+				[機能追加] メモ設定ファイルを保存するかどうか設定できるようにした。<br>
+				[機能追加] スクロールバーの幅を変更できるようにした。（テーマの項目になります。）<br>
+				[仕様変更] オプション画面の整理。（項目の追加などを行っています。）<br>
+				[仕様変更] メモ一覧と外部ツールをサブメニューに表示するようにした。（以前のオプションは廃止しました。）<br>
+				[仕様変更] キーやマウスの操作設定をシステム設定ファイルに記録するようにした。（「key.ini」廃止）<br>
+				[仕様変更] 暗号化ファイルにパスワードのヒントを含めるようにした。<br>
+				[仕様変更] エディタ部分の右クリックメニューに「削除」を追加。<br>
+				[仕様変更] エディタの「すべて選択」でスクロールバー位置を移動しないようにした。<br>
+				[仕様変更] テーマ変更速度の改善。（テーマ設定の項目追加や項目の省略も可としました。）<br>
+				[仕様変更] キーワード色分け描画速度の改善。<br>
+				[仕様変更] スタートアップ登録機能を再実装。<br>
+				[仕様変更] タスクトレイアイコンのツールチップにバージョン情報を表示するようにした。<br>
+				[バグ修正] メモ一覧描画時にメモリリークが発生して操作できなくなるバグを修正。<br>
+				[バグ修正] メモの編集中に新規メモを作成するとメモが保存されないバグを修正。<br>
+				[バグ修正] 暗号化メモの編集中にパスワード変更するとパスワードが解除されてしまうバグを修正。<br>
+				[バグ修正] 外部ツールのホットキーが設定できないバグを修正。<br>
+				[バグ修正] オプション画面から「常に手前に表示する」を変更しても正しく設定されないバグを修正。<br>
+				[バグ修正] クリップボード監視が動作してしまうことがあるバグを修正。<br>
+				[バグ修正] クリップボードのテキストを末尾に貼り付ける際にスクロールバー位置が先頭になるバグを修正。<br>
+				[バグ修正] 水平スクロールバーの位置の復元処理でスクロール位置が正しく戻らないバグを修正。<br>
+				[バグ修正] キー設定を初期化した後キャンセルするとショートカットキーが無効になるバグを修正。<br>
+				[バグ修正] メニューのショートカットキーを非表示にしてもエディタのメニューの一部が表示されるバグを修正。<br>
+				[バグ修正] エディタ背景画像が途切れて表示される場合があるバグを修正。<br>
+				[バグ修正] 日付が変わったときにカレンダーが更新されない不具合を修正。<br>
+				[バグ修正] メモの先頭が暗号化ファイルヘッダと同じだと暗号化ファイルと判断されてしまう不具合を修正。<br>
+				[バグ修正] 拡張キーの名前を正しく表示するようにした。（「Delete」や「Page Up」など）<br>
+				その他、表示や再生のタイミングの調整。テーマ仕様の変更。ドキュメントの書き加えと修正。<br>
+			</div>
+
+			<h3 id="history_14">2008/11/02 Ver.1.4</h3>
+			<div class="indent">
+				[機能追加] エディタの左と上の余白を設定できるようにした。<br>
+				[仕様変更] テーマ画像がない場合でも最小化でタスクトレイアイコンを変化させるようにした。<br>
+				[仕様変更] キャレットの前後情報を保存するようにした。（以前は必ず後方になっていました。）<br>
+				[仕様変更] <s class="comment" title="【Ver.1.5で見直し】やっぱりあったほうが便利という結論に。">スタートアップ登録機能を廃止。（使用頻度が少ないと思われるため）</s><br>
+				[バグ修正] パスワード入力を省略する設定にしてメモを変更するとパスワードが解除されてしまうバグを修正。<br>
+				[バグ修正] 起動時のウィンドウを最小化して起動することができないバグを修正。<br>
+				[バグ修正] ステータスバーのメモ番号が更新されない場合があるバグを修正。<br>
+				[バグ修正] 署名挿入のショートカットキーが設定できないバグを修正。（配列がオーバーフローしていました。）<br>
+				[バグ修正] タスクバーボタン最小化やタイトルバー状態で終了すると起動時に正しく表示されないバグを修正。<br>
+				[バグ修正] タスクバーのボタンを表示するときに最小化でメモが保存されないバグを修正。<br>
+				[バグ修正] パスワード変更後にキャレット位置がリセットされてしまう場合があるバグを修正。<br>
+				[バグ修正] メモの新規作成でメモ一覧のスクロールバーが更新されないバグを修正。<br>
+				[バグ修正] 外部ツールのパラメータ[BACKIMAGE]のパスが正しく取得できていないバグを修正。<br>
+				[バグ修正] エディタ1行目で行間が狭いとき入力するとIMEの変換ウィンドウが表示される不具合を修正。<br>
+				[バグ修正] オプション画面からテーマを選択するとエディタのキャレットが点滅する不具合を修正。<br>
+				その他、システム設定ファイルの見直し、警告ダイアログのメッセージなどの修正。
+			</div>
+
+			<h3 id="history_13">2008/10/24 Ver.1.3</h3>
+			<div class="indent">
+				[機能追加] アプリケーション起動時にIMEの日本語入力をONにするオプションを追加。<br>
+				[機能追加] タスク表示をタスクバーボタンとタスクトレイから選べるようにした。<br>
+				[機能追加] エディタ画面にファイルをドロップできるようにした。（ファイル内容やパスの挿入などが可能です。）<br>
+				[機能追加] メモ一覧上でマウスホイール操作やメモのドラッグ移動時に上下にスクロールするようにした。<br>
+				[機能追加] メインメニューにメモ一覧を表示するオプションを追加。<br>
+				[機能追加] スプリッター移動時にウィンドウの描画を省略できるようにした。（CPU使用率軽減の効果）<br>
+				[仕様変更] ウィンドウ表示ホットスポットの左右上下をラジオボタンからチェックボックスに変更。<br>
+				[仕様変更] 多重起動禁止処理でメッセージを出さずに先に起動したウィンドウをアクティブにするようにした。<br>
+				[仕様変更] メモを選択した瞬間に再描画するようにした。（体感速度がアップしました。）<br>
+				[仕様変更] <s class="comment" title="【Ver.1.4で見直し】勘違いの仕様変更でした。">パスワード省略を行わない場合にはメモリにパスワードを記憶しないようにした。</s><br>
+				[仕様変更] <s class="comment" title="上記に同じ。">パスワード省略のチェックをはずしたときにメモリ上のパスワードを消去するようにした。</s><br>
+				[仕様変更] フォント拡大縮小機能でマウスホイールを上に回して拡大、下に回して縮小を初期設定にした。<br>
+				[仕様変更] オプション画面の「ウィンドウに影を付ける」の初期設定をオフにした。<br>
+				[仕様変更] オプション画面に「複数起動を許可する」を追加。（使い所が難しいオプションかもしれません。）<br>
+				[仕様変更] メモのドラッグ移動をEscキーでキャンセルできるようにした。<br>
+				[仕様変更] テーマの仕様を変更。（画像がない場合のアイコン描画やキー名などの見直しを行っています。）<br>
+				[バグ修正] 日付と時刻の書式が設定ファイルから読み出されないバグを修正。<br>
+				[バグ修正] パスワードを設定したメモのキャレット位置が記憶されない場合があるバグを修正。<br>
+				[バグ修正] 起動時に開くメモが右端で折り返す設定のときスクロールバーが上に移動してしまうバグを修正。<br>
+				[バグ修正] 外部ツールのパラメータ[FILENAME]と[FILEPATH]の文字列が二重に取得されていたバグを修正。<br>
+				[バグ修正] プロパティ表示でファイルの更新日時とアクセス日時が逆になっていたバグを修正。<br>
+				[バグ修正] メモの順番を変えたときにステータスバーが更新されないバグを修正。<br>
+				[バグ修正] 右端で折り返す長さが設定直後とメモ読み込み後で異なるバグを修正。<br>
+				[バグ修正] テーマ変更でタスクトレイアイコンが変更されないバグを修正。<br>
+				[バグ修正] 「メモフォルダを開く」などフォルダ存在チェック時にメモリリークしていたバグを修正。<br>
+				[バグ修正] メモの名前変更テキストボックスのキャレットが表示されなくなる不具合を修正。<br>
+				[バグ修正] メモ一覧の一行の高さを変更したときにメモ一覧のスクロールバーが変化しない不具合を修正。<br>
+				その他、オプション画面の用語や配置の変更、初期設定値の変更。ドキュメントの書き加えと修正。
+			</div>
+
+			<h3 id="history_12">2008/07/13 Ver.1.2</h3>
+			<div class="indent">
+				[機能追加] 各メモのフォント名、フォントサイズ、フォントスタイル、行間、折り返し設定を記憶できるようにした。<br>
+				[機能追加] 外部ツールのパスとパラメータに編集情報を付加できるようにした。<br>
+				[機能追加] クリップボードコピー処理を改良してクリップボード監視ができるようにした。（操作音も追加。）<br>
+				[機能追加] マウス設定のテキストエディタの操作に「行間変更」を追加。<br>
+				[機能追加] ショートカットキーの「フォント変更」「メモの一行目をメモ名に設定」など計7つを追加。<br>
+				[機能追加] メモの名前が重複した場合の連番で前後の文字列を追加できるようにした。<br>
+				[機能追加] 検索ダイアログ表示時に「キャレット位置の文字を検索文字列にする」の設定を追加。<br>
+				[仕様変更] ウィンドウ表示切り替えホットキーの処理でアクティブでない場合はアクティブになるようにした。<br>
+				[仕様変更] エディタの左余白のクリックで１行選択されるようにした。<br>
+				[仕様変更] エディタの単語選択を細かくした。（以前は半角スペースなどで区切っていました。）<br>
+				[仕様変更] エディタの行間に負の値を指定できるようにした。<br>
+				[仕様変更] 外部ツール名を半角ハイフン「-」にした場合メニュー表示時にセパレータになるようにした。<br>
+				[仕様変更] 外部ツールを新規作成したとき現在選択されているアイテム位置に追加するようにした。<br>
+				[仕様変更] オプション画面の表示位置をデスクトップ作業領域の中央に表示するようにした。<br>
+				[仕様変更] タスクトレイのポップアップメニュー項目の「常に手前に表示」など計3つを表示しないようにした。<br>
+				[仕様変更] ショートカットキーの「ウィンドウ非表示」は最小化と同じ意味であるため廃止。<br>
+				[仕様変更] メモの名前変更でタブ文字を制限し、「,」と「;」を入力できるようにした。<br>
+				[バグ修正] パスワード入力画面で現在メモのパスワード変更を行うと前回のメモが表示されるバグを修正。<br>
+				[バグ修正] メモのファイル名に「,」を含む、または「;」で始まる場合、メモの順番が反映されないバグを修正。<br>
+				[バグ修正] 上方向の検索で特定の文字が正常に検索されないバグを修正。<br>
+				[バグ修正] テキストエディタのフォントスタイルが設定ファイルから読み書きされていないバグを修正。<br>
+				[バグ修正] メニューのアクセスキー重複とショートカットキーの有無でメニュー順番が異なるバグを修正。<br>
+				[バグ修正] オプション画面で設定可能なホットキーを指定しても警告メッセージが表示されてしまうバグを修正。<br>
+				[バグ修正] 非アクティブ時動作がダイアログを表示するときに実行されてしまう不具合を修正。<br>
+				[バグ修正] タスクトレイのポップアップメニューからオプション画面が複数表示されてしまう不具合を修正。<br>
+				その他、オプション画面の用語と配置の修正、テーマの色設定項目の変更、ドキュメントの書き加えと修正。
+			</div>
+
+			<h3 id="history_11">2008/06/10 Ver.1.1</h3>
+			<div class="indent">
+				[機能追加] クリップボード文字列をコピーするホットキー機能で貼り付けを行うメモを選択できるようにした。<br>
+				[機能追加] メモ一覧にテキストファイルをドラッグ＆ドロップしてメモとしてコピー作成できるようにした。<br>
+				[機能追加] メモ一覧を左右に配置できるようにした。（他、スプリッターの操作性が向上しています。）<br>
+				[機能追加] IME日本語入力ON/OFFでテーマの画像を使用しないときでもキャレットの色が変化するようにした。<br>
+				[機能追加] 設定画面の外部ツール一覧のリストビューにドラッグ＆ドロップでツールを追加できるようにした。<br>
+				[機能追加] 設定画面のパス入力テキストボックスにファイルをドロップしたときファイル名を取得できるようにした。<br>
+				[機能追加] タイトルバーのボタン順を変更できるようにした。（設定ファイルを編集する必要があります。）<br>
+				[機能追加] カレンダーの週初めの曜日を変更できるようにした。（テーマのファイルを編集する必要があります。）<br>
+				[機能追加] 再生可能な操作音を追加。<br>
+				[機能追加] バージョンリソースを実行ファイルに同梱。（実行ファイルのプロパティから閲覧できます。）<br>
+				[仕様変更] メモ項目以外を右クリックしてメモ作成した場合現在メモ直前でなく一番下に作成する仕様に変更。<br>
+				[仕様変更] クリップボード文字列をコピーするホットキー機能で貼り付ける位置の「現在位置」を廃止。<br>
+				[仕様変更] 外部ツール実行時にツールのパスが何も入力されていない場合にメッセージを表示するようにした。<br>
+				[仕様変更] <s class="comment" title="【Ver.1.6で見直し】上書きモード時のキャレット幅をキャレット位置の文字の幅に戻しました。">テキスト上書きモード時にキャレット幅が現在位置の1文字分ではなくフォントの平均幅に固定した。</s><br>
+				[仕様変更] エディタ背景切り替えショートカットキーの切り替わり順番をオプション画面の並びと同じにした。<br>
+				[仕様変更] PSAPI.DLLを動的ロードするようにしてWindows98でもプログラム開始エラーにしないようにした。<br>
+				[バグ修正] Windowsのログオフまたは終了時にメモ内容やアプリケーション設定が保存されないバグを修正。<br>
+				[バグ修正] 開いているメモ以外のメモを削除したときメモ内容が保存されず異なるメモが開くバグを修正。<br>
+				[バグ修正] 新規作成時に今まで開いていたメモのキャレット位置などが保存されないバグを修正。<br>
+				[バグ修正] タスクトレイアイコン登録時間が設定ファイルから読み書きされていないバグを修正。<br>
+				[バグ修正] 設定画面からメモ一覧とステータスバーの表示を切り替えたとき再描画されない不具合を修正。<br>
+				[バグ修正] ウィンドウシェード状態のときにテーマ変更するとタイトルバーの高さが変化しない不具合を修正。<br>
+				その他、テーマ画像の配置割りの変更やドキュメントの書き加えと修正。
+			</div>
+
+			<h3 id="history_10">2008/06/01 Ver.1.0</h3>
+			<div class="indent">
+				公開
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="footer">
+		<div class="footerright">
+			<p>
+				&copy; 2014 PapparaSoft
+				<a href="http://www.cc9.ne.jp/~pappara/">http://www.cc9.ne.jp/~pappara/</a><br>
+				Mail: <a href="mailto:tenku.ginga&#64;gmail.com">tenku.ginga&#64;gmail.com</a>
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>

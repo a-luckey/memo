@@ -1,0 +1,446 @@
+﻿/* Your code goes here */ 
+/************************
+* 予定日計算
+************************/
+$(function(){
+  if($(".datepicker").length > 0) {
+    $(".datepicker").datepicker({
+      dateFormat: 'yy/mm/dd',
+      changeYear: true,  // 年選択をプルダウン化
+      changeMonth: true  // 月選択をプルダウン化
+　  });
+　  $(".datepicker").datepicker("setDate",new Date());
+  }
+
+  $('#cal_btn_1').click(function() {
+    var cal = $('.datepicker').val();
+    var period = Number($('#period').val());
+    var date1 = new Date(cal);
+    var date2 = new Date(cal);
+    var date3 = new Date(cal);
+    var date4 = new Date(cal);
+    var day = getDiff(date1,new Date()) % 7;
+    var week = (getDiff(date1,new Date()) - day)/7;
+    var date5 = week + "週 " + day + "日";
+    date1.setDate(date1.getDate() + 252 + period);
+    date2.setDate(date2.getDate() + 252 + period - 42);
+    date3.setDate(date3.getDate() + 252 + period - 98);
+    date4.setDate(date4.getDate() + 252 + period + 56);
+
+    $('#output1').val(formatDate_type1(date1));
+    $('#output2').val(formatDate_type1(date2));
+    $('#output3').val(formatDate_type1(date3));
+    $('#output4').val(formatDate_type1(date4));
+    if(Number(day) < 0) {
+      $('#output5').val('0週 0日');
+    } else {
+      $('#output5').val(date5);
+    }
+
+    var target = $('#scroll_point').offset().top;
+    $('body,html').animate({scrollTop:target}, 400, 'swing');
+  });
+});
+
+function formatDate_type1(date) {
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  var add_html = year + '年' + month + '月' + day + '日';
+  
+  return add_html;
+}
+
+function getDiff(date1, date2) {
+	var msDiff = date2.getTime() - date1.getTime();
+	var daysDiff = Math.floor(msDiff / (1000 * 60 * 60 *24));
+	return daysDiff;
+}
+
+/************************
+* 産休・育休期間計算
+************************/
+$(function(){
+  $('#cal_btn_2').click(function() {
+    var cal = $('.datepicker').val();
+    var date1 = new Date(cal);
+    var date2 = new Date(cal);
+    var date3 = new Date(cal);
+    var diff_date2 = 42;//産前
+    var diff_date1 = 0;//予定日との差
+    date1.setDate(date1.getDate());
+    
+    switch ($('input[name="optionsRadios"]:checked').val()) {
+      case '1':
+        diff_date1 = $('.diff_fast').val();
+        break;
+      case '2':
+        diff_date1 = -$('.diff_slow').val();
+        break;
+    }
+
+    if($('#period').val() == 2) {
+      diff_date2 = 98;
+    }
+
+    date1.setDate(date1.getDate() - diff_date1);//出産
+    date2.setDate(date2.getDate() - diff_date2);//産前
+    date3.setDate(date1.getDate() + 56);//産後
+
+    $('#output1').val(formatDate(date1,0,0,0));
+    $('#output2').val(formatDate(date2,0,0,-1));
+    $('#output3').val(formatDate(date3,0,0,0));
+    $('#output4').val(formatDate(date1,1,0,1));
+    $('#output5').val(formatDate(date1,1,2,1));
+    $('#output6').val(formatDate(date1,1,6,1));
+    $('#output7').val(formatDate(date1,2,0,1));
+    $('#output8').val(formatDate(date3,0,0,-1));
+
+    var target = $('#scroll_point').offset().top;
+    $('body,html').animate({scrollTop:target}, 400, 'swing');
+  });
+});
+
+function formatDate(date, addYear, addMonth, pullDay) {
+  var year = date.getFullYear() + addYear;
+  var month = date.getMonth() + 1 + addMonth;
+  var day = date.getDate() - pullDay;
+
+  if(day == 0) {
+    month = month - 1;
+    day = 31;
+    if(month == 2) {
+      day = 28;
+    } else if(month == 4 || month == 6 || month == 9 || month == 11) {
+      day = 30;
+    }
+    if(month == 0) {
+      month = 12;
+      year = year - 1;
+    }
+  }
+  if(month > 12) {
+    month = month - 12;
+    year = year + 1;
+  }  
+
+  var add_html = year + '年' + month + '月' + day + '日';
+
+  return add_html;
+}
+
+$(function(){
+  $('input[name="optionsRadios"]:radio').change(function(){
+    var num = $('input[name="optionsRadios"]:checked').val();
+    if(num > 0) {
+      $('#diff_area').removeClass('hidden');
+      if(num == 1) {
+        $('#diff_fast').removeClass('hidden');
+        $('#diff_slow').addClass('hidden');
+      } else {
+        $('#diff_slow').removeClass('hidden');
+        $('#diff_fast').addClass('hidden');
+      }
+    } else {
+      $('#diff_area').addClass('hidden');
+    }
+  });
+});
+
+
+/************************
+* 育児休業給付金
+************************/
+$(function(){
+  $('#cal_btn_3').click(function() {
+    var cal = $('.datepicker').val();
+    var babyNum = $('#period').val();
+    var salary_half = $('#salary_half').val();
+    var salary_year = $('#salary_year').val();
+    var period = 12;
+    var diff_before = 42;
+    var diff_after = 56;
+    var max_salary = 449700;//上限賃金
+    var min_salary = 74400;//下限賃金
+    var birth_salary = 420000;//出産育児一時金
+    var salary_radio = $('input[name="salaryRadios"]:checked').val();
+
+    // 育休の額面上限・下限を設定
+    if (Number(salary_half) > max_salary) {
+      salary_half = max_salary; 
+    } else if (Number(salary_half) < min_salary) {
+      salary_half = min_salary; 
+    }
+
+    // 育休の期間を設定
+    switch ($('input[name="optionsRadios"]:checked').val()) {
+      case '1':
+        period = 18;
+        break;
+      case '2':
+        period = 24;
+        break;
+    }
+
+    // 産休手当の上限設定（12か月未満の場合）
+    if (Number(salary_radio) > 0 && Number(salary_year) > 280000) {
+      salary_year = 280000;
+    }
+
+    // 双子以上の場合産前休の日にちを変更
+    if($('baby_num') == 2) {
+      diff_before = 96;
+    }
+
+    var start_day = new Date(cal);
+    var that_day = new Date(cal);
+    var after_day = new Date(cal);
+    var childcare_day = new Date(cal);
+    var end_day = new Date(cal);
+    
+    start_day.setDate(that_day.getDate() - diff_before);//産前
+    after_day.setDate(that_day.getDate() + diff_after);//産後
+    childcare_day.setDate(that_day.getDate() + diff_after + 1);//育休開始日
+    end_day.setMonth(that_day.getMonth() + period);//育休終了日
+    end_day.setDate(that_day.getDate() - 1);
+
+    var before_benefit = Math.round((Number(salary_year) / 30 * 2 / 3 * (diff_before + diff_after)),0);//産前産後給付金
+    var fast_benefit = Math.round((Number(salary_half) * 0.67 * 2),0);
+    var letter_benefit = Math.round((Number(salary_half) * 0.5 * 2),0);
+    var last_letter_benefit = Math.round((Number(salary_half) * 0.5 * 2 + Number(salary_half) * 0.05),0);
+    var distance = monthDistance(start_day, that_day);
+    var sum_benefit = 0;// 育休手当合計
+    var html = '';
+ 
+    for (var i=0; i<distance; i++) {
+      html = html + '<tr><td class="tbl2_left">' + formatDate(start_day, i) + '</td><td class="tbl2_center">'
+      if (i == 0) {
+        html = html + '<span style="font-weight:bold;">産休開始</span>'; 
+      }
+      html = html + '</td><td class="tbl2_right"></td></tr>';
+    }
+
+    var count = 0;
+    var count_flg = false;
+    var end_flg = false;
+    for (var i=0; i<=period+1; i++) {
+      if (end_flg) {
+        break;
+      }
+      html = html + '<tr><td>' + formatDate(that_day, i) + '</td><td>';
+      
+      if (i == 0) {
+         html = html + '<span style="font-weight:bold; color:red;">出産</span>'; 
+      } else if (formatDate(childcare_day, 0) == formatDate(that_day, i)) {
+        html = html + '<span style="font-weight:bold;">育休開始</span>';
+        count_flg = true;
+      } else if (formatDate(end_day, 0) == formatDate(that_day, i)) {
+        html = html + '<span style="font-weight:bold;">育休終了</span>';
+      }
+      
+      html = html + '</td><td class="tbl2_right">';
+      
+      if (count_flg) {
+        count++;
+      }
+      
+      // 出産一時金
+      if (count == 1) {
+        html = html + '<span style="color:red">※￥' + separate(birth_salary) + '円</span>';      
+      // 産休手当
+      } else if (count == 2) {
+        html = html + '￥' + separate(before_benefit) + '円';
+      // 育児休業給付金(67%)
+      } else if (count == 4 || count == 6 || count == 8) {
+        html = html + '￥' + separate(fast_benefit) + '円';
+        sum_benefit = sum_benefit + fast_benefit;
+      // 育児休業給付金(50%)
+      } else if (count > 6 && count%2 == 0) {
+        if (period <= i) {
+          html = html + '￥' + separate(last_letter_benefit) + '円';
+          sum_benefit = sum_benefit + last_letter_benefit;
+          end_flg = true;
+        } else {
+          html = html + '￥' + separate(letter_benefit) + '円';
+          sum_benefit = sum_benefit + letter_benefit;
+        }
+      }
+
+      html = html + '</td></tr>';
+    }
+
+    var before_html = '<tr><td class="tbl1_left">出産育児一時金</td><td class="tbl1_right">';
+    before_html = before_html + '￥' + separate(birth_salary) + '円' + '</td></tr>';
+    before_html = before_html + '<tr><td class="tbl1_left">出産手当金（総額）</td><td class="tbl1_right">';
+    before_html = before_html + '￥' + separate(before_benefit) + '円' + '</td></tr>';
+    before_html = before_html + '<tr><td class="tbl1_left">育児休業給付金（総額）</td><td class="tbl1_right">';
+    before_html = before_html + '￥' + separate(sum_benefit) + '円' + '</td></tr>';
+
+    $('#output_tbl_1').html(before_html);
+    $('#output_tbl_2').html(html);
+    
+    var target = $('#scroll_point').offset().top;
+    $('body,html').animate({scrollTop:target}, 400, 'swing');
+
+  });
+});
+
+/************************
+* 育児休業給付金(パパ)
+************************/
+$(function(){
+  $('#cal_btn_4').click(function() {
+    var cal_start = $('#start_time').val();
+    var cal_end = $('#end_time').val();
+    var salary_half = $('#salary_half').val();
+    var start_day = new Date(cal_start);
+    var end_day = new Date(cal_end);
+    var termDay = Math.ceil((end_day - start_day) / 86400000);
+    var period = getTermDate(start_day, end_day);
+    var html = '';
+    
+    var fast_benefit = Math.round((Number(salary_half) * 0.67 * 2),0);
+    var letter_benefit = Math.round((Number(salary_half) * 0.5 * 2),0);
+    var last_letter_benefit = Math.round((Number(salary_half) * 0.5 * 2 + Number(salary_half) * 0.05),0);
+    var sum_benefit = 0;
+    
+    if (termDay <= 0) {
+      alert('正しい期間を入力してください！');
+      return; 
+    }
+    
+    if (period >= 24) {
+      alert('育児休業は最長2年までです！');
+      return; 
+    }
+    console.log(termDay);
+    var one_benefit = Number(salary_half) * 0.67 / 30;
+    var last_benefit = 0;
+    var total_benefit = 0;
+    if (termDay <= 180) {
+       total_benefit = one_benefit * termDay;
+    } else {
+       total_benefit = one_benefit * 180;
+       one_benefit = Number(salary_half) * 0.5 / 30;
+       total_benefit = total_benefit + (one_benefit * (termDay - 180));
+    }
+    total_benefit = Math.round(total_benefit, 0);
+    last_benefit = total_benefit;
+    console.log(last_benefit);
+    
+    if (termDay < 60) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.67 / 30 * termDay),0);
+    } else if (termDay < 120) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.67 / 30 * (termDay-60)),0);
+    } else if(termDay < 180) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.67 / 30 * (termDay-120)),0);
+    } else if(termDay < 240) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-180)),0);
+    } else if(termDay < 300) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-240)),0);
+    } else if(termDay < 360) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-300)),0);
+    } else if(termDay < 420) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-360)),0);
+    } else if(termDay < 480) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-420)),0);
+    } else if(termDay < 520) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-480)),0);
+    } else if(termDay < 560) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-520)),0);
+    } else if(termDay < 620) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-560)),0);
+    } else if(termDay < 680) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-620)),0);
+    } else if(termDay <= 730) {
+      last_letter_benefit =  Math.round((Number(salary_half) * 0.50 / 30 * (termDay-680)),0);
+    }
+
+    var count = 0;
+    var count_flg = false;
+    var end_flg = false;
+    for (var i=0; i<=period+2; i++) {
+      if (end_flg) {
+        break;
+      }
+      html = html + '<tr><td>' + formatDate(start_day, i) + '</td><td>';
+
+      if (i == 0) {
+        html = html + '<span style="font-weight:bold;">育休開始</span>'; 
+        count_flg = true;
+      }
+      if (i == period) {
+        html = html + '<span style="font-weight:bold;">育休終了</span>';
+      }
+      
+      html = html + '</td><td class="tbl2_right">';
+      
+      if (count_flg) {
+        count++;
+      }
+
+      // 育児休業給付金(67%)
+     if ((period + 1) == i) {
+        html = html + '￥' + separate(last_benefit) + '円';
+        sum_benefit = sum_benefit + last_letter_benefit;
+        end_flg = true;        
+      } else if (count == 3 || count == 5 || count == 7) {
+        html = html + '￥' + separate(fast_benefit) + '円';
+        sum_benefit = sum_benefit + fast_benefit;
+        last_benefit = last_benefit - fast_benefit;
+      // 育児休業給付金(50%)
+      } else if (count > 7 && count%2 == 1) {
+        html = html + '￥' + separate(letter_benefit) + '円';
+        sum_benefit = sum_benefit + letter_benefit;
+        last_benefit = last_benefit - letter_benefit;
+      }
+
+      html = html + '</td></tr>';
+    }
+
+    var before_html = '<tr><td class="tbl1_left">育児休業給付金（総額）</td><td class="tbl1_right">';
+    before_html = before_html + '￥' + separate(total_benefit) + '円' + '</td></tr>';
+
+    $('#output_tbl_1').html(before_html);
+    $('#output_tbl_2').html(html);
+
+    var target = $('#scroll_point').offset().top;
+    $('body,html').animate({scrollTop:target}, 400, 'swing');
+
+  });
+});
+
+function getTermDate(date1, date2) {
+  var month1 = date1.getFullYear() * 12 + date1.getMonth();
+  var month2 = date2.getFullYear() * 12 + date2.getMonth();
+  var result = month2 - month1;
+  
+  return result;
+}
+
+function formatDate(date, addMonth) {
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1 + addMonth;
+
+  if(month > 24) {
+    month = month - 24;
+    year = year + 2;
+  } else if(month > 12) {
+    month = month - 12;
+    year = year + 1;
+  }
+
+  var add_html = year + '年' + month + '月';
+
+  return add_html;
+}
+
+function monthDistance(date1, date2) {
+  var distance = date1.getMonth() - date2.getMonth();  
+  return Math.abs(distance);
+}
+
+// 正規表現でセパレート
+function separate(num){
+    return String(num).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,');
+}

@@ -1,0 +1,42 @@
+﻿function formatDate1(date){
+var year = date.getFullYear();
+var month = date.getMonth() + 1;
+var day = date.getDate();
+var over_flg = false;
+if(month < 4) {
+  month = month + 9;
+} else {
+  month = month - 3;
+}
+if(month == 2) {
+  if(day < 22) {
+    day = day + 7;
+  } else {
+    day = day + 7 - 28;
+    over_flg = true;
+  }
+} else if(month == 4 || month == 6 || month == 9 || month == 11) {
+  if(day < 24) {
+    day = day + 7;
+  } else {
+    day = day + 7 - 30;
+    over_flg = true;
+  }
+} else {
+  if(day < 25) {
+    day = day + 7;
+  } else {
+    day = day + 7 - 31;
+    over_flg = true;
+  }
+}
+if(over_flg) {
+  month = month + 1;
+  if(month > 12) {
+    month = month - 12;
+    year = year + 1;
+  }
+}
+var add_html = year + '年' + month + '月' + day + '日';
+return add_html;
+}

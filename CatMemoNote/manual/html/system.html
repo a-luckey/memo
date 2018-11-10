@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta name="robots" content="noindex,nofollow">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<link rel="stylesheet" href="./common.css" type="text/css">
+	<title>システム設定ファイル仕様 - CatMemoNote</title>
+</head>
+<body>
+
+	<h1 id="header"><img src="./icon.png" width="32" height="32"> CatMemoNote</h1>
+
+
+
+	<div class="information">
+		<a href="../index.html">戻る</a>
+	</div>
+
+
+
+	<h2 id="info">システム設定ファイル仕様</h2>
+	<div class="information">
+		<p>
+			システム設定ファイル「system.ini」はソフト全体の設定を保存しておくためのファイルです。また、ソフト本体では設定できない細かな動作についても、このファイルを変更することで設定ができます。中身は普通のテキスト形式になっていますのでテキストエディタなどで編集することが可能です。<BR>
+		</p>
+		<h3>設定ファイルの書式</H3>
+		<div class="indent">
+			<ul>
+				<li>書式は一般的なiniファイルと同じように[ ]で囲ったセクションとキーで設定します。</li>
+				<li>セクション名とキー名の大文字/小文字の区別はありません。</li>
+				<li>空行は無視されますがタブ文字は意味を持ちます。</li>
+				<li>行頭にセミコロン「;」が付いている行はコメントになります。</li>
+				<li>一部のキーにはカンマ「,」で区切って複数指定するものがあります。</li>
+				<li>セクションごと、または特定のキーを省略するとソフトが持つ既定の値を使用します。</li>
+				<li>文字列は「&#34;」や「&#39;」で囲う必要はありません。（カンマ区切り指定での文字列は、「,」は「\,」としてエスケープされます。）</li>
+				<li>値が「0」の場合は空文字でも問題ありません。</li>
+				<li>設定ファイルの文字コードはUTF-8（BOM付き）で保存されています。</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<h2 id="sectionandkey">セクションとキー</h2><div class="pagetop"><a href="#header">▲ページトップへ</a></div>
+	<div class="information">
+		<p>
+			※<span class="highlight">薄い赤色</span>の部分は「system.ini」ファイルでのみ設定可能な設定項目です。<br>
+		</p>
+		<h3>セクション一覧</h3>
+		<div class="marginbottom_wide">
+			<ul>
+				<li><a href="#sectionandkey_system">[System]</a> <span class="detail">…</span> アプリケーション全般の設定</li>
+				<li><a href="#sectionandkey_window">[Window]</a> <span class="detail">…</span> ウィンドウの状態</li>
+				<li><a href="#sectionandkey_tab">[Tab]</a> <span class="detail">…</span> タブの設定</li>
+				<li><a href="#sectionandkey_list">[List]</a> <span class="detail">…</span> メモ一覧の設定</li>
+				<li><a href="#sectionandkey_edit">[Edit]</a> <span class="detail">…</span> 編集エリアの設定</li>
+				<li><a href="#sectionandkey_favoritefont">[FavoriteFont]</a> <span class="detail">…</span> よく使うフォント</li>
+				<li><a href="#sectionandkey_search">[Search]</a> <span class="detail">…</span> 検索機能の設定</li>
+				<li><a href="#sectionandkey_searchhistory">[SearchHistory]</a> <span class="detail">…</span> 検索履歴</li>
+				<li><a href="#sectionandkey_replacehistory">[ReplaceHistory]</a> <span class="detail">…</span> 置換履歴</li>
+				<li><a href="#sectionandkey_template">[Template]</a> <span class="detail">…</span> 定型文の設定</li>
+				<li><a href="#sectionandkey_tool">[Tool]</a> <span class="detail">…</span> 外部ツールの設定</li>
+				<li><a href="#sectionandkey_statusbar">[Clip]</a> <span class="detail">…</span> ステータスバーの設定</li>
+				<li><a href="#sectionandkey_theme">[Theme]</a> <span class="detail">…</span> テーマの設定</li>
+				<li><a href="#sectionandkey_tabnum">[Tab#]</a> <span class="detail">…</span> 各タブで管理するメモの設定</li>
+			</ul>
+		</div>
+
+		<h3 id="sectionandkey_system">[System]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				アプリケーション全般の設定を保存します。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>Version</td>									<td>3桁の数値</td>			<td>設定ファイルのバージョン（例えばVer.2.2の場合は「220」。この値はバージョン間の互換性維持に使われます。）</td></tr>
+				<tr><td>Counter</td>									<td>0～</td>				<td>起動回数カウンタ（初回起動時の設定に使われます。）</td></tr>
+				<tr class="highlight"><td>DelayTrayIcon</td>			<td>-1, 0～</td>			<td>起動時のタスクトレイにアイコンが登録されるまでの秒単位の時間（CatMemoNoteをスタートアップに登録しているときに、まれにタスクトレイアイコンが表示されないことがあります。この設定を行うと、数秒後にアイコンの登録処理を再度行うようになります。通常は 0 秒で問題ありません。-1 にするとアイコンを非表示にできます。）</td></tr>
+				<tr class="highlight"><td>IniShadowCopyInterval</td>	<td>0～</td>				<td>設定のバックアップファイル「system_backup.ini」を作成する日付間隔（初期状態では 7 になっており1週間ごとに「system.ini」のコピー「system_backup.ini」が作成されるようになっています。設定が不正になったり、間違ってタブを閉じてしまった場合などにこちらのファイルから復元できるようになります。起動する頻度に合わせて日数を指定するとよいでしょう。0にするとバックアップファイルは作成しません。）</td></tr>
+				<tr><td>IniShadowCopyDate</td>							<td>8桁の数字（日付）</td>	<td>前回の「system_backup.ini」を作成した日付</td></tr>
+				<tr class="highlight"><td>IniSafeWriting</td>			<td>0 or 1</td>				<td>設定ファイル「system.ini」の安全な書き込みを行うかどうか（0:しない 1:する）（CatMemoNote起動中にWindowsを終了した時など、設定ファイル書き込み途中でプロセスが強制終了されると設定ファイルの保存に失敗することがあります。この問題を回避するため一旦別のファイルに設定を保存して古い設定ファイルと置き換える処理を行います。初期状態では 1 になっており安全な書き込みを行うようになっています。）</td></tr>
+				<tr><td>ValidHotKey</td>								<td>0 or 1</td>				<td>ホットキー有効状態（0:無効 1:有効）</td></tr>
+				<tr><td>ValidGesture</td>								<td>0 or 1</td>				<td>マウスジェスチャー有効状態（0:無効 1:有効）</td></tr>
+				<tr><td>CreateReName</td>								<td>0 or 1</td>				<td>メモやタブの作成時に名前を編集状態にするどうか（0:しない 1:する）</td></tr>
+				<tr><td>CheckFileSave</td>								<td>0 or 1</td>				<td>メモを保存するときに確認するどうか（0:しない 1:する）</td></tr>
+				<tr><td>CheckDelete</td>								<td>0 or 1</td>				<td>メモやタブの削除時に確認を行うかどうか（0:しない 1:する）</td></tr>
+				<tr><td>ListFocus</td>									<td>0 or 1</td>				<td>メモ一覧のフォーカス有効状態（0:無効 1:有効）</td></tr>
+				<tr><td>MemoryPassWord</td>								<td>0 or 1</td>				<td>パスワードを記憶するかどうか（0:記憶しない 1:記憶する）</td></tr>
+				<tr><td>SelectLoop</td>									<td>0 or 1</td>				<td>リスト選択や移動をループさせるかどうか（0:しない 1:する）</td></tr>
+				<tr><td>MenuShortcut</td>								<td>0 or 1</td>				<td>メニューにショートカットキー名を表示するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>StartIME</td>									<td>0 or 1</td>				<td>起動時にIMEの日本語入力をONにするかどうか（0:しない 1:する）</td></tr>
+				<tr><td>MultipleStart</td>								<td>0 or 1</td>				<td>多重起動状態（0:多重起動させない 1:多重起動を許可）</td></tr>
+				<tr class="highlight"><td>TabWheelMode</td>				<td>0 or 1</td>				<td>マウスホイールのタブ選択方向を逆にするかどうか（0:しない 1:する）</td></tr>
+				<tr class="highlight"><td>FontWheelMode</td>			<td>0 or 1</td>				<td>マウスホイールのフォント拡大方向を逆にするかどうか（0:しない 1:する）</td></tr>
+				<tr><td>CustomColor</td>								<td>カラーコード</td>		<td>カスタムカラー（色設定ダイアログの作成した色の一覧）のカラーコードをカンマ区切りで16色指定</td></tr>
+				<tr><td>HotKey</td>										<td>16進数</td>				<td>ホットキー情報をカンマ区切りで10個指定（<a href="#keyinfo">キー保存方式</a>）</td></tr>
+				<tr><td>ShortcutKey</td>								<td>16進数</td>				<td>ショートカットキー情報をカンマ区切りで118個指定（<a href="#keyinfo">キー保存方式</a>）</td></tr>
+				<tr><td>Mouse</td>										<td>16進数</td>				<td>マウス操作情報をカンマ区切りで240個指定</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_window">[Window]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				ウィンドウの状態を保存します。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>Left</td>										<td>～0～</td>				<td>ウィンドウの表示x位置[px]</td></tr>
+				<tr><td>Top</td>										<td>～0～</td>				<td>ウィンドウの表示y位置[px]</td></tr>
+				<tr><td>Width</td>										<td>1～</td>				<td>ウィンドウの幅[px]</td></tr>
+				<tr><td>Height</td>										<td>1～</td>				<td>ウィンドウの高さ[px]</td></tr>
+				<tr><td>WindowMax</td>									<td>0 or 1</td>				<td>最大化状態（0:通常ウィンドウ 1:最大化ウィンドウ）</td></tr>
+				<tr><td>StayOnTop</td>									<td>0 or 1</td>				<td>最前面状態（0:通常ウィンドウ 1:最前面ウィンドウ）</td></tr>
+				<tr><td>Transparent</td>								<td>0 or 1</td>				<td>半透明化状態（0:通常ウィンドウ 1:半透明ウィンドウ）</td></tr>
+				<tr><td>Opacity</td>									<td>0～100</td>				<td>不透明度（0～100%）</td></tr>
+				<tr><td>WindowShade</td>								<td>0 or 1</td>				<td>ウィンドウシェード状態（0:off 1:on）</td></tr>
+				<tr><td>WindowSnap</td>									<td>0 or 1</td>				<td>ウィンドウスナップを行うかどうか（0:しない 1:する）</td></tr>
+				<tr><td>SnapWidth</td>									<td>1～</td>				<td>スナップ間隔[px]</td></tr>
+				<tr><td>ExitMin</td>									<td>0 or 1</td>				<td>終了ボタンで最小化するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>StartMin</td>									<td>0 or 1</td>				<td>最小化状態で起動するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>CaptionMode</td>								<td>0～2</td>				<td>タイトルバーテキスト表示方法（0:メモ名 1:[メモ番号]メモ名 2:[タブ番号]タブ名[メモ番号]メモ名）</td></tr>
+				<tr><td>AutoHide</td>									<td>0 or 1</td>				<td>自動的に隠すかどうか（0:しない 1:する）</td></tr>
+				<tr><td>AutoHideAction</td>								<td>0～3</td>				<td>自動的に隠す動作（0:マウスが離れたときにウィンドウシェード 1:マウスが離れたときに最小化 2:非アクティブ時にウィンドウシェード 3:非アクティブ時に最小化）</td></tr>
+				<tr><td>StartPosition</td>								<td>0 or 1</td>				<td>指定した位置と大きさで起動するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>WindowPosX</td>									<td>0 or 1</td>				<td>指定位置x座標[px]</td></tr>
+				<tr><td>WindowPosY</td>									<td>0 or 1</td>				<td>指定位置y座標[px]</td></tr>
+				<tr><td>WindowSizeX</td>								<td>0 or 1</td>				<td>指定位置xサイズ[px]</td></tr>
+				<tr><td>WindowSizeY</td>								<td>0 or 1</td>				<td>指定位置yサイズ[px]</td></tr>
+				<tr><td>ActiveEdge</td>									<td>0 or 1</td>				<td>画面端表示有効状態（0:無効 1:有効）</td></tr>
+				<tr><td>ActiveArea</td>									<td>0～255</td>				<td>画面端表示領域（1:左 2:右 4:上 8:下 16:左上 32:右上 64左下 128:右下）※合計した数値を指定</td></tr>
+				<tr><td>ShowStatusBar</td>								<td>0 or 1</td>				<td>ステータスバー表示状態（0:非表示 1:表示）</td></tr>
+				<tr><td>Task</td>										<td>0～2</td>				<td>タスク表示種類（0:タスクバーボタン 1:タスクトレイ 2:最小化時のみタスクトレイ）</td></tr>
+				<tr><td>EndDispOption</td>								<td>0～10</td>				<td>最後に表示されていたオプション画面（プロパティシートのページ番号）</td></tr>
+				<tr><td>EndDispOperation</td>							<td>0～2</td>				<td>最後に表示されていた操作設定の種類（0:ホットキー 1:ショートカットキー 2:マウス操作）</td></tr>
+				<tr><td>StatusBarItem</td>								<td>4桁の16進数</td>		<td>ステータスバー表示項目をカンマ区切りで15個指定（前の2桁:項目の種類 後の2桁:表示状態[0:非表示 1:表示]）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_tab">[Tab]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				タブの設定を保存します。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>Index</td>										<td>0～</td>				<td>終了時の選択タブ番号（0から開始）</td></tr>
+				<tr><td>Scroll</td>										<td>0～</td>				<td>終了時のタブスクロール位置[px]</td></tr>
+				<tr><td>SaveDirectory</td>								<td>文字列</td>				<td>管理フォルダの保存先フォルダ</td></tr>
+				<tr><td>ShowTab</td>									<td>0 or 1</td>				<td>タブバー表示状態（0:非表示 1:表示）</td></tr>
+				<tr class="highlight"><td>TabScrollPixel</td>			<td>0～</td>				<td>タブの左右スクロールボタンを押し続けたときの１回の移動量[px]（0で加速移動）</td></tr>
+				<tr><td>NewName</td>									<td>文字列</td>				<td>作成時の名前</td></tr>
+				<tr><td>NewNameHome</td>								<td>文字列</td>				<td>連番の前の文字</td></tr>
+				<tr><td>NewNameDigit</td>								<td>1～</td>				<td>連番の桁数</td></tr>
+				<tr><td>NewNameEnd</td>									<td>文字列</td>				<td>連番の後の文字</td></tr>
+				<tr><td>TabMonospace</td>								<td>0 or 1</td>				<td>タブを等幅で表示するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>MinTabWidth</td>								<td>1～</td>				<td>タブ最小幅[px]</td></tr>
+				<tr><td>MaxTabWidth</td>								<td>1～</td>				<td>タブ最大幅[px]</td></tr>
+				<tr><td>ShowToolTip</td>								<td>0 or 1</td>				<td>ツールチップを表示するかどうか（0:しない 1:する）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_list">[List]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				メモ一覧の設定を保存します。<BR>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>ShowList</td>									<td>0 or 1</td>				<td>メモ一覧を表示するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>Width</td>										<td>0～</td>				<td>メモ一覧の幅[px]</td></tr>
+				<tr><td>Layout</td>										<td>0 or 1</td>				<td>メモ一覧の配置（0:左 1:右）</td></tr>
+				<tr><td>ShowIcon</td>									<td>0 or 1</td>				<td>アイコン表示状態（0:非表示 1:表示）</td></tr>
+				<tr><td>ShowTreeLine</td>								<td>0 or 1</td>				<td>ツリーライン（接続線）表示状態（0:非表示 1:表示）</td></tr>
+				<tr><td>ItemHeight</td>									<td>10～</td>				<td>項目の高さ[px]</td></tr>
+				<tr><td>TreeIndent</td>									<td>0～</td>				<td>ツリーインデント幅[px]</td></tr>
+				<tr><td>VScroll</td>									<td>0～2</td>				<td>垂直スクロールバー表示状態（0:常に表示 1:必要なとき表示 2:表示しない）</td></tr>
+				<tr><td>SaveCaret</td>									<td>0 or 1</td>				<td>カーソル位置を記憶するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>SaveFont</td>									<td>0 or 1</td>				<td>フォント情報を記憶するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>SaveWordWrap</td>								<td>0 or 1</td>				<td>折り返し設定を記憶するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>SaveVertical</td>								<td>0 or 1</td>				<td>縦書き設定を記憶するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>NewName</td>									<td>文字列</td>				<td>作成時の名前</td></tr>
+				<tr><td>NewNameHome</td>								<td>文字列</td>				<td>連番の前の文字</td></tr>
+				<tr><td>NewNameDigit</td>								<td>1～</td>				<td>連番の桁数</td></tr>
+				<tr><td>NewNameEnd</td>									<td>文字列</td>				<td>連番の後の文字</td></tr>
+				<tr><td>MemoAutoReName</td>								<td>0 or 1</td>				<td>メモの一行目を自動的にメモの名前にするかどうか（0:無効 1:有効）</td></tr>
+				<tr><td>DefaultCharCode</td>							<td>0～6</td>				<td>既定の文字コード（0:SJIS 1:JIS 2:EUC-JP 3:UTF-8 BOM付き 4:UTF-8 5:UTF-16LE 6:UTF-16BE）</td></tr>
+				<tr><td>DefaultReturnCode</td>							<td>0～2</td>				<td>既定の改行コード（0:CR+LF 1:LF 2:CR）</td></tr>
+				<tr><td>DeleteMode</td>									<td>0 or 1</td>				<td>メモの削除時の動作（0:ごみ箱 1:指定したタブへ移動）</td></tr>
+				<tr><td>DeleteTabName</td>								<td>文字列</td>				<td>メモの削除時に移動するタブ名</td></tr>
+			</table>
+		</div>
+
+		<H3 id="sectionandkey_edit">[Edit]</H3>
+		<div class="marginbottom_wide">
+			<p>
+				編集エリアの設定を保存します。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>DefaultFont</td>								<td>フォント情報</td>		<td>作成時のフォント情報をカンマ区切りで3個指定（フォント名,フォントサイズ[pt],フォントスタイル（1:太字 2:斜体）※合計した数値を指定）</td></tr>
+				<tr><td>DefaultLineSpace</td>							<td>～0～</td>				<td>作成時の行間[px]</td></tr>
+				<tr><td>DefaultWrapMode</td>							<td>0～2</td>				<td>作成時の折り返しモード（0:折り返さない 1:指定文字数 2:ウィンドウ幅）</td></tr>
+				<tr><td>DefaultWrapLength</td>							<td>1～</td>				<td>作成時の折り返し文字数（半角文字単位）</td></tr>
+				<tr><td>DefaultVerticalView</td>						<td>0 or 1</td>				<td>作成時の縦書き設定（0:横書き 1:縦書き）</td></tr>
+				<tr><td>TabStop</td>									<td>1～</td>				<td>タブ幅</td></tr>
+				<tr><td>SoftTab</td>									<td>0 or 1</td>				<td>ソフトタブ（0:OFF 1:ON）</td></tr>
+				<tr><td>MarginLeft</td>									<td>0～</td>				<td>左余白[px]</td></tr>
+				<tr><td>MarginRight</td>								<td>0～</td>				<td>右余白[px]</td></tr>
+				<tr><td>MarginTop</td>									<td>0～</td>				<td>上余白[px]</td></tr>
+				<tr class="highlight"><td>MinFontSize</td>				<td>1～</td>				<td>最小フォントサイズ[pt]（Ctrl + ホイールなどで文字の大きさを制限するときに指定します。）</td></tr>
+				<tr class="highlight"><td>MaxFontSize</td>				<td>1～</td>				<td>最大フォントサイズ[pt]（〃）</td></tr>
+				<tr><td>LineNumberMode</td>								<td>0 or 1</td>				<td>行の表示方法（0:論理座標 1:レイアウト座標）</td></tr>
+				<tr><td>ScrollMargin</td>								<td>0～</td>				<td>カーソル余白行</td></tr>
+				<tr><td>ScrollLines</td>								<td>1～</td>				<td>スクロール行数</td></tr>
+				<tr class="highlight"><td>ScrollInterval</td>			<td>10～</td>				<td>スクロールバーのボタンやトラックを押し続けたときのスクロール開始時間[ms]（値が小さいほど早くスクロールします。）</td></tr>
+				<tr><td>VScroll</td>									<td>0～2</td>				<td>垂直スクロールバー表示状態（0:常に表示 1:必要なとき表示 2:表示しない）</td></tr>
+				<tr><td>HScroll</td>									<td>0～2</td>				<td>水平スクロールバー表示状態（0:常に表示 1:必要なとき表示 2:表示しない）</td></tr>
+				<tr><td>AutoIndent</td>									<td>0 or 1</td>				<td>オートインデントを行うかどうか（0:しない 1:する）</td></tr>
+				<tr><td>AutoIndentChar</td>								<td>文字列</td>				<td>オートインデントに使う文字</td></tr>
+				<tr><td>CheckMarkOn</td>								<td>文字列</td>				<td>チェックマーク「済」に使う文字（1文字）</td></tr>
+				<tr><td>CheckMarkOff</td>								<td>文字列</td>				<td>チェックマーク「未」に使う文字（1文字）</td></tr>
+				<tr><td>Kinsoku</td>									<td>0 or 1</td>				<td>日本語禁則処理を行うかどうか（0:しない 1:する）</td></tr>
+				<tr><td>WordWrap</td>									<td>0 or 1</td>				<td>英文ワードラップを行うかどうか（0:しない 1:する）</td></tr>
+				<tr class="highlight"><td>CalcEnter</td>				<td>0 or 1</td>				<td>「=」のあとのEnterで数式計算するかどうか（0:しない 1:する）</td></tr>
+				<tr class="highlight"><td>CalcSumText</td>				<td>文字列</td>				<td>合計結果の合計値の前の文字列（初期状態では「合計：」になっています。）</td></tr>
+				<tr><td>ColorMode</td>									<td>0～1</td>				<td>エディタ表示色（0:テーマの色 1:設定した色）</td></tr>
+				<tr><td>EditShowItem</td>								<td>0 or 1</td>				<td>エディタ表示項目の表示状態をカンマ区切りで36個指定（0:非表示 1:表示）</td></tr>
+				<tr><td>EditColorItem</td>								<td>カラーコード</td>		<td>エディタ表示項目の色情報をカンマ区切りで36色指定</td></tr>
+				<tr><td>ColorAlpha</td>									<td>1～100</td>				<td>背景色の濃さ（1～100%）</td></tr>
+				<tr><td>ThemeCaret</td>									<td>0 or 1</td>				<td>テーマのキャレットを使用するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>CaretLineStyle</td>								<td>0～1</td>				<td>カーソル行のスタイル（0:背景塗り潰し 1:下線）</td></tr>
+				<tr><td>LineNumberSeparator</td>						<td>0～2</td>				<td>行番号の区切り線のスタイル（0:なし 1:実線 2:点線）</td></tr>
+				<tr><td>PageNumberLine</td>								<td>1～</td>				<td>1ページの行数</td></tr>
+				<tr><td>TabStyle</td>									<td>0～2</td>				<td>タブ記号のスタイル（0:[&gt; 1:→ 2:|）</td></tr>
+				<tr><td>GuideLineStyle</td>								<td>0～3</td>				<td>ガイドラインのスタイル（0:行罫線 1:タブ区切り 2:全角区切り 3:指定長区切り）</td></tr>
+				<tr><td>GuideLineLength</td>							<td>1～</td>				<td>指定長区切りガイドラインの文字数（半角文字単位）</td></tr>
+				<tr><td>LineNumberDigit</td>							<td>1～99</td>				<td>行番号の最小桁数</td></tr>
+				<tr><td>ClickLinkMode</td>								<td>0 or 1</td>				<td>リンクの実行方法（0:シングルクリック 1:ダブルクリック）</td></tr>
+				<tr><td>CheckLinkOpen</td>								<td>0 or 1</td>				<td>リンク実行時に確認するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>UserBrowser</td>								<td>0 or 1</td>				<td>URL実行方法（0:既定のブラウザ 1:指定したブラウザ）</td></tr>
+				<tr><td>UserBrowserPath</td>							<td>文字列</td>				<td>Webブラウザのパス</td></tr>
+				<tr><td>UserMailSoft</td>								<td>0 or 1</td>				<td>メールアドレス実行方法（0:既定のメールソフト 1:指定したメールソフト）</td></tr>
+				<tr><td>UserMailSoftPath</td>							<td>文字列</td>				<td>メールソフトのパス</td></tr>
+				<tr class="highlight"><td>VerticalIMEPosX</td>			<td>～0～</td>				<td>縦書き時のIME変換ウィンドウ調整x位置[px]（IMEの種類によっては縦書きの変換ウィンドウがずれることがあるのでその場合ここを変更することで調整できます。）</td></tr>
+				<tr class="highlight"><td>VerticalIMEPosY</td>			<td>～0～</td>				<td>縦書き時のIME変換ウィンドウ調整y位置[px]（〃）</td></tr>
+				<tr class="highlight"><td>LineSelect</td>				<td>0 or 1</td>				<td>行番号のクリックで行選択を行うかどうか（0:しない 1:する）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_favoritefont">[FavoriteFont]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				よく使うフォントを保存します。同名の「Item」キーのみ複数保存されます。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>Item</td>										<td>フォント名</td>			<td>フォント名</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_search">[Search]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				検索機能の設定を保存します。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>BarWidth</td>									<td>0～</td>				<td>検索バーの幅[px]</td></tr>
+				<tr><td>MatchCase</td>									<td>0 or 1</td>				<td>大文字/小文字を区別して検索するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>RegEx</td>										<td>0 or 1</td>				<td>正規表現で検索するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>WordOnly</td>									<td>0 or 1</td>				<td>単語単位で検索するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>Revers</td>										<td>0 or 1</td>				<td>先頭(末尾)から再検索するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>MemoNameFlag</td>								<td>0 or 1</td>				<td>メモの名前を検索条件にするかどうか（0:しない 1:する）</td></tr>
+				<tr><td>IconFlag</td>									<td>0 or 1</td>				<td>アイコンを検索条件にするかどうか（0:しない 1:する））</td></tr>
+				<tr><td>IconID</td>										<td>0～4</td>				<td>検索条件のアイコンID（0～4:各アイコンID）</td></tr>
+				<tr><td>Range</td>										<td>0～1</td>				<td>検索範囲（0:すべてのタブ 1:現在のタブ）</td></tr>
+				<tr><td>Result</td>										<td>0～2</td>				<td>検索結果の表示方法（0:すべての箇所 1:行ごとにまとめる 2:メモごとにまとめる）</td></tr>
+				<tr><td>ReplaceRange</td>								<td>0～2</td>				<td>置換範囲（0:現在のメモ 1:選択範囲のみ 2:タブ内の選択メモ）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_searchhistory">[SearchHistory]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				検索履歴を保存します。「Item」キーは最大20個で複数保存されます。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>SearchBoxText</td>								<td>文字列</td>				<td>検索ボックスのテキスト</td></tr>
+				<tr><td>Item</td>										<td>文字列</td>				<td>検索文字列</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_replacehistory">[ReplaceHistory]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				置換履歴を保存します。「Item」キーは最大20個で複数保存されます。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>Item</td>										<td>文字列</td>				<td>置換文字列</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_template">[Template]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				定型文の設定を保存します。同名の「Item」キーのみ複数保存されます。パラメータはカンマ区切りで3個です。<BR>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">カンマ区切り</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>1番目</td>										<td>文字列</td>				<td>定型文の名前</td></tr>
+				<tr><td>2番目</td>										<td>文字列</td>				<td>定型文本文</td></tr>
+				<tr><td>3番目</td>										<td>4桁の16進数</td>		<td>ショートカットキー情報（<a href="#keyinfo">キー保存方式</a>）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_tool">[Tool]</H3>
+		<div class="marginbottom_wide">
+			<p>
+				外部ツールの設定を保存します。同名の「Item」キーのみ複数行で保存されます。パラメータはカンマ区切りで8個です。
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">カンマ区切り</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>1番目</td>										<td>文字列</td>				<td>ツールの名前</td></tr>
+				<tr><td>2番目</td>										<td>文字列</td>				<td>ツールのパス</td></tr>
+				<tr><td>3番目</td>										<td>文字列</td>				<td>ツールのパラメータ</td></tr>
+				<tr><td>4番目</td>										<td>文字列</td>				<td>ツールの作業フォルダ</td></tr>
+				<tr><td>5番目</td>										<td>4桁の16進数</td>		<td>ショートカットキー情報（<a href="#keyinfo">キー保存方式</a>）</td></tr>
+				<tr><td>6番目</td>										<td>4桁の16進数</td>		<td>ホットキー情報（<a href="#keyinfo">キー保存方式</a>）</td></tr>
+				<tr><td>7番目</td>										<td>0～3</td>				<td>起動時のウィンドウサイズ（0:通常のウィンドウ 1:最小化 2:最大化）</td></tr>
+				<tr><td>8番目</td>										<td>0～31</td>				<td>動作フラグ（1:実行時メモ保存 2:起動時実行 4:終了時実行 8:テキスト選択時有効 16:通常メモ編集時有効）※合計した数値を指定</td></tr>
+			</table>
+		</div>
+
+		<H3 id="sectionandkey_statusbar">[StatusBar]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				クリップボード監視機能の設定を保存します。<BR>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>StatusBarItem</td>								<td>4桁の16進数</td>		<td>ステータスバーの表示項目の状態。カンマ区切りで12個指定</td></tr>
+				<tr><td>ClickFunction</td>								<td>0～2</td>				<td>項目操作（0:何もしない 1:シングルクリック 2:ダブルクリック）</td></tr>
+				<tr><td>InsertTimeFormat</td>							<td>文字列</td>				<td>ステータスバー現在日時挿入書式</td></tr>
+				<tr><td>WrapCharList</td>								<td>1～</td>				<td>よく使う折り返し文字数。カンマ区切りで10個以内。</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_theme">[Theme]</H3>
+		<div class="marginbottom_wide">
+			<p>
+				テーマの設定を保存します。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>ThemeDirectory</td>								<td>文字列</td>				<td>現在のテーマ（フォルダ名）</td></tr>
+				<tr><td>BackImageMode</td>								<td>0～3</td>				<td>編集エリア内の壁紙表示モード（0:背景なし 1:カレンダー 2:指定壁紙 3:テーマの壁紙）</td></tr>
+				<tr><td>CalendarPosX</td>								<td>-200～200</td>			<td>カレンダー表示x位置[%]</td></tr>
+				<tr><td>CalendarPosY</td>								<td>-200～200</td>			<td>カレンダー表示y位置[%]</td></tr>
+				<tr><td>BackImagePath</td>								<td>文字列</td>				<td>指定壁紙の画像ファイルパス（BMP形式のみ対応）</td></tr>
+				<tr><td>BackImageVRepeat</td>							<td>0 or 1</td>				<td>指定壁紙を垂直方向に敷き詰めるかどうか（0:しない 1:する）</td></tr>
+				<tr><td>BackImageHRepeat</td>							<td>0 or 1</td>				<td>指定壁紙を水平方向に敷き詰めるかどうか（0:しない 1:する）</td></tr>
+				<tr><td>BackImagePosX</td>								<td>-200～200</td>			<td>指定壁紙の表示x位置[%]</td></tr>
+				<tr><td>BackImagePosY</td>								<td>-200～200</td>			<td>指定壁紙の表示y位置[%]</td></tr>
+				<tr><td>Sound</td>										<td>0～100</td>				<td>指定壁紙の不透明度[%]</td></tr>
+				<tr><td>Sound</td>										<td>0 or 1</td>				<td>サウンドの再生状態（0:再生しない 1:再生する）</td></tr>
+				<tr><td>Animation</td>									<td>0 or 1</td>				<td>タスクトレイアイコンをアニメーション表示するかどうか（0:しない 1:する）</td></tr>
+				<tr><td>WindowFade</td>									<td>0 or 1</td>				<td>ウィンドウのフェードアニメーションを行うかどうか（0:しない 1:する）</td></tr>
+				<tr><td>WindowFadeSpeed</td>							<td>1～</td>				<td>ウィンドウのフェードアニメーションスピード（値を小さくするほど早くなります）</td></tr>
+				<tr><td>DropShadow</td>									<td>0 or 1</td>				<td>ウィンドウに影を付けるかどうか（0:しない 1:する）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_tabnum">[Tab#]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				各タブで管理するメモの設定を保存します。このセクションは少し特殊で、タブの数だけセクションが作成されます。セクションの#の部分は連番になります。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 1em;">
+				<tr><th width="20%">キー</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>Path</td>										<td>文字列</td>					<td>管理フォルダのパス（相対パス可）</td></tr>
+				<tr><td>Index</td>										<td>0～</td>					<td>最後に選択していたメモ番号（0から開始）</td></tr>
+				<tr><td>Scroll</td>										<td>0～</td>					<td>スクロール位置</td></tr>
+				<tr><td>Memo</td>										<td></td>						<td>各メモ情報（<span class="color_red">※</span>詳細は以下）</td></tr>
+			</table>
+			<p>
+				<span class="color_red">※</span>「Memo」キーはタブにあるメモの数だけ複数行で保存されます。パラメータはカンマ区切りで15個です。また、このキーはツリー構造を記憶するためタブ文字を先頭に付けて保存しています。メモの順番も上から下へ並びます。ツリー構造とタブ文字のインデントが対応しない場合でも読み込み時に自動で調整されるので設定ファイルを編集するときは先頭のタブ文字は適当でもかまいません。<br>
+			</p>
+			<table class="highlighttable" width="100%" style="margin-bottom: 3em;">
+				<tr><th width="20%">カンマ区切り</th><th width="20%">値</th><th width="60%">説明</th></tr>
+				<tr><td>1番目</td>										<td>文字列</td>				<td>メモ名</td></tr>
+				<tr><td>2番目</td>										<td>0～5</td>				<td>アイコンID</td></tr>
+				<tr><td>3番目</td>										<td>0～</td>				<td>テキスト選択開始位置</td></tr>
+				<tr><td>4番目</td>										<td>0～</td>				<td>テキスト選択終了位置</td></tr>
+				<tr><td>5番目</td>										<td>0～</td>				<td>垂直スクロールバー位置</td></tr>
+				<tr><td>6番目</td>										<td>文字列</td>				<td>フォント名</td></tr>
+				<tr><td>7番目</td>										<td>1～</td>				<td>フォントサイズ[pt]</td></tr>
+				<tr><td>8番目</td>										<td>0～3</td>				<td>フォントスタイル（1:太字 2:斜体）※合計した数値を指定</td></tr>
+				<tr><td>9番目</td>										<td>～0～</td>				<td>行間[px]</td></tr>
+				<tr><td>10番目</td>										<td>0～2</td>				<td>折り返しモード（0:折り返さない 1:指定文字数 2:ウィンドウ幅）</td></tr>
+				<tr><td>11番目</td>										<td>1～</td>				<td>折り返し文字数（半角文字単位）</td></tr>
+				<tr><td>12番目</td>										<td>0 or 1</td>				<td>縦書き状態（0:横書き 1:縦書き）</td></tr>
+				<tr><td>13番目</td>										<td>0～1</td>				<td>項目の状態（0:通常メモ 1:暗号化メモ）</td></tr>
+				<tr><td>14番目</td>										<td>0 or 1</td>				<td>ツリー開閉状態（0:閉じている 1:開いている）</td></tr>
+				<tr><td>15番目</td>										<td>0 or 1</td>				<td>編集ロック状態（読み取り専用属性）（0:通常 1:読み取り専用）</td></tr>
+			</table>
+		</div>
+	</div>
+
+
+
+	<h2 id="keyinfo">ショートカットキー、ホットキー情報の保存方式</h2><div class="pagetop"><a href="#header">▲ページトップへ</a></div>
+	<div class="information">
+		<p>
+			ショートカットキーやホットキーは4桁の16進数で記憶されます。前の2桁は修飾キー（1:Ctrlキー 2:Shiftキー 4:Altキー 8:Windowsキーを足し合わせた数）、後の2桁は仮想キーコードです。（仮想キーコードについては関連のサイトなどをご参照ください。）
+			先頭が0になる場合は省略できます。
+		</p>
+		<p>
+			（例）
+		</p>
+		<table>
+			<tr><th>キー</th><th>値</th></tr>
+			<tr><td>Win + C</td>				<td>0843</td></tr>
+			<tr><td>Win + Z</td>				<td>085A</td></tr>
+			<tr><td>Alt + 無変換</td>			<td>041D</td></tr>
+			<tr><td>F1</td>						<td>70</td></tr>
+		</table>
+	</DIV>
+
+
+
+	<div class="information">
+		<a href="../index.html">戻る</a>
+	</div>
+
+
+
+	<div class="footer">
+		<div class="footerright">
+			<p>
+				&copy; 2014 PapparaSoft
+				<a href="http://www.cc9.ne.jp/~pappara/">http://www.cc9.ne.jp/~pappara/</a><br>
+				Mail: <a href="mailto:tenku.ginga&#64;gmail.com">tenku.ginga&#64;gmail.com</a>
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>

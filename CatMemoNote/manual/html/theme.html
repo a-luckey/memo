@@ -1,0 +1,726 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta name="robots" content="noindex,nofollow">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<link rel="stylesheet" href="./common.css" type="text/css">
+	<title>テーマ仕様 - CatMemoNote</title>
+</head>
+<body>
+
+	<h1 id="header"><img src="./icon.png" width="32" height="32"> CatMemoNote</h1>
+
+
+
+	<div class="information">
+		<a href="../index.html">戻る</a>
+	</div>
+
+
+
+	<h2 id="info">テーマ仕様</h2>
+	<div class="information">
+		<h3>テーマを構成するのに必要なファイル</h3>
+		<div class="indent">
+			<ul>
+				<li>設定ファイル「theme.ini」</li>
+				<li>画像ファイル「theme.bmp」</li>
+				<li>音声ファイル（ファイル名は固定です。「<a href="#sound">サウンド</a>」項目を参照ください。）</li>
+				<li>以上を格納するフォルダ</li>
+			</ul>
+			<p>
+				フォルダの名前がテーマ名になります。各テーマは実行ファイルと同じフォルダにある「theme」フォルダの中に配置してください。
+				それぞれのファイルを省略することも可能です。テーマのフォルダの中にファイルがない場合は、OSのシステムカラーを使ってウィンドウを描画します。<br>
+			</p>
+		</div>
+	</div>
+
+
+
+	<h2 id="inifile">設定ファイル「theme.ini」について</h2><div class="pagetop"><a href="#header">▲ページトップへ</a></div>
+	<div class="information">
+		<h3>書式</h3>
+		<div class="indent">
+			<ul>
+				<li>書式は一般的なiniファイルと同じように[ ]で囲ったセクションとキーで設定します。</li>
+				<li>セクション名とキー名の大文字/小文字の区別はありません。</li>
+				<li>空行やタブ文字は無視されます。</li>
+				<li>行頭にセミコロン「;」が付いている行はコメントになります。</li>
+				<li>一部のキーにはカンマ「,」で区切って複数指定するものがあります。</li>
+				<li>セクションごと、または特定のキーを省略するとソフトが持つ既定の値を使用します。</li>
+				<li>文字列は「&#34;」や「&#39;」で囲う必要はありません。（カンマ区切り指定での文字列は、「,」を文字として使用できません。）</li>
+				<li>文字コードはSJIS, JIS, EUC-JP, UTF-8, UTF-16LE, UTF-16BEのいずれかであれば読み込めます。</li>
+			</ul>
+		</div>
+		<h3>テーマ画像について</h3>
+		<div class="indent">
+			<ul>
+				<li>テーマフォルダにある「theme.bmp」をテーマ画像として読み込みます。</li>
+				<li>画像はビットマップ形式のみ使用可能です。</li>
+				<li>テーマ画像がない場合でも設定ファイルで指定した色でウィンドウを描画できます。</li>
+			</ul>
+		</div>
+		<h3>色について</h3>
+		<div class="indent">
+			<ul>
+				<li>色は16進数のカラーコードで指定します。（例: #FFFFFF）</li>
+				<li>複数の色を指定するキーの場合はそれぞれ指定する必要があります。（省略すると黒色になったりします。）</li>
+				<li>一部の色に緑色（#00FF00）を指定すると描画されないようになります。</li>
+				<li>カラーコードは「#」を先頭に付けなくてもかまいません。</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<h2 id="sectionandkey">セクションとキー</h2><div class="pagetop"><a href="#header">▲ページトップへ</a></div>
+	<div class="information">
+		<h3>セクション一覧</h3>
+		<div class="marginbottom_wide">
+			<ul>
+				<li><a href="#sectionandkey_images">[Images]</a> <span class="detail">…</span> テーマ画像の設定</li>
+				<li><a href="#sectionandkey_colors">[Colors]</a> <span class="detail">…</span> 色の設定</li>
+				<li><a href="#sectionandkey_mainwindow">[MainWindow]</a> <span class="detail">…</span> メインウィンドウの設定</li>
+				<li><a href="#sectionandkey_titlebar">[TitleBar]</a> <span class="detail">…</span> タイトルバーの設定</li>
+				<li><a href="#sectionandkey_tabbar">[TabBar]</a> <span class="detail">…</span> タブバーの設定</li>
+				<li><a href="#sectionandkey_list">[List]</a> <span class="detail">…</span> メモ一覧の設定</li>
+				<li><a href="#sectionandkey_edit">[Edit]</a> <span class="detail">…</span> 編集エリアの設定</li>
+				<li><a href="#sectionandkey_calendar">[Calendar]</a> <span class="detail">…</span> 編集エリア内のカレンダーの設定</li>
+				<li><a href="#sectionandkey_backimage">[BackImage]</a> <span class="detail">…</span> テーマの壁紙（編集エリアの背景画像）の設定</li>
+				<li><a href="#sectionandkey_statusbar">[StatusBar]</a> <span class="detail">…</span> ステータスバーの設定</li>
+				<li><a href="#sectionandkey_scrollbar">[ScrollBar]</a> <span class="detail">…</span> スクロールバーの設定</li>
+				<li><a href="#sectionandkey_menu">[Menu]</a> <span class="detail">…</span> ポップアップメニューの設定</li>
+				<li><a href="#sectionandkey_tasktray">[TaskTray]</a> <span class="detail">…</span> タスクトレイアイコンの設定</li>
+			</ul>
+		</div>
+		<h3 id="sectionandkey_images">[Images]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				テーマ画像から描画要素を切り出す位置や大きさなどを指定します。<br>
+				各キーのパラメータは次のようになっています。<br>
+				（x:テーマ画像のX位置 y:テーマ画像のY位置 w:テーマ画像の幅 h:テーマ画像の高さ d:整列方向[0:横1:縦] s:伸縮表示を行うかどうか）<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+					<tr><td>TitleBarNormalLeft</td>						<td>通常時タイトルバー左側（x,y,w,h）</td></tr>
+					<tr><td>TitleBarNormalCenter</td>					<td>通常時タイトルバー中央（x,y,w,h,s）</td></tr>
+					<tr><td>TitleBarNormalRight</td>					<td>通常時タイトルバー右側（x,y,w,h）</td></tr>
+					<tr><td>TitleBarShadeLeft</td>						<td>ウィンドウシェード時タイトルバー左側（x,y,w,h）</td></tr>
+					<tr><td>TitleBarShadeCenter</td>					<td>ウィンドウシェード時タイトルバー中央（x,y,w,h,s）</td></tr>
+					<tr><td>TitleBarShadeRight</td>						<td>ウィンドウシェード時タイトルバー右側（x,y,w,h）</td></tr>
+					<tr><td>WindowLeft</td>								<td>ウィンドウ左側（x,y,w,h,s）</td></tr>
+					<tr><td>WindowCenter</td>							<td>ウィンドウ中央（x,y,w,h,s）</td></tr>
+					<tr><td>WindowRight</td>							<td>ウィンドウ右側（x,y,w,h,s）</td></tr>
+					<tr><td>StatusBarOnLeft</td>						<td>ステータスバー表示時左側（x,y,w,h）</td></tr>
+					<tr><td>StatusBarOnCenter</td>						<td>ステータスバー表示時中央（x,y,w,h,s）</td></tr>
+					<tr><td>StatusBarOnRight</td>						<td>ステータスバー表示時右側（x,y,w,h）</td></tr>
+					<tr><td>StatusBarOffLeft</td>						<td>ステータスバー非表示時左側（x,y,w,h）</td></tr>
+					<tr><td>StatusBarOffCenter</td>						<td>ステータスバー非表示時中央（x,y,w,h,s）</td></tr>
+					<tr><td>StatusBarOffRight</td>						<td>ステータスバー非表示時右側（x,y,w,h）</td></tr>
+					<tr><td>StatusBarSizeBox</td>						<td>ステータスバーのサイズボックス（x,y,w,h）</td></tr>
+					<tr><td>SystemIcon</td>								<td>アクティブ時システムアイコン（x,y,w,h）</td></tr>
+					<tr><td>SystemIconInactive</td>						<td>非アクティブ時システムアイコン（x,y,w,h）</td></tr>
+					<tr><td>TitleBarButton</td>							<td>タイトルバーボタン（<a href="#titlebarbuttonid">ボタンID</a>,配置[0:左 1:右],表示X位置,表示Y位置,w,h,x,y）※複数指定可</td></tr>
+					<tr><td>TitleBarButtonDirection</td>				<td>タイトルバーボタン画像の整列方向（0:横 1:縦）</td></tr>
+					<tr><td>MaxBorderOffset</td>						<td>最大化時にカットするウィンドウ枠の幅[px]（上,右,下,左）</td></tr>
+					<tr><td>TabBarLeft</td>								<td>タブバー左側（x,y,w,h）</td></tr>
+					<tr><td>TabBarCenter</td>							<td>タブバー中央（x,y,w,h,s）</td></tr>
+					<tr><td>TabBarRight</td>							<td>タブバー右側（x,y,w,h）</td></tr>
+					<tr><td>TabNormalLeft</td>							<td>通常時タブ項目左側（x,y,w,h）</td></tr>
+					<tr><td>TabNormalCenter</td>						<td>通常時タブ項目中央（x,y,w,h,s）</td></tr>
+					<tr><td>TabNormalRight</td>							<td>通常時タブ項目右側（x,y,w,h）</td></tr>
+					<tr><td>TabOverLeft</td>							<td>マウスオーバー時タブ項目左側（x,y,w,h）</td></tr>
+					<tr><td>TabOverCenter</td>							<td>マウスオーバー時タブ項目中央（x,y,w,h,s）</td></tr>
+					<tr><td>TabOverRight</td>							<td>マウスオーバー時タブ項目右側（x,y,w,h）</td></tr>
+					<tr><td>TabSelectLeft</td>							<td>選択時タブ項目左側（x,y,w,h）</td></tr>
+					<tr><td>TabSelectCenter</td>						<td>選択時タブ項目中央（x,y,w,h,s）</td></tr>
+					<tr><td>TabSelectRight</td>							<td>選択時タブ項目右側（x,y,w,h）</td></tr>
+					<tr><td>TabScrollButtonLeft</td>					<td>タブ左スクロールボタン（x,y,w,h）</td></tr>
+					<tr><td>TabScrollButtonRight</td>					<td>タブ右スクロールボタン（x,y,w,h）</td></tr>
+					<tr><td>TabBarSpliter</td>							<td>タブバーのスプリッター（x,y,w,h）</td></tr>
+					<tr><td>SearchPrevButton</td>						<td>前へ検索ボタン（x,y,w,h,d）※通常時、マウスオーバー時、押下時の3種類</td></tr>
+					<tr><td>SearchNextButton</td>						<td>次へ検索ボタン（x,y,w,h,d）※通常時、マウスオーバー時、押下時の3種類</td></tr>
+					<tr><td>SearchAllButton</td>						<td>全検索ボタン（x,y,w,h,d）※通常時、マウスオーバー時、押下時の3種類</td></tr>
+					<tr><td>ListBack</td>								<td>メモ一覧の背景（x,y,w,h,d）※通常時、アクティブ時、選択時の3種類</td></tr>
+					<tr><td>ListIcon</td>								<td>通常メモのアイコン（x,y,w,h,d）※5種類</td></tr>
+					<tr><td>ListPasswordIcon</td>						<td>暗号化メモのアイコン（x,y,w,h,d）※5種類</td></tr>
+					<tr><td>CaretIMEOff</td>							<td>IME日本語入力が無効のときのキャレット（x,y,w,h）</td></tr>
+					<tr><td>CaretIMEOn</td>								<td>IME日本語入力が有効のときのキャレット（x,y,w,h）</td></tr>
+					<tr><td>PasswordHintIcon</td>						<td>パスワードヒントアイコン（x,y,w,h）</td></tr>
+					<tr><td>PasswordOKButton</td>						<td>パスワードOKボタン（x,y,w,h,d）※通常時、マウスオーバー時、フォーカスがある時、フォーカスがありマウスオーバー時、押下時の5種類</td></tr>
+					<tr><td>StatusBarClipIcon</td>						<td>ステータスバー項目のクリップアイコン（x,y,w,h,d）※ON、OFFの2種類</td></tr>
+					<tr><td>StatusBarSoundIcon</td>						<td>ステータスバー項目のサウンドアイコン（x,y,w,h,d）※ON、OFFの2種類</td></tr>
+					<tr><td>StatusBarSeparator</td>						<td>ステータスバー項目の区切り（x,y,w,h）</td></tr>
+					<tr><td>SpliterLeft</td>							<td>メモ一覧が左側のときのスプリッター（x,y,w,h,s）</td></tr>
+					<tr><td>SpliterRight</td>							<td>メモ一覧が右側のときのスプリッター（x,y,w,h,s）</td></tr>
+					<tr><td>VScrollBarButtonPrev</td>					<td>垂直スクロールバーの前へボタン（x,y,w,h）</td></tr>
+					<tr><td>VScrollBarSliderTop</td>					<td>垂直スクロールバーのスライダ上側（x,y,w,h）</td></tr>
+					<tr><td>VScrollBarSliderCenter</td>					<td>垂直スクロールバーのスライダ中央（x,y,w,h）</td></tr>
+					<tr><td>VScrollBarSliderGrip</td>					<td>垂直スクロールバーのスライダグリップ（x,y,w,h,s）</td></tr>
+					<tr><td>VScrollBarSliderBottom</td>					<td>垂直スクロールバーのスライダ下側（x,y,w,h）</td></tr>
+					<tr><td>VScrollBarTrackShadow</td>					<td>垂直スクロールバーのトラック影（x,y,w,h）</td></tr>
+					<tr><td>VScrollBarTrack</td>						<td>垂直スクロールバーのトラック（x,y,w,h）</td></tr>
+					<tr><td>VScrollBarButtonNext</td>					<td>垂直スクロールバーの次へボタン（x,y,w,h）</td></tr>
+					<tr><td>HScrollBarButtonPrev</td>					<td>水平スクロールバーの前へボタン（x,y,w,h）</td></tr>
+					<tr><td>HScrollBarSliderLeft</td>					<td>水平スクロールバーのスライダ左側（x,y,w,h）</td></tr>
+					<tr><td>HScrollBarSliderCenter</td>					<td>水平スクロールバーのスライダ中央（x,y,w,h）</td></tr>
+					<tr><td>HScrollBarSliderGrip</td>					<td>水平スクロールバーのスライダグリップ（x,y,w,h,s）</td></tr>
+					<tr><td>HScrollBarSliderRight</td>					<td>水平スクロールバーのスライダ右側（x,y,w,h）</td></tr>
+					<tr><td>HScrollBarTrackShadow</td>					<td>水平スクロールバーのトラック影（x,y,w,h）</td></tr>
+					<tr><td>HScrollBarTrack</td>						<td>水平スクロールバーのトラック（x,y,w,h）</td></tr>
+					<tr><td>HScrollBarButtonNext</td>					<td>水平スクロールバーの次へボタン（x,y,w,h）</td></tr>
+					<tr><td>ScrollBarSizeBox</td>						<td>スクロールバーのサイズボックス（x,y,w,h,d）※非表示時、表示時の2種類</td></tr>
+					<tr><td>TrayIconSize</td>							<td>タスクトレイアイコンの大きさ[px]</td></tr>
+					<tr><td>TrayIconNum</td>							<td>タスクトレイアイコンのアニメーション個数※最大9個まで</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_colors">[Colors]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				色をカラーコードで設定します。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>DefaultColor</td>								<td>基本色（エディタ背景,エディタ文字,選択背景,選択文字,ウィンドウの表面の色,ウィンドウの明るい色,ウィンドウの暗い色,ウィンドウの文字）※テーマ画像がない場合に設定</td></tr>
+				<tr><td>Back</td>										<td>ウィンドウ背景色</td></tr>
+				<tr><td>ListBorder</td>									<td>メモ一覧の枠の色（上,右,下,左）※#00FF00で描画しない</td></tr>
+				<tr><td>EditBorder</td>									<td>エディタの枠の色（上,右,下,左）※#00FF00で描画しない</td></tr>
+				<tr><td>TitleText</td>									<td>タイトルバーの文字色（文字色,文字影の色）※#00FF00で描画しない</td></tr>
+				<tr><td>MemoNumber</td>									<td>タブ番号・メモ番号の文字色（文字色,文字影の色）※#00FF00で描画しない</td></tr>
+				<tr><td>TabNormalText</td>								<td>タブの文字色（通常時）</td></tr>
+				<tr><td>TabActiveText</td>								<td>タブの文字色（マウスオーバー時）</td></tr>
+				<tr><td>TabSelectText</td>								<td>タブの文字色（選択時）</td></tr>
+				<tr><td>TabDrag</td>									<td>タブのドラッグ位置</td></tr>
+				<tr><td>SearchBoxText</td>								<td>検索ボックスの文字色</td></tr>
+				<tr><td>SearchBoxBack</td>								<td>検索ボックスの背景色</td></tr>
+				<tr><td>SearchBoxBackError</td>							<td>検索ボックスの背景色（正規表現エラー時）</td></tr>
+				<tr><td>SearchBoxBorder</td>							<td>検索ボックスの枠線（上,右,下,左）</td></tr>
+				<tr><td>ListBack</td>									<td>メモ一覧の背景色</td></tr>
+				<tr><td>ListNormalText</td>								<td>通常メモの文字色</td></tr>
+				<tr><td>ListNormalBack</td>								<td>通常メモの背景色（グラデーション開始色,終了色）※#00FF00でテーマ画像を使用</td></tr>
+				<tr><td>ListNormalBorder</td>							<td>通常メモの枠（上,右,下,左）※#00FF00で描画しない</td></tr>
+				<tr><td>ListActiveText</td>								<td>アクティブ時メモの文字色</td></tr>
+				<tr><td>ListActiveBack</td>								<td>アクティブ時メモの背景色（グラデーション開始色,終了色）※#00FF00でテーマ画像を使用</td></tr>
+				<tr><td>ListActiveBorder</td>							<td>アクティブ時メモの枠（上,右,下,左）※#00FF00で描画しない</td></tr>
+				<tr><td>ListSelectText</td>								<td>選択メモの文字色</td></tr>
+				<tr><td>ListSelectBack</td>								<td>選択メモの背景色（グラデーション開始色,終了色）※#00FF00でテーマ画像を使用</td></tr>
+				<tr><td>ListSelectBorder</td>							<td>選択メモの枠（上,右,下,左）※#00FF00で描画しない</td></tr>
+				<tr><td>ListTreeLine</td>								<td>ツリーラインの色</td></tr>
+				<tr><td>ListDrag</td>									<td>メモ一覧のドラッグ位置</td></tr>
+				<tr><td>ListFocus</td>									<td>メモ一覧のフォーカス枠の色</td></tr>
+				<tr><td>EditText</td>									<td>[エディタ配色]通常の文字</td></tr>
+				<tr><td>EditBack</td>									<td>[エディタ配色]背景</td></tr>
+				<tr><td>EditSelectText</td>								<td>[エディタ配色]選択文字</td></tr>
+				<tr><td>EditSelectBack</td>								<td>[エディタ配色]選択背景</td></tr>
+				<tr><td>EditCaret</td>									<td>[エディタ配色]カーソル</td></tr>
+				<tr><td>EditCaretIME</td>								<td>[エディタ配色]カーソル(IME ON)</td></tr>
+				<tr><td>EditCaretLine</td>								<td>[エディタ配色]カーソル行</td></tr>
+				<tr><td>EditCaretLineIME</td>							<td>[エディタ配色]カーソル行(IME ON)</td></tr>
+				<tr><td>EditLineNumber</td>								<td>[エディタ配色]行番号</td></tr>
+				<tr><td>EditPageNumber</td>								<td>[エディタ配色]ページ番号</td></tr>
+				<tr><td>EditTab</td>									<td>[エディタ配色]タブ</td></tr>
+				<tr><td>EditHSpace</td>									<td>[エディタ配色]半角スペース</td></tr>
+				<tr><td>EditZSpace</td>									<td>[エディタ配色]全角スペース</td></tr>
+				<tr><td>EditReturn</td>									<td>[エディタ配色]改行</td></tr>
+				<tr><td>EditEOF</td>									<td>[エディタ配色][EOF]</td></tr>
+				<tr><td>EditURL</td>									<td>[エディタ配色]URL</td></tr>
+				<tr><td>EditMailAddress</td>							<td>[エディタ配色]メールアドレス</td></tr>
+				<tr><td>EditFilePath</td>								<td>[エディタ配色]ファイルパス</td></tr>
+				<tr><td>EditMemo</td>									<td>[エディタ配色]メモリンク</td></tr>
+				<tr><td>EditCheckList</td>								<td>[エディタ配色]チェックリスト</td></tr>
+				<tr><td>EditWordWrapLine</td>							<td>[エディタ配色]折り返し縦線</td></tr>
+				<tr><td>EditGuideLine</td>								<td>[エディタ配色]ガイドライン</td></tr>
+				<tr><td>EditSearchWord</td>								<td>[エディタ配色]検索ワード背景</td></tr>
+				<tr><td>EditKeyWord1</td>								<td>[エディタ配色]キーワード1</td></tr>
+				<tr><td>EditKeyWord2</td>								<td>[エディタ配色]キーワード2</td></tr>
+				<tr><td>EditKeyWord3</td>								<td>[エディタ配色]キーワード3</td></tr>
+				<tr><td>EditKeyWord4</td>								<td>[エディタ配色]キーワード4</td></tr>
+				<tr><td>EditKeyWord5</td>								<td>[エディタ配色]キーワード5</td></tr>
+				<tr><td>EditKeyWord6</td>								<td>[エディタ配色]キーワード6</td></tr>
+				<tr><td>EditKeyWord7</td>								<td>[エディタ配色]キーワード7</td></tr>
+				<tr><td>EditKeyWord8</td>								<td>[エディタ配色]キーワード8</td></tr>
+				<tr><td>EditKeyWord9</td>								<td>[エディタ配色]キーワード9</td></tr>
+				<tr><td>EditKeyWord10</td>								<td>[エディタ配色]キーワード10以降</td></tr>
+				<tr><td>EditCalendarMonth</td>							<td>[エディタ配色]カレンダー月</td></tr>
+				<tr><td>EditCalendarDay</td>							<td>[エディタ配色]カレンダー平日</td></tr>
+				<tr><td>EditCalendarSat</td>							<td>[エディタ配色]カレンダー土曜</td></tr>
+				<tr><td>EditCalendarSun</td>							<td>[エディタ配色]カレンダー日曜・祝日</td></tr>
+				<tr><td>WindowText</td>									<td>ウィンドウ内の文字色</td></tr>
+				<tr><td>PasswordBoxText</td>							<td>パスワード入力ボックスの文字色</td></tr>
+				<tr><td>PasswordBoxBack</td>							<td>パスワード入力ボックスの背景色</td></tr>
+				<tr><td>PasswordBoxBorder</td>							<td>パスワード入力ボックスの枠の色（上,右,下,左）※#00FF00で描画しない</td></tr>
+				<tr><td>PasswordOKButtonText</td>						<td>パスワードOKボタンの文字色</td></tr>
+				<tr><td>StatusBarText</td>								<td>ステータスバーの文字色（通常時の文字色,無効時の文字色）</td></tr>
+				<tr><td>MenuBackIcon</td>								<td>※メニューの背景色（アイコン表示エリア）</td></tr>
+				<tr><td>MenuBackText</td>								<td>※メニューの背景色（メニューテキスト表示エリア）</td></tr>
+				<tr><td>MenuText</td>									<td>※メニューの文字色</td></tr>
+				<tr><td>MenuTextDisable</td>							<td>※メニューの文字色（無効状態）</td></tr>
+				<tr><td>MenuSelectBorder</td>							<td>※メニューの選択枠</td></tr>
+				<tr><td>MenuSelectBack</td>								<td>※メニューの選択背景</td></tr>
+				<tr><td>MenuSelectBorderDisable</td>					<td>※メニューの選択枠（無効状態）</td></tr>
+				<tr><td>MenuSeparator</td>								<td>※メニューのセパレータ</td></tr>
+			</table>
+			<p>
+				※メニューの色は[Menu]セクションのColorModeキーを「1」にすることで反映されます。（デフォルトではシステムカラーで描画されます。）<br>
+			</p>
+		</div>
+
+		<h3 id="sectionandkey_mainwindow">[MainWindow]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				メインウィンドウ全般の設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>BorderWidth</td>								<td>ウィンドウ枠の幅[px]（左,右,下）</td></tr>
+				<tr><td>MaxBorderWidth</td>								<td>最大化時ウィンドウ枠の幅[px]（左,右,下）</td></tr>
+				<tr><td>Round</td>										<td>ウィンドウの角の丸み[0～4]（左上,右上,左下,右下[0～4]値が大きいほど丸くなる）</td></tr>
+				<tr><td>RoundShade</td>									<td>ウィンドウシェード時のウィンドウの角の丸み[0～4]（左上,右上,左下,右下[0～4]）</td></tr>
+				<tr><td>MinSize</td>									<td>ウィンドウの最小サイズ[px]（最小xサイズ,最小yサイズ）</td></tr>
+				<tr><td>SpliterWidth</td>								<td>スプリッターの幅[px]（1～16）</td></tr>
+				<tr><td>Font</td>										<td>クライアント領域内のフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>MessagePosition</td>							<td>メッセージ表示位置[px]（x座標,y座標）</td></tr>
+				<tr><td>MessageLineHeight</td>							<td>メッセージの行間[px]</td></tr>
+				<tr><td>PsswordBoxFont</td>								<td>パスワード入力ボックスのフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>PsswordBoxSize</td>								<td>パスワード入力ボックスの大きさ[px]（幅,高さ）</td></tr>
+				<tr><td>PsswordBoxPadding</td>							<td>パスワード入力ボックスの内側余白[px]（上,右,下,左）</td></tr>
+				<tr><td>PsswordBoxMargin</td>							<td>パスワード入力ボックスの外側余白[px]（上,右,下,左）</td></tr>
+				<tr><td>PsswordButtonSize</td>							<td>パスワードOKボタンの大きさ[px]（幅,高さ）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_titlebar">[TitleBar]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				タイトルバーの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>Font</td>										<td>フォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>Height</td>										<td>タイトルバーの高さ[px]（タブ非表示時,タブ表示時,シェード時）</td></tr>
+				<tr><td>SystemIconPosition</td>							<td>システムアイコン表示位置[px]（x座標,y座標）</td></tr>
+				<tr><td>TextPosition</td>								<td>タイトルバー文字表示x位置[px]（左からの距離）</td></tr>
+				<tr><td>AdjustTextPosition</td>							<td>タイトルバー文字表示y位置調整用[px]（タブ非表示時のタイトルバーの高さの中心からの差）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_tabbar">[TabBar]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				タブバーの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>Height</td>										<td>タブバーの高さ[px]</td></tr>
+				<tr><td>Margin</td>										<td>タブバー全体の余白[px]（上,右,下,左）</td></tr>
+				<tr><td>ItemFont</td>									<td>タブ項目のフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td><s>ItemTextPosition</s></td>					<td><s>タブ項目の文字表示Y座標[px]（通常時,マウスオーバー時,選択時）</s>（Ver.2.0で廃止されました）</td></tr>
+				<tr><td>AdjustTextPosition</td>							<td>タブ項目の文字表示y位置調整用[px]（通常時,マウスオーバー時,選択時）</td></tr>
+				<tr><td>ItemMargin</td>									<td>タブ項目の左右の余白[px]</td></tr>
+				<tr><td>ItemSelectWidth</td>							<td>選択タブ項目の拡張幅[px]</td></tr>
+				<tr><td>ScrollButtonStyle</td>							<td>スクロールボタン配置スタイル[0～2]（0:左揃え 1:左右 2:右揃え）</td></tr>
+				<tr><td>SearchBoxFont</td>								<td>検索ボックスのフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>SearchBoxHeight</td>							<td>検索ボックスの高さ[px]</td></tr>
+				<tr><td>SearchBoxPadding</td>							<td>検索ボックスの内側余白[px]（上、右、下、左）</td></tr>
+				<tr><td>SearchBoxMargin</td>							<td>検索ボックスの外側余白[px]（上、右、下、左）</td></tr>
+				<tr><td>SearchButtonSpace</td>							<td>検索ボタン間の余白[px]</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_list">[List]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				メモ一覧の設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>Font</td>										<td>通常メモのフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>FontSelect</td>									<td>選択メモのフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>FontNodeNum</td>								<td>子ノード数のフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>ItemMarginLeft</td>								<td>項目の左余白[px]</td></tr>
+				<tr><td>IconMarginLeft</td>								<td>アイコンの左余白[px]</td></tr>
+				<tr><td>IconMarginRight</td>							<td>アイコンの右余白[px]</td></tr>
+				<tr><td>IconName</td>									<td>アイコンの名称（アイコン１～アイコン５）（アイコン1,アイコン2,アイコン3,アイコン4,アイコン5）</td></tr>
+				<tr><td>NodeNumberMarginLeft</td>						<td>子ノード数表示時の左余白[px]</td></tr>
+				<tr><td>NodeNumberMarginRight</td>						<td>子ノード数表示時の右余白[px]</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_edit">[Edit]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				編集エリアの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>LineNumberMinDigit</td>							<td>行番号の最小桁数[1～]</td></tr>
+				<tr><td>LineNumberMarginLeft</td>						<td>行番号の左余白[px]（左,右）</td></tr>
+				<tr><td>LineNumberMarginRight</td>						<td>行番号の右余白[px]（左,右）</td></tr>
+				<tr><td>LineNumberSeparator</td>						<td>行番号の区切り線の種類[0～2]（0:なし 1:実線 2:点線）</td></tr>
+				<tr><td>CaretWidth</td>									<td>通常キャレット（文字カーソル）の幅[px]</td></tr>
+				<tr><td>HCaretPosition</td>								<td>横書き時テーマキャレットの調整用位置[px]（x座標,y座標）</td></tr>
+				<tr><td>VCaretPosition</td>								<td>縦書き時テーマキャレットの調整用位置[px]（x座標,y座標）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_calendar">[Calendar]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				編集エリア内のカレンダーの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>Type</td>										<td>カレンダーの表示種類[0～2]（0:表 1:縦 2:横）</td></tr>
+				<tr><td>Layout</td>										<td>カレンダーのレイアウト[0～3]（1:曜日表示 2:日付を6段または32日分に揃える）</td></tr>
+				<tr><td>Margin</td>										<td>カレンダー全体の余白（上、右、下、左）</td></tr>
+				<tr><td>FontMonth</td>									<td>月のフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>FontDay</td>									<td>曜日・日付のフォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>MonthPosition</td>								<td>月の表示位置[px]（x座標,y座標）</td></tr>
+				<tr><td>DayWidth</td>									<td>曜日・日付の幅[px]</td></tr>
+				<tr><td>LineSpace</td>									<td>曜日・日付の行間[px]</td></tr>
+				<tr><td>StartWeek</td>									<td>表形式カレンダーの週始めの曜日[0～6]（0:日 1:月 2:火 3:水 4:木 5:金 6:土）</td></tr>
+				<tr><td>StringMonth</td>								<td>月の文字（1月～12月）（1月～12月の文字をカンマ区切りで指定）</td></tr>
+				<tr><td>StringWeek</td>									<td>曜日の文字（日曜～土曜）（日～土の文字をカンマ区切りで指定）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_backimage">[BackImage]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				テーマの壁紙（編集エリアの背景画像）の設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>Path</td>										<td>背景画像のパス（BMP形式のみ）</td></tr>
+				<tr><td>Position</td>									<td>背景画像の表示位置[0～100%]（x位置,y位置）</td></tr>
+				<tr><td>VRepeat</td>									<td>背景画像を垂直方向に敷き詰めるかどうか（0:しない 1:する）</td></tr>
+				<tr><td>HRepeat</td>									<td>背景画像を水平方向に敷き詰めるかどうか（0:しない 1:する）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_statusbar">[StatusBar]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				ステータスバーの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>Font</td>										<td>フォント（フォント名,フォントサイズ[px],フォントスタイル[0～15]）</td></tr>
+				<tr><td>Height</td>										<td>ステータスバーの高さ[px]</td></tr>
+				<tr><td>MarginLeft</td>									<td>ステータスバー全体の左余白[px]</td></tr>
+				<tr><td>MarginRight</td>								<td>ステータスバー全体の右余白[px]</td></tr>
+				<tr><td><s>TextPosition</s></td>						<td><s>テキスト項目のウィンドウ下からの表示位置[px]</s>（Ver.2.0で廃止されました）</td></tr>
+				<tr><td><s>IconPosition</s></td>						<td><s>アイコン項目のウィンドウ下からの表示位置[px]</s>（Ver.2.0で廃止されました）</td></tr>
+				<tr><td>AdjustTextPosition</td>							<td>テキスト項目の位置調整用[px]</td></tr>
+				<tr><td>AdjustIconPosition</td>							<td>アイコン項目の位置調整用[px]</td></tr>
+				<tr><td>SeparatorPosition</td>							<td>区切り線のウィンドウ下からの表示位置[px]</td></tr>
+				<tr><td>ItemPadding</td>								<td>項目の左右余白[px]</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_scrollbar">[ScrollBar]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				スクロールバーの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>Width</td>										<td>スクロールバーの幅[px]</td></tr>
+				<tr><td>Type</td>										<td>スクロールバーの表示種類[0～2]（0:通常 1:先頭末尾移動ボタン 2:上下ボタンなし）</td></tr>
+				<tr><td>Layout</td>										<td>スクロールバーのレイアウト[0～3]（1:グリップ 2:影 3:グリップと影※影はテーマ画像がある場合のみ有効）</td></tr>
+				<tr><td>Overlap</td>									<td>ボタンとスライダの重ね合わせ幅[px]</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_menu">[Menu]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				ポップアップメニューの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>ColorMode</td>									<td>配色モード（0:システムカラーを使う 1:[Colors]で指定した配色を使う）</td></tr>
+				<tr><td>ShowIcon</td>									<td>アイコンを表示するかどうか（0:表示しない 1:表示する）</td></tr>
+			</table>
+		</div>
+
+		<h3 id="sectionandkey_tasktray">[TaskTray]</h3>
+		<div class="marginbottom_wide">
+			<p>
+				タスクトレイアイコンの設定を行います。<br>
+			</p>
+			<table class="highlighttable" width="100%">
+				<tr><th width="20%">キー</th><th width="80%">説明</th></tr>
+				<tr><td>AnimationSpeed</td>								<td>最小化時のトレイアイコンアニメーション速度[ms]（10ms以上）</td></tr>
+			</table>
+		</div>
+	</div>
+
+
+
+	<h2 id="titlebarbuttonid">タイトルバーボタンID一覧</h2><div class="pagetop"><a href="#header">▲ページトップへ</a></div>
+	<div class="information">
+		<p>
+			タイトルバーには次の機能を持つボタンを複数表示させることができます。ボタンIDは大文字で指定しなければなりません。
+		</p>
+		<table class="highlighttable">
+			<tr><th>ボタンID</th><th>機能</th></tr>
+			<tr><td>EXIT</td>					<td>[ウィンドウ] 終了</td></tr>
+			<tr><td>MAX</td>					<td>[ウィンドウ] 最大化</td></tr>
+			<tr><td>MIN</td>					<td>[ウィンドウ] 最小化</td></tr>
+			<tr><td>TOP</td>					<td>[ウィンドウ] 最前面表示</td></tr>
+			<tr><td>ALPHA</td>					<td>[ウィンドウ] 半透明化</td></tr>
+			<tr><td>SHADE</td>					<td>[ウィンドウ] シェード</td></tr>
+			<tr><td>RESIZE</td>					<td>[ウィンドウ] リサイズ</td></tr>
+			<tr><td>AUTOHIDE</td>				<td>[ウィンドウ] 自動的に隠す</td></tr>
+			<tr><td>LIST</td>					<td>[ウィンドウ] メモ一覧表示</td></tr>
+			<tr><td>TAB</td>					<td>[ウィンドウ] タブ表示</td></tr>
+			<tr><td>STATUS</td>					<td>[ウィンドウ] ステータスバー表示</td></tr>
+			<tr><td>MOVEFOCUS</td>				<td>[ウィンドウ] フォーカス移動</td></tr>
+			<tr><td>TASK</td>					<td>[ウィンドウ] タスク表示切り替え</td></tr>
+			<tr><td>OPTION</td>					<td>[ウィンドウ] オプション</td></tr>
+			<tr><td>MENUTITLEBAR</td>			<td>[メニュー] タイトルバーメニュー</td></tr>
+			<tr><td>MENUMEMO</td>				<td>[メニュー] メモ一覧メニュー</td></tr>
+			<tr><td>MENUTAB</td>				<td>[メニュー] タブメニュー</td></tr>
+			<tr><td>MENUSEARCH</td>				<td>[メニュー] 検索メニュー</td></tr>
+			<tr><td>MENUSELECTMEMO</td>			<td>[メニュー] メモ選択</td></tr>
+			<tr><td>MENUSELECTTAB</td>			<td>[メニュー] タブ選択</td></tr>
+			<tr><td>MENUSELECTTEMPLATE</td>		<td>[メニュー] 定型文</td></tr>
+			<tr><td>MENUSELECTTOOL</td>			<td>[メニュー] ツール</td></tr>
+			<tr><td>MENUSELECTFONT</td>			<td>[メニュー] よく使うフォント</td></tr>
+			<tr><td>MEMOADD</td>				<td>[メモ] 前に追加</td></tr>
+			<tr><td>MEMOADDAFTER</td>			<td>[メモ] 後に追加</td></tr>
+			<tr><td>MEMOADDCHILD</td>			<td>[メモ] 下の階層に追加</td></tr>
+			<tr><td>MEMOADDTOP</td>				<td>[メモ] リスト先頭に追加</td></tr>
+			<tr><td>MEMOADDBOTTOM</td>			<td>[メモ] リスト末尾に追加</td></tr>
+			<tr><td>MEMORENAME</td>				<td>[メモ] 名前の変更</td></tr>
+			<tr><td>MEMODELETE</td>				<td>[メモ] 削除</td></tr>
+			<tr><td>MEMOPREV</td>				<td>[メモ] 前のメモ</td></tr>
+			<tr><td>MEMONEXT</td>				<td>[メモ] 次のメモ</td></tr>
+			<tr><td>MEMOSCROLLUP</td>			<td>[メモ] 上にスクロール</td></tr>
+			<tr><td>MEMOSCROLLDOWN</td>			<td>[メモ] 下にスクロール</td></tr>
+			<tr><td>MEMO1</td>					<td>[メモ] １番目のメモを開く</td></tr>
+			<tr><td>MEMO2</td>					<td>[メモ] ２番目のメモを開く</td></tr>
+			<tr><td>MEMO3</td>					<td>[メモ] ３番目のメモを開く</td></tr>
+			<tr><td>MEMO4</td>					<td>[メモ] ４番目のメモを開く</td></tr>
+			<tr><td>MEMO5</td>					<td>[メモ] ５番目のメモを開く</td></tr>
+			<tr><td>MEMO6</td>					<td>[メモ] ６番目のメモを開く</td></tr>
+			<tr><td>MEMO7</td>					<td>[メモ] ７番目のメモを開く</td></tr>
+			<tr><td>MEMO8</td>					<td>[メモ] ８番目のメモを開く</td></tr>
+			<tr><td>MEMO9</td>					<td>[メモ] ９番目のメモを開く</td></tr>
+			<tr><td>MEMO10</td>					<td>[メモ] １０番目のメモを開く</td></tr>
+			<tr><td>MEMOICON1</td>				<td>[メモ] アイコン１に変更</td></tr>
+			<tr><td>MEMOICON2</td>				<td>[メモ] アイコン２に変更</td></tr>
+			<tr><td>MEMOICON3</td>				<td>[メモ] アイコン３に変更</td></tr>
+			<tr><td>MEMOICON4</td>				<td>[メモ] アイコン４に変更</td></tr>
+			<tr><td>MEMOICON5</td>				<td>[メモ] アイコン５に変更</td></tr>
+			<tr><td>MEMOICONUP</td>				<td>[メモ] アイコン切り替え↑</td></tr>
+			<tr><td>MEMOICONDOWN</td>			<td>[メモ] アイコン切り替え↓</td></tr>
+			<tr><td>MEMOMOVEUP</td>				<td>[メモ] 上に移動</td></tr>
+			<tr><td>MEMOMOVEDOWN</td>			<td>[メモ] 下に移動</td></tr>
+			<tr><td>MEMOTREELEVELUP</td>		<td>[メモ] 左に移動</td></tr>
+			<tr><td>MEMOTREELEVELDOWN</td>		<td>[メモ] 右に移動</td></tr>
+			<tr><td>MEMOTREEOPENCLOSE</td>		<td>[メモ] ツリーの開閉</td></tr>
+			<tr><td>MEMOTREEOPENALL</td>		<td>[メモ] すべてのツリーを開く</td></tr>
+			<tr><td>MEMOTREECLOSEALL</td>		<td>[メモ] すべてのツリーを閉じる</td></tr>
+			<tr><td>MEMOLOCK</td>				<td>[メモ] 編集ロック</td></tr>
+			<tr><td>MEMOPASSWORD</td>			<td>[メモ] パスワード設定</td></tr>
+			<tr><td>MEMOTREEJOIN</td>			<td>[メモ] 結合</td></tr>
+			<tr><td>MEMONAMELINE</td>			<td>[メモ] 一行目をメモ名に設定</td></tr>
+			<tr><td>MEMONAMESELECT</td>			<td>[メモ] 選択テキストをメモ名に設定</td></tr>
+			<tr><td>MEMOSAVE</td>				<td>[メモ] 現在メモの上書き保存</td></tr>
+			<tr><td>MEMOUPDATE</td>				<td>[メモ] メモ一覧更新</td></tr>
+			<tr><td>MEMONAMECOPY</td>			<td>[メモ] 名前をコピー</td></tr>
+			<tr><td>MEMOPATHCOPY</td>			<td>[メモ] パスをコピー</td></tr>
+			<tr><td>MEMOINFO</td>				<td>[メモ] プロパティ</td></tr>
+			<tr><td>MEMOCLIPONOFF</td>			<td>[メモ] クリップON/OFF</td></tr>
+			<tr><td>TABADD</td>					<td>[タブ] 新規タブ作成</td></tr>
+			<tr><td>TABRENAME</td>				<td>[タブ] 名前の変更</td></tr>
+			<tr><td>TABDELETE</td>				<td>[タブ] 削除</td></tr>
+			<tr><td>TABPREV</td>				<td>[タブ] 前のタブ</td></tr>
+			<tr><td>TABNEXT</td>				<td>[タブ] 次のタブ</td></tr>
+			<tr><td>TABMOVELEFT</td>			<td>[タブ] 左に移動</td></tr>
+			<tr><td>TABMOVERIGHT</td>			<td>[タブ] 右に移動</td></tr>
+			<tr><td>TABSCROLLLEFT</td>			<td>[タブ] 左にスクロール</td></tr>
+			<tr><td>TABSCROLLRIGHT</td>			<td>[タブ] 右にスクロール</td></tr>
+			<tr><td>TAB1</td>					<td>[タブ] １番目のタブを開く</td></tr>
+			<tr><td>TAB2</td>					<td>[タブ] ２番目のタブを開く</td></tr>
+			<tr><td>TAB3</td>					<td>[タブ] ３番目のタブを開く</td></tr>
+			<tr><td>TAB4</td>					<td>[タブ] ４番目のタブを開く</td></tr>
+			<tr><td>TAB5</td>					<td>[タブ] ５番目のタブを開く</td></tr>
+			<tr><td>TAB6</td>					<td>[タブ] ６番目のタブを開く</td></tr>
+			<tr><td>TAB7</td>					<td>[タブ] ７番目のタブを開く</td></tr>
+			<tr><td>TAB8</td>					<td>[タブ] ８番目のタブを開く</td></tr>
+			<tr><td>TAB9</td>					<td>[タブ] ９番目のタブを開く</td></tr>
+			<tr><td>TAB10</td>					<td>[タブ] １０番目のタブを開く</td></tr>
+			<tr><td>TABNAMESELECT</td>			<td>[タブ] 選択テキストをタブ名に設定</td></tr>
+			<tr><td>TABNAMECOPY</td>			<td>[タブ] 名前をコピー</td></tr>
+			<tr><td>TABPATHCOPY</td>			<td>[タブ] パスをコピー</td></tr>
+			<tr><td>TABREGIST</td>				<td>[タブ] タブを登録</td></tr>
+			<tr><td>TABRELEASE</td>				<td>[タブ] タブを閉じる</td></tr>
+			<tr><td>TABPATHCHANGE</td>			<td>[タブ] パスを変更</td></tr>
+			<tr><td>TABFOLDEROPEN</td>			<td>[タブ] 保存フォルダを開く</td></tr>
+			<tr><td>TABRELEASEALL</td>			<td>[タブ] すべてのタブを閉じる</td></tr>
+			<tr><td>TABRELEASELEFT</td>			<td>[タブ] 左のタブを閉じる</td></tr>
+			<tr><td>TABRELEASERIGHT</td>		<td>[タブ] 右のタブを閉じる</td></tr>
+			<tr><td>EDITUNDO</td>				<td>[編集] 元に戻す</td></tr>
+			<tr><td>EDITREDO</td>				<td>[編集] やり直す</td></tr>
+			<tr><td>EDITCUT</td>				<td>[編集] 切り取り</td></tr>
+			<tr><td>EDITCOPY</td>				<td>[編集] コピー</td></tr>
+			<tr><td>EDITPASTE</td>				<td>[編集] 貼り付け</td></tr>
+			<tr><td>EDITDELETE</td>				<td>[編集] 削除</td></tr>
+			<tr><td>EDITSELECTALL</td>			<td>[編集] すべて選択</td></tr>
+			<tr><td>EDITLINETOP</td>			<td>[編集] 行の先頭へ移動</td></tr>
+			<tr><td>EDITLINEEND</td>			<td>[編集] 行の末尾へ移動</td></tr>
+			<tr><td>EDITPAGEUP</td>				<td>[編集] １ページ上へ移動</td></tr>
+			<tr><td>EDITPAGEDOWN</td>			<td>[編集] １ページ下へ移動</td></tr>
+			<tr><td>EDITTEXTTOP</td>			<td>[編集] テキストの先頭へ移動</td></tr>
+			<tr><td>EDITTEXTEND</td>			<td>[編集] テキストの末尾へ移動</td></tr>
+			<tr><td>EDITWORDLEFT</td>			<td>[編集] 単語の先頭へ移動</td></tr>
+			<tr><td>EDITWORDRIGHT</td>			<td>[編集] 単語の末尾へ移動</td></tr>
+			<tr><td>EDITDELETEWORDLEFT</td>		<td>[編集] 単語の先頭まで削除</td></tr>
+			<tr><td>EDITDELETEWORDRIGHT</td>	<td>[編集] 単語の末尾まで削除</td></tr>
+			<tr><td>EDITSCROLLUP</td>			<td>[編集] 上にスクロール</td></tr>
+			<tr><td>EDITSCROLLDOWN</td>			<td>[編集] 下にスクロール</td></tr>
+			<tr><td>EDITCHECKLIST</td>			<td>[編集] チェックリスト</td></tr>
+			<tr><td>REVERSECASE</td>			<td>[変換] 大文字/小文字の反転</td></tr>
+			<tr><td>LOWER</td>					<td>[変換] 小文字</td></tr>
+			<tr><td>UPPER</td>					<td>[変換] 大文字</td></tr>
+			<tr><td>HIRAGANA</td>				<td>[変換] ひらがな</td></tr>
+			<tr><td>KATAKAKA</td>				<td>[変換] カタカナ</td></tr>
+			<tr><td>HANKAKU</td>				<td>[変換] 半角</td></tr>
+			<tr><td>ZENKAKU</td>				<td>[変換] 全角</td></tr>
+			<tr><td>EDITTABTOSPACE</td>			<td>[変換] タブをスペースに変換</td></tr>
+			<tr><td>EDITSPACETOTAB</td>			<td>[変換] スペースをタブに変換</td></tr>
+			<tr><td>EDITTABFORMAT</td>			<td>[変換] タブ揃え</td></tr>
+			<tr><td>EDITTABINDENT</td>			<td>[変換] インデント</td></tr>
+			<tr><td>EDITTABUNINDENT</td>		<td>[変換] アンインデント</td></tr>
+			<tr><td>EDITSORTASC</td>			<td>[変換] 行の昇順ソート</td></tr>
+			<tr><td>EDITSORDESC</td>			<td>[変換] 行の降順ソート</td></tr>
+			<tr><td>EDITSORTLOGICALASC</td>		<td>[変換] 行の数値昇順ソート</td></tr>
+			<tr><td>EDITSORTLOGICALDESC</td>	<td>[変換] 行の数値降順ソート</td></tr>
+			<tr><td>EDITSHUFFLE</td>			<td>[変換] 行のシャッフル</td></tr>
+			<tr><td>EDITREVERSE</td>			<td>[変換] 行の逆並べ</td></tr>
+			<tr><td>EDITUNIQ</td>				<td>[変換] 連続する重複行の削除</td></tr>
+			<tr><td>EDITUNIQEX</td>				<td>[変換] 重複行の削除</td></tr>
+			<tr><td>EDITUNIQCOUNT</td>			<td>[変換] 重複行のカウント</td></tr>
+			<tr><td>EDITCALC</td>				<td>[変換] 数式計算</td></tr>
+			<tr><td>EDITSUM</td>				<td>[変換] 合計</td></tr>
+			<tr><td>EDITCALCSUM</td>			<td>[変換] 計算結果の合計</td></tr>
+			<tr><td>EDITFONT</td>				<td>[書式] フォント変更</td></tr>
+			<tr><td>EDITFONTPLUS</td>			<td>[書式] 文字サイズ＋</td></tr>
+			<tr><td>EDITFONTMINUS</td>			<td>[書式] 文字サイズ－</td></tr>
+			<tr><td>EDITSPACEPLUS</td>			<td>[書式] 行間＋</td></tr>
+			<tr><td>EDITSPACEMINUS</td>			<td>[書式] 行間－</td></tr>
+			<tr><td>EDITWORDWRAP</td>			<td>[書式] 折り返し切り替え</td></tr>
+			<tr><td>EDITVERTICAL</td>			<td>[書式] 縦書き</td></tr>
+			<tr><td>EDITTABPLUS</td>			<td>[書式] タブ幅＋</td></tr>
+			<tr><td>EDITTABMINUS</td>			<td>[書式] タブ幅－</td></tr>
+			<tr><td>EDITSOFTTAB</td>			<td>[書式] ソフトタブ</td></tr>
+			<tr><td>EDITAUTOINDENT</td>			<td>[書式] オートインデント</td></tr>
+			<tr><td>EDITSHOWLINENUMBER</td>		<td>[書式] 行番号の表示</td></tr>
+			<tr><td>EDITSHOWPAGENUMBER</td>		<td>[書式] ページ番号の表示</td></tr>
+			<tr><td>EDITSHOWSPACE</td>			<td>[書式] 空白の表示</td></tr>
+			<tr><td>EDITSHOWRETURN</td>			<td>[書式] 改行の表示</td></tr>
+			<tr><td>EDITSHOWGUIDELINE</td>		<td>[書式] ガイドラインの表示</td></tr>
+			<tr><td>EDITBACK</td>				<td>[書式] 壁紙切り替え</td></tr>
+			<tr><td>SEARCH</td>					<td>[検索] 検索</td></tr>
+			<tr><td>SEARCHPREV</td>				<td>[検索] 前へ検索</td></tr>
+			<tr><td>SEARCHNEXT</td>				<td>[検索] 次へ検索</td></tr>
+			<tr><td>SEARCHPREVTEXT</td>			<td>[検索] 選択テキストを前へ検索</td></tr>
+			<tr><td>SEARCHNEXTTEXT</td>			<td>[検索] 選択テキストを次へ検索</td></tr>
+			<tr><td>REPLACE</td>				<td>[検索] 置換</td></tr>
+			<tr><td>SEARCHALL</td>				<td>[検索] 全検索ウィンドウ表示</td></tr>
+			<tr><td>EDITJUMP</td>				<td>[検索] 指定行へ移動</td></tr>
+		</table>
+	</div>
+
+
+
+	<h2 id="sound">サウンド</h2><div class="pagetop"><a href="#header">▲ページトップへ</a></div>
+	<div class="information">
+		<p>
+			操作音は以下の名称のWAVE形式の音声ファイルを各テーマフォルダに置くことにより再生することができます。
+		</p>
+		<table class="highlighttable">
+			<tr><th>種類</th><th>ファイル名</th><th>操作</th></tr>
+
+			<tr><th rowspan="11">ウィンドウ</th>
+				<td>maxin.wav</td>								<td>最大化されたとき</td></tr>
+			<tr><td>maxout.wav</td>								<td>最大化から元に戻ったとき</td></tr>
+			<tr><td>minin.wav</td>								<td>最小化されたとき</td></tr>
+			<tr><td>minout.wav</td>								<td>最小化から元に戻ったとき</td></tr>
+			<tr><td>opaquein.wav</td>							<td>半透明化されたとき</td></tr>
+			<tr><td>opaqueout.wav</td>							<td>半透明化を解除したとき</td></tr>
+			<tr><td>shadein.wav</td>							<td>タイトルバーだけの状態になったとき</td></tr>
+			<tr><td>shadeout.wav</td>							<td>タイトルバーだけの状態から元に戻ったとき</td></tr>
+			<tr><td>topin.wav</td>								<td>最前面化されたとき</td></tr>
+			<tr><td>topout.wav</td>								<td>最前面化を解除したとき</td></tr>
+			<tr><td>resize.wav</td>								<td>リサイズ機能を実行したとき</td></tr>
+
+			<tr><th rowspan="8">メモ</th>
+				<td>memoliston.wav</td>							<td>メモ一覧を表示したとき</td></tr>
+			<tr><td>memolistoff.wav</td>						<td>メモ一覧を非表示にしたとき</td></tr>
+			<tr><td>memonew.wav</td>							<td>メモを作成したとき</td></tr>
+			<tr><td>memoopen.wav</td>							<td>メモを開いたとき</td></tr>
+			<tr><td>memodelete.wav</td>							<td>メモを削除したとき</td></tr>
+			<tr><td>memoicon.wav</td>							<td>メモのアイコンを変更したとき</td></tr>
+			<tr><td>memolock.wav</td>							<td>メモをロックしたとき</td></tr>
+			<tr><td>memounlock.wav</td>							<td>メモのロックを解除したとき</td></tr>
+
+			<tr><th rowspan="2">タブ</th>
+				<td>tabon.wav</td>								<td>タブを表示したとき</td></tr>
+			<tr><td>taboff.wav</td>								<td>タブを非表示にしたとき</td></tr>
+
+			<tr><th rowspan="3">オートクリップ</th>
+				<td>autoclipon.wav</td>							<td>オートクリップON</td></tr>
+			<tr><td>autoclipoff.wav</td>						<td>オートクリップOFF</td></tr>
+			<tr><td>clipcopy.wav</td>							<td>オートクリップで張り付けたとき</td></tr>
+
+			<tr><th rowspan="12">編集</th>
+				<td>editchar.wav</td>							<td>文字を入力したとき</td></tr>
+			<tr><td>editenter.wav</td>							<td>改行したとき</td></tr>
+			<tr><td>editcut.wav</td>							<td>切り取り</td></tr>
+			<tr><td>editcopy.wav</td>							<td>コピー</td></tr>
+			<tr><td>editpaste.wav</td>							<td>貼り付け</td></tr>
+			<tr><td>editdelete.wav</td>							<td>削除</td></tr>
+			<tr><td>insert.wav</td>								<td>定型文を貼り付けたとき</td></tr>
+			<tr><td>editcheckon.wav</td>						<td>チェック状態をONにしたとき</td></tr>
+			<tr><td>editcheckoff.wav</td>						<td>チェック状態をOFFにしたとき</td></tr>
+			<tr><td>editcalc.wav</td>							<td>数式計算を行ったとき</td></tr>
+			<tr><td>editsum.wav</td>							<td>合計したとき</td></tr>
+			<tr><td>editnotfound.wav</td>						<td>検索で見つからないとき</td></tr>
+		</table>
+	</div>
+
+
+
+	<h2 id="system">その他注意事項まとめ</h2><div class="pagetop"><a href="#header">▲ページトップへ</a></div>
+	<div class="information">
+		<p>
+			テーマ画像の大きさや、テーマ画像から切り出す画像の配置は自由に作成することができますが、タスクトレイアイコンはテーマ画像の左上座標から水平方向に並べる必要があります。<br>
+		</p>
+	</div>
+
+
+
+	<div class="information">
+		<a href="../index.html">戻る</a>
+	</div>
+
+
+
+	<div class="footer">
+		<div class="footerright">
+			<p>
+				&copy; 2014 PapparaSoft
+				<a href="http://www.cc9.ne.jp/~pappara/">http://www.cc9.ne.jp/~pappara/</a><br>
+				Mail: <a href="mailto:tenku.ginga&#64;gmail.com">tenku.ginga&#64;gmail.com</a>
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>

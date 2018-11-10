@@ -1,0 +1,366 @@
+﻿◆◆◆【 内部リンク設置あり】◆◆◆
+・出産育児一時金
+・出産手当金
+・育児休業給付金
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+
+<h2>産休・育休自動計算ツール</h2>
+<div class="contact-form">
+  <div class="item">
+    <label class="label">出産予定日：</label>
+    <div style="width:50%;"><input class="cal" type="text" id="datepicker"></div>
+  </div>
+
+  <div class="item">
+    <label class="label">出産の人数：</label>
+    <div>
+      <select id="baby_num" style="width:50%;">
+        <option value="1" selected>1人</option>
+        <option value="2">双子以上</option>
+      </select> 
+    </div>
+  </div>
+
+  <div class="item">
+    <label class="label"><a href="">毎月の額面給与（直近6ヶ月の平均)</a>：</label>
+    <div style="width:50%;">
+     <input id="salary_half" class="cal" type="tel" value="200000" onkeyup="if(event.keyCode==9||event.keyCode==16) return; this.value=this.value.replace(/[^0-9]+/i,'');">
+    </div>
+  </div>
+
+  <div class="item">
+    <label class="label"><a href="">毎月の額面給与（直近12ヶ月の平均）</a>：</label>
+    <div style="width:50%;">
+     <input id="salary_year " class="cal" type="tel" value="200000" onkeyup="if(event.keyCode==9||event.keyCode==16) return; this.value=this.value.replace(/[^0-9]+/i,'');">
+    </div>
+    <div>
+      <input class="" type="radio" name="salaryRadios" checked value="0">直近の給与が12ヶ月以上ある場合
+      <input class="" type="radio" name="salaryRadios" value="1">直近の給与が12ヶ月未満の場合
+    </div>
+  </div>
+
+  <div class="item">
+    <label class="label">育休の期間：</label>
+    <input class="" type="radio" name="optionsRadios" checked value="0">子供が1歳まで取得する場合
+    <input class="" type="radio" name="optionsRadios" value="1">子供が1歳6ヶ月まで取得する場合
+    <input class="" type="radio" name="optionsRadios" value="2">子供が2歳まで取得する場合
+  </div>
+
+  <div style="text-align:center; margin-bottom:1em; margin-top:1em;">
+     <button class="cp_btn" id="cal_btn_3">計算する</button>
+  </div>
+</div>
+<p id="scroll_point"></p>
+<h2>産休手当・育児休業給付金計算結果</h2>
+<div class="result_area">
+  <p class="title">受け取れる給付金</p>
+  <table id="output_tbl_1"></table>
+
+  <p class="title">給付金の受け取れる時期と金額</p>
+  <table id="output_tbl_2"></table>
+</div>
+<div style="text-align:center; margin-bottom:1em; margin-top:2em;">
+   <a href="/lifestyle/calculation/"><button class="link_btn" style="2px solid #00bfff;">出産予定日の自動計算へ</button></a>
+</div>
+<hr>
+[toc heading_levels="2,3"]
+<p id="section1"></p>
+<h2>出産育児一時金について</h2>
+ここでは、出産育児一時金について説明します。
+どのような制度なのか？給付条件や給付額は？
+などを説明していきます。
+[box class="blue_box" title="計算式"]
+<ol>
+<li>出産育児一時金ってなに？</li>
+<li>出産育児一時金の支給額は？</li>
+<li>出産育児一時金の給付条件とは？</li>
+</ol>
+[/box]
+<h3>出産育児一時期とは？</h3>
+<p>
+妊娠や出産は健康保険が効かないのはご承知だと思います。
+
+しかし、妊娠や出産にはとても費用がかかります。
+そこで、妊娠や出産にかかる費用による家計の負担を軽減する目的とした制度が、
+「出産育児一時金」です。
+
+とくに、お産費用は高額なため、
+お産費用をサポートするという意味合いとして一般的には認知されているでしょう。
+
+支払いは、
+・会社勤めの場合 ⇒ 健康保険組合
+・主人の扶養に入っている場合 ⇒ 健康保険組合
+・国民健康保険加入の場合 ⇒ 各自治体
+からになります。
+</p>
+
+<h3>支給額はいくら？</h3>
+<p>
+気になる支給額ですが、
+赤ちゃん一人につき「42万円」支給されます。
+
+また、双子以上の場合は、
+「赤ちゃんの数×42万円」支給されます。
+</p>
+<h3>出産育児一時金の給付条件とは？</h3>
+<p>
+ただし、出産育児一時金を利用するためには条件があります。
+
+条件：
+・健康保険に加入していること
+・または、健康保険に加入している方の配偶者または扶養家族
+・妊娠4ヶ月（85日）以上での出産の場合
+
+この条件に該当する場合は、
+早産や流産、死産、人工妊娠中絶のいずれの場合も支給対象となります。
+
+ただし、以下の場合は減額されますのでご注意ください。
+・妊娠22週未満での出産
+・産科医療保障制度に未加入の医療機関等での出産の場合
+⇒「40万4千円」となります。
+
+補足）
+産科医療保障制度とは、
+医療機関等が加入する制度で、加入機関で制度対象となる出産をされ、万一、分娩時の何らかの理由により重度の脳性まひとなった場合、赤ちゃんとご家族の経済的負担を補償するものです。。
+</p>
+<p id="section2"></p>
+<h2>出産手当金とは？</h2>
+<p>
+ここでは、出産手当金について説明します。
+どんな制度なのか？支給額はどれくら？
+などを説明していきます。
+</p>
+[box class="blue_box" title="ここでのポイント"]
+<ol>
+<li>出産手当金ってなに？</li>
+<li>出産手当金の支給額は？</li>
+<li>出産手当金の条件は？</li>
+</ol>
+[/box]
+<h3>出産手当金とは</h3>
+<p>
+出産手当金とは、
+働くママを応援する制度のことです。
+
+働きたくても出産のためには会社を休まなくてはいけません。
+そんな出産のために会社を休んだ時に支給されるのが、
+出産手当金です。
+
+では、一体どれくらいの支給額なのでしょうか？
+</p>
+<h3>出産手当金の支給額とは</h3>
+<p>
+出産手当金の支給額は、
+［支給開始日以前の継続した12ヶ月間の各月の標準報酬月額］を平均した額］ ÷ 30日× 2/3
+です。
+
+標準報酬金額について補足します。
+
+標準報酬月額とは、
+毎月の基本給に加え、残業代、各種手当、交通費などを含んだ総支給額のことです。
+
+この金額が、対象期間で支給されます。
+対象期間については、下記をご覧ください。
+<?php // 対象期間?>
+[kanren class="kanren2" postid="1997"]
+<p>
+<h3>出産手当金の条件？</h3>
+<p>
+主な条件としては、下記3点になります。
+
+・会社の健康保険に加入している被保険者や公務員
+・妊娠4ヶ月（85日）以降の出産
+・出産のために休業している
+
+ただし、退職者も適用される場合があります。
+こちらに関しては、別の記事で説明します。
+<?php // 出産手当金?>
+
+</p>
+
+<h2>育児休業給付金について</h2>
+<p>
+ここでは、育児休業給付金について説明します。
+育児休業給付金はどんな制度？給付額は？
+などを説明してきます。
+</p>
+[box class="blue_box" title="ここでのまとめ"]
+<ol>
+<li>育児休業給付金ってなに？</li>
+<li>育児休業給付金の支給額は？</li>
+<li>育児休業給付金の給付条件とは？</li>
+</ol>
+[/box]
+<h3>育児休業給付金とは？</h3>
+<p>
+育児休業給付金とは、
+会社員が育児休業中に申請することでもらえる給付金のことです。
+
+育児休業中は仕事を休む必要があり、
+かといって会社も今までの給料を支払うわけにもいきません。
+
+そのような人を対象に国がお金を給付し、
+育児休業中の人の生活を困らないようにするためにある制度です。
+</p>
+<h3>育児休業給付金の支給額は？</h3>
+<p>
+支給額は、
+育児休業開始から6か月（180日）までと
+育児休業開始から6か月経過後で変わります。
+
+6か月までの場合：
+標準報酬月額　×　支給日数（通常30日）　×　67％
+
+6か月経過後の場合：
+標準報酬月額　×　支給日数（通常30日）　×　50％
+
+また、標準報酬月額は
+「直近6ヶ月」の月平均になります。
+
+産休手当金の場合は、「直近12カ月」の月平均ですので、
+異なることに気をつけてください。
+</p>
+
+<h3>育児休業給付金の条件とは？</h3>
+<p>
+育児休業給付金の条件は、下記になります。
+
+・1歳未満の子供がいる（延長することで、最長2歳まで延長可能）
+・雇用保険に加入している
+・育休前の2年間で、11日以上働いた月が12か月以上ある
+・育児休業期間中に、休業前の1か月分の賃金の8割以上を支払われていない
+・育児休業中に就業している日数が1か月に10日以下であること
+です。
+
+給付の詳しい期間については、こちらの記事を参考にしてください。
+[kanren class="kanren2" postid="1997"]
+
+また、育児休業給付金に関しての詳しい説明は、
+別の記事にて紹介します。
+<?php //育児休業給付金?>
+</p>
+
+<style>
+.title {
+position: relative;
+padding: 0.6em;
+background: -webkit-repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+background: repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+border-radius: 3px;
+border-left: 10px solid #ffc778;
+margin-bottom: 3px !important;
+font-size: 1.2em;
+font-weight: bold;
+}
+td {
+  border-right: 0px !important;
+  border-left: 0px !important;
+  text-align: center !important;
+}
+table#output_tbl_1, table#output_tbl_2 {
+  background-color: #fff;
+  font-size: 0.92em;
+}
+table#output_tbl_2 tr:nth-child(2n+1) {
+  background-color:#FFCCCC;
+}
+.tbl1_left {
+  width: 60%;
+}
+.tbl1_right {
+  width: 40%;
+  color: tomato;
+}
+.tbl2_left {
+  width: 35%;
+}
+.tbl2_center {
+  width: 25%;
+}
+.tbl2_right {
+  width: 40%;
+  color: blue;
+}
+input.output {
+  margin-top: -0.3em;
+}
+.result_area {
+  border: 1px solid #ccc;
+  background-color: #FFFFEE;
+  padding: 1em;
+  margin-top: -1.2em;
+  padding-top: 2em;
+}
+.contact-form {
+  margin-top: -1.1em;
+  border: 1px solid #ccc;
+  background-color: #fff0f5;
+  padding: 1em;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+.contact-form .item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 10%;
+  width: 90% !important;
+  padding: 0px;
+}
+.contact-form .item .label {
+  float: left;
+  margin:0;
+}
+.contact-form label{
+  margin-bottom: -1em;
+}
+.contact-form .item input[type=text],
+.cal {
+  display: block;
+  padding: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.contact-form .item ::placeholder {
+  color: #ccc;
+}
+.cp_btn {
+	background-color: #fff;
+	width: 50%;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 3px;
+}
+.link_btn {
+	background-color: #fff;
+	width: 60%;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #00bfff;
+	border: 2px solid #00bfff;
+	border-radius: 3px;
+}
+/* 年プルダウンの変更 */
+select.ui-datepicker-year{
+  height: 2em!important;      /* 高さ調整 */
+  margin-right:0px!important; /* 「年」との余白設定 */
+  width:80px!important;       /* 幅調整 */
+  float: left;
+}
+/* 月プルダウンの変更 */
+select.ui-datepicker-month{
+  height: 2em!important;      /* 高さ調整 */
+  margin-left:10px!important;  /* 「年」との余白設定 */
+  width:60px!important;       /* 幅調整 */
+  float: right;
+}
+</style>

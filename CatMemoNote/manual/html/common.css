@@ -1,0 +1,365 @@
+@charset "utf-8";
+/********************************************************************************
+	CSS
+	CatMemoNote
+********************************************************************************/
+
+
+/* ------------------------------------------------------------------------------
+	デフォルト
+------------------------------------------------------------------------------ */
+	* {
+		margin: 0px;
+		padding: 0px;
+		border: 0px;
+		font-size: 100%;
+		font-family: Meiryo, 'メイリオ', 'Lucida Grande', 'segoe UI', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+	}
+	body {
+		background-color: #FFFFFF;
+		line-height: 1.5;
+		color: #333333;
+		font-size: 80%;
+		margin: 0.5em 2% 1em 3%;
+	}
+	a {
+		text-decoration: none;
+		color: #2255AA;
+	}
+	a:visited  {
+		color: #2255AA;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #4477CC;
+		text-decoration: underline;
+	}
+	a:active {
+		color: #4477CC;
+		text-decoration: underline;
+	}
+	h1 {
+		margin: 1em 0em 1em 0em;
+		white-space: nowrap;
+		font-weight: bold;
+		font-size: 250%;
+		color: #507CAA;
+	}
+	h2 {
+		border-width: 1px;
+		border-color: #82A5FF;
+		border-style: solid;
+		background-color: #82A5FF;
+		margin: 0.5em 0em 0.2em 0em;
+		padding: 0.2em 0.5em 0.1em 0.5em;
+		white-space: nowrap;
+		font-size: 150%;
+		color: #507CAA;
+		background: url('./back.png') repeat-x 0px -2px;
+		box-shadow: 3px 3px 3px #DFEAFD;
+		-moz-box-shadow: 3px 3px 3px #DFEAFD;
+		-webkit-box-shadow: 3px 3px 3px #DFEAFD;
+		-o-box-shadow: 3px 3px 3px #DFEAFD;
+		-ms-box-shadow: 3px 3px 3px #DFEAFD;
+		border-radius: 8px;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-o-border-radius: 8px;
+		-ms-border-radius: 8px;
+	}
+
+	h3 {
+		border-width: 0px 0px 2px 0px;
+		border-color: #FFFFFF #FFFFFF #BDD3FF #FFFFFF;
+		border-color: #FFFFFF #FFFFFF #BBBBBB #FFFFFF;
+		border-style: dotted;
+		margin: 0.5em 0em 0.5em 0em;
+		padding: 0.2em 0.5em 0em 0.5em;
+		white-space: nowrap;
+		font-size: 120%;
+		color: #333333;
+	}
+	img {
+		border: 0px solid #000000;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+	ul, ol {
+		margin: 0em 1em 1em 1.5em;
+		padding: 0em;
+	}
+	ul li {
+		list-style-type: circle;
+		margin: 0em;
+		padding: 0em;
+		list-style-image: url('./point.png');
+	}
+	ol li {
+		list-style-type: decimal;
+		font-weight: bold;
+		color: #507CAA;
+	}
+	ol li span {
+		font-weight: normal;
+		color: #333333;
+	}
+	table {
+		background-color: #FFFFFF;
+		border-top: 1px solid #82A5FF;
+		border-left: 1px solid #82A5FF;
+		border-collapse: collapse;
+		border-spacing: 0;
+		empty-cells: show;
+		margin-bottom: 1em;
+	}
+	th {
+		background-color: #DFEAFD;
+		background-position: left top;
+		border-right: 1px solid #82A5FF;
+		border-bottom: 1px solid #82A5FF;
+		padding: 0.1em 0.8em;
+		text-align: center;
+		font-size: 100%;
+		line-height: 1.5em;
+		color: #112233;
+	}
+	th.textleft{
+		text-align: left;
+	}
+	td {
+		border-right: 1px solid #82A5FF;
+		border-bottom: 1px solid #82A5FF;
+		padding: 0px 0.8em;
+		font-size: 100%;
+		line-height: 1.5em;
+	}
+	p {
+		margin: 0em 0em 1em 0em;
+	}
+
+
+/* ------------------------------------------------------------------------------
+	ベースレイアウト
+------------------------------------------------------------------------------ */
+
+	/* メインメニュー */
+	.mainmenu {
+		position: fixed;
+		_position: absolute;
+		left: 1em;
+		top: 1em;
+		width: 15em;
+		height: 100%;
+		margin: 1em;
+		padding: 0;
+		text-align: left;
+	}
+	.mainmenu ul {
+		margin: 0em 0em 0em 0em;
+		padding: 0em 0em 0em 0em;
+	}
+	.mainmenu li {
+		margin: 0em;
+		padding: 0em;
+		list-style-type: none;
+		list-style-image: url('');
+	}
+
+	/* メインコンテンツ */
+	.maincontents {
+		_overflow: auto;
+		margin: 0em 0em 0em 14em;
+		height: 100%;
+		padding: 0em 1em 1em 1em;
+		z-index: 1;
+	}
+
+	/* 本文 */
+	.information {
+		margin: 1em 0.5em 6em 1em;
+	}
+
+	/* 字下げ */
+	.indent {
+		padding-left: 1em;
+	}
+
+	/* 2行目以降の字下げ */
+	.indentline {
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+
+	/* 行末余白 */
+	.marginbottom {
+		margin-bottom: 2em;
+	}
+
+	/* 行末余白 */
+	.marginbottom_wide {
+		margin-bottom: 4em;
+	}
+
+	/* フッター */
+	.footer {
+		margin: 10em 2em 1em 1em;
+	}
+	.footerright {
+		text-align: right;
+	}
+
+	/* 構文 */
+	.syntax {
+		background-color: #DFEAFD;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #82A5FF;
+		padding: 0.3em;
+		font-size: 100%;
+		-moz-border-radius: 3px; 
+		-webkit-border-radius: 3px;
+	}
+
+	/* 更新履歴 */
+	.versionup {
+		font-size: 85%;
+	}
+
+	/* 目次へ戻るリンク */
+	.pagetop {
+		margin: -2.3em 2em 2.3em 0;
+		line-height: 1.5;
+		text-align: right;
+	}
+	.pagetop a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #507CAA;
+	}
+	.pagetop a:hover {
+		text-decoration: underline;
+		color: #507CAA;
+	}
+
+	/* 表のマウスオーバー装飾 */
+	.highlighttable tr:hover {
+		background-color: #DFEAFD;
+	}
+
+	/* 表の背景色強調（変更点など） */
+	.highlight {
+		background-color: #FFE0E0;
+	}
+
+	/* 小さく */
+	.small {
+		font-size: 100%;
+	}
+
+	/* 注釈 */
+	.comment {
+		cursor: help;
+	}
+
+	/* 注意点 */
+	.attention {
+		color: #FF0000;
+	}
+
+	/* 詳細 */
+	.detail {
+		color: #ACACAC;
+	}
+
+	/* 定型文特殊記号 */
+	.template_symbol {
+		color: #AA00EE;
+	}
+	/* 演算子 */
+	.operator {
+		color: #AA00EE;
+	}
+	/* プレフィックス */
+	.prefix {
+		color: #AA00EE;
+	}
+	/* 関数 */
+	.function {
+		color: #AA00EE;
+	}
+	/* 正規表現メタ文字 */
+	.re_meta {
+		color: #AA00EE;
+	}
+	/* チェックリスト記号 */
+	.checkmark {
+	}
+
+	/* 説明用 */
+	.ringo {
+		color: #F03333;
+	}
+	.mikan {
+		color: #F0AA33;
+	}
+	.meron {
+		color: #33DD33;
+	}
+	.grape {
+		color: #AA33DD;
+	}
+
+	/* リンク「URL」 */
+	.link_url {
+		text-decoration: underline;
+		color: #0088FF;
+	}
+	/* リンク「メールアドレス」 */
+	.link_mail {
+		text-decoration: underline;
+		color: #FF0088;
+	}
+	/* リンク「ファイルパス」 */
+	.link_path {
+		text-decoration: underline;
+		color: #FF8800;
+	}
+	/* リンク「メモリンク」 */
+	.link_memo {
+		text-decoration: underline;
+		color: #00AA00;
+	}
+
+	/* 回り込み左 */
+	.floatleft {
+		float: left;
+		margin: 0em 1em 1em 1em;
+	}
+	/* 回り込み右 */
+	.floatright {
+		float: right;
+		margin: 0em 1em 1em 1em;
+	}
+	/* 回り込みクリア */
+	.floatclear {
+		clear: both;
+	}
+	/* 段組左 */
+	.block_left {
+		float: left;
+		width: 33%;
+	}
+	/* 段組中 */
+	.block_center {
+		float: left;
+		width: 33%;
+	}
+	/* 段組右 */
+	.block_right {
+	}
+
+	/* 過去の更新履歴の表示リンク */
+	a.history_dropdown:hover {
+		cursor: pointer;
+	}
+

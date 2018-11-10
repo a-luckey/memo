@@ -1,0 +1,316 @@
+﻿<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+
+<div class="tab_area">
+<div class="tab_tbl">
+   <div class="tab_cell"><div class="link_cell"><a href="/lifestyle/maternity_calculation/">予定日計算</a></div></div>
+   <div class="tab_cell"><div class="link_cell"><a href="/lifestyle/calculation/">育休期間</a></div></div>
+   <div class="tab_cell"><div class="link_cell"><a href="#">給付金(ママ)</a></div></div>
+   <div class="tab_cell"><div class="link_cell checked_cell"><a href="/lifestyle/payment_papa/">給付金(パパ)</a></div></div>
+</div>
+</div>
+
+<h2>産休・育休自動計算ツール</h2>
+<div class="contact-form">
+  <div class="item">
+    <label class="label">出産予定日：</label>
+    <div style="width:50%;"><input class="cal" type="text" id="datepicker"></div>
+  </div>
+
+  <div class="item">
+    <label class="label">出産の人数：</label>
+    <div>
+      <select id="baby_num" style="width:50%;">
+        <option value="1" selected>1人</option>
+        <option value="2">双子以上</option>
+      </select> 
+    </div>
+  </div>
+
+  <div class="item">
+    <label class="label"><a href="">毎月の額面給与（直近6ヶ月の平均)</a>：</label>
+    <div style="width:50%;">
+     <input id="salary_half" class="cal" type="tel" value="200000" onkeyup="if(event.keyCode==9||event.keyCode==16) return; this.value=this.value.replace(/[^0-9]+/i,'');">
+    </div>
+  </div>
+  <div class="item">
+    <label class="label"><a href="">毎月の額面給与（直近12ヶ月の平均）</a>：</label>
+    <div style="width:50%;">
+
+     <input id="salary_year" class="cal" type="tel" value="200000" onkeyup="if(event.keyCode==9||event.keyCode==16) return; this.value=this.value.replace(/[^0-9]+/i,'');">
+    </div>
+    <div>
+      <input class="" type="radio" name="salaryRadios" checked value="0">直近の給与が12ヶ月以上ある場合
+      <input class="" type="radio" name="salaryRadios" value="1">直近の給与が12ヶ月未満の場合
+    </div>
+  </div>
+
+  <div class="item">
+    <label class="label">育休の期間：</label>
+    <input class="" type="radio" name="optionsRadios" checked value="0">子供が1歳まで取得する場合
+    <input class="" type="radio" name="optionsRadios" value="1">子供が1歳6ヶ月まで取得する場合
+    <input class="" type="radio" name="optionsRadios" value="2">子供が2歳まで取得する場合
+  </div>
+
+  <div style="text-align:center; margin-bottom:1em; margin-top:1em;">
+     <button class="cp_btn" id="cal_btn_3">計算する</button>
+  </div>
+</div>
+<p id="scroll_point"></p>
+<h2>産休手当・育児休業給付金計算結果</h2>
+<div class="result_area">
+  <p class="title">受け取れる給付金</p>
+  <table id="output_tbl_1"></table>
+
+  <p class="title">給付金の受け取れる時期と金額</p>
+  <table id="output_tbl_2"></table>
+</div>
+<div style="text-align:center; margin-bottom:1em; margin-top:2em;">
+   <a href="/lifestyle/calculation/"><button class="link_btn" style="2px solid #00bfff;">出産予定日の自動計算へ</button></a>
+</div>
+<hr>
+[toc heading_levels="2,3"]
+<p id="section1"></p>
+<h2>出産育児一時金について</h2>
+ここでは、出産育児一時金について説明します。
+どのような制度なのか？給付条件や給付額は？
+などを説明していきます。
+[box class="blue_box" title="計算式"]
+<ol>
+<li>出産育児一時金ってなに？</li>
+<li>出産育児一時金が給付条件とは？</li>
+<li>支給額はどれくらい？</li>
+</ol>
+[/box]
+<h3>出産育児一時期とは？</h3>
+<p>
+産前休業は、「<strong>双子以上</strong>」の妊娠かどうかでわかれます。
+
+<span class="f_yellow f_bold">【通常の場合】</span>
+⇒<strong>出産予定日を含めて42日前から出産予定日までが産前休業期間となります。</strong>
+
+<span class="f_yellow f_bold">【双子以上の場合】</span>
+⇒<strong>出産予定日を含めて98日前から出産予定日までが産前休業期間となります。</strong>
+
+※出産予定日からの算出になることに注意してください。
+</p>
+
+<h3>産後休業期間って？</h3>
+<p>
+産後休業は、双子以上も同じ日数となります。
+
+<span class="f_yellow f_bold">【産後休業】</span>
+⇒<strong>出産日の翌日から56日後までが産後休業期間となります。</strong>
+
+</p>
+<h3>予定日とずれた場合ってどうなる？</h3>
+<p>
+<span class="f_yellow f_bold">予定日がずれた場合は</span>、
+産前休業期間が出産日に終了し、
+出産日を<span class="f_red f_bold">起算日</span>として、産後休業期間が開始します。
+
+また、育児休業期間も同様に変更します。
+</p>
+<p id="section2"></p>
+<h2>パパ・ママ育休プラスとは？</h2>
+<p>
+ここでは、<strong>パパ・ママ育休プラス制度</strong>について説明します。
+</p>
+[box class="blue_box" title="ここでのポイント"]
+<ol>
+<li>パパ・ママ育休プラスとは</li>
+<li>パパ・ママ育休プラスのメリット</li>
+<li>取得条件</li>
+</ol>
+[/box]
+<h3>パパ・ママ育休プラスとは</h3>
+<p>
+「<strong>パパ・ママ育休プラス</strong>」とは、
+2010年からスタートした、<span class="f_red f_bold">両親（パパとママ）がともに</span>育児休業を取得する場合の特例です。
+
+簡単に説明すると、
+生まれた赤ちゃんの母親だけでなく、父親も育児休業を取得することで、
+原則赤ちゃんが1歳になるまでしか取得できない育児休業期間が、
+<strong>2か月延長</strong>の<span class="f_red f_bold">1歳2か月</span>まで期間が延びることです。
+
+ただし、ここで注意点があり、
+母親と父親の<span class="f_blue f_bold">2人とも</span>が、赤ちゃんが1歳2ヶ月まで休みを取得することはできない点です。
+
+赤ちゃんが1歳までの間は、父親と母親の2人とも育児休業を取得できますが、
+1歳から1歳2か月までの間は、父親か母親のどちらのみしかお休みを延長できないということです。
+</p>
+<h3>パパ・ママ育休プラスのメリットって？</h3>
+<p>
+前述しましたが、
+上限1年間の休業期間が<span class="f_blue f_bold">2か月延長</span>できる点は大きなメリットです。
+
+また、父親には特例があり、
+次の項目で説明しますが、条件を満たすことで、
+期間内であれば、<span class="f_yellow f_bold">育休を2度取得する</span>ことが可能です。
+
+例えば、
+赤ちゃんが生まれてすぐに、育休を取得。
+その後、会社に復帰。
+期間内であれば、もう一度、育休を取得。
+ということが可能です。
+
+ママとパパが<span class="f_yellow f_bold">協力して育児をすること</span>を目的とした制度なので、
+ママの負担がかかる期間だけでも、パパが育休を取得して助けてあげましょう！
+ということです。
+<p>
+<h3>取得条件と活用パターンは？</h3>
+<p>
+パパ・ママ育休プラスを取得するためには条件があります。
+下記条件は、育児休業を取得条件を満たしている前提で説明します。
+もし、育児休業の取得条件を満たしていない場合は、パパ・ママ育休プラスは取得できません。
+
+<span class="f_yellow f_bold">条件：</span>
+・配偶者(母親)が子どもの1歳到達日以前のいずれかの日において育児休業をしていること
+・父親の育児休業開始予定日が、子どもの1歳の誕生日前であること
+・父親の育児休業開始予定日が、母親の育児休業の初日以降であること
+
+一つ目と二つ目については、理解できると思います。
+三つ目について言い換えると、
+「<strong>育休を父親が母親よりも早く取得していなければいけない</strong>」ということです。
+
+つまり、
+母親は、産前休業⇒出産⇒産後休業⇒育休（育児休業）という流れですが、
+父親は、母親の<span class="f_blue f_bold">産後休業中</span>に育休を取得しなければいけないということです。
+</p>
+<p id="section3"></p>
+<h2>育児休業延長について</h2>
+<p>
+原則として育休を取得できるのは、赤ちゃんが1歳になるまででしたが、
+平成29年10月1日から、<span class="f_red f_bold">最長で2年</span>まで期間を延長できることになりました。
+
+<span class="f_yellow f_bold">延長ができる条件として、</span>
+・子どもが認可保育所等に入所できないとき
+・子どもを育てる予定だった人が、病気・ケガ・妊娠などさまざまな理由で、子どもを育てることが難しくなったとき
+があります。
+
+赤ちゃんが1歳を迎えるときに「<strong>1歳6カ月になる前日までの延長</strong>」
+1歳6カ月を迎えるときに「<strong>2歳になる誕生日の前日までの再延長</strong>」
+を申し出ることができます。
+</p>
+<style>
+.title {
+position: relative;
+padding: 0.6em;
+background: -webkit-repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+background: repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+border-radius: 3px;
+border-left: 10px solid #ffc778;
+margin-bottom: 3px !important;
+font-size: 1.2em;
+font-weight: bold;
+}
+td {
+  border-right: 0px !important;
+  border-left: 0px !important;
+  text-align: center !important;
+}
+table#output_tbl_1, table#output_tbl_2 {
+  background-color: #fff;
+  font-size: 0.92em;
+}
+table#output_tbl_2 tr:nth-child(2n+1) {
+  background-color:#FFCCCC;
+}
+.tbl1_left {
+  width: 60%;
+}
+.tbl1_right {
+  width: 40%;
+  color: tomato;
+}
+.tbl2_left {
+  width: 35%;
+}
+.tbl2_center {
+  width: 25%;
+}
+.tbl2_right {
+  width: 40%;
+  color: blue;
+}
+input.output {
+  margin-top: -0.3em;
+}
+.result_area {
+  border: 1px solid #ccc;
+  background-color: #FFFFEE;
+  padding: 1em;
+  margin-top: -1.2em;
+  padding-top: 2em;
+}
+.contact-form {
+  margin-top: -1.1em;
+  border: 1px solid #ccc;
+  background-color: #fff0f5;
+  padding: 1em;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+.contact-form .item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 10%;
+  width: 90% !important;
+  padding: 0px;
+}
+.contact-form .item .label {
+  float: left;
+  margin:0;
+}
+.contact-form label{
+  margin-bottom: -1em;
+}
+.contact-form .item input[type=text],
+.cal {
+  display: block;
+  padding: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.contact-form .item ::placeholder {
+  color: #ccc;
+}
+.cp_btn {
+	background-color: #fff;
+	width: 50%;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 3px;
+}
+.link_btn {
+	background-color: #fff;
+	width: 60%;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #00bfff;
+	border: 2px solid #00bfff;
+	border-radius: 3px;
+}
+/* 年プルダウンの変更 */
+select.ui-datepicker-year{
+  height: 2em!important;      /* 高さ調整 */
+  margin-right:0px!important; /* 「年」との余白設定 */
+  width:80px!important;       /* 幅調整 */
+  float: left;
+}
+/* 月プルダウンの変更 */
+select.ui-datepicker-month{
+  height: 2em!important;      /* 高さ調整 */
+  margin-left:10px!important;  /* 「年」との余白設定 */
+  width:60px!important;       /* 幅調整 */
+  float: right;
+}
+</style>

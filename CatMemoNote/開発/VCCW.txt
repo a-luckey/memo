@@ -1,0 +1,37 @@
+﻿// クローン
+git clone https://github.com/vccw-team/vccw.git {フォルダ名}
+
+// ディレクトリを移動する
+cd {フォルダ名}
+
+// default.ymlを修正
+◆hostnameの修正
+vccw.{任意}
+※.app .devはＮＧ。
+◆ipの修正
+192.168.33.1{任意}
+◆languageの修正
+lang: ja
+
+// vagrantを起動する
+vagrant up
+
+// SQLユーザーの作成
+◆ssh接続
+vagrant ssh
+◆sql接続
+mysql
+◆ユーザーの作成
+GRANT ALL PRIVILEGES ON *.* TO shomty@"192.168.33.1" IDENTIFIED BY 'shomtypass' WITH GRANT OPTION
+
+// SQLエディタでログイン
+
+// コピーするサーバがある場合は、コピーサーバー上のphpadminからエクスポート
+
+// SQLエディタでインポート
+
+//アドレスの置換
+C:\Users\infor\OneDrive\ドキュメント\2018\10月
+にある、「Search-Replace-DB-master」をwpのホームディレクトリ内に配置。
+URL = ドメイン + /Search-Replace-DB-master でアクセス。
+※使い方はググるとでてくる。
