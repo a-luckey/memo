@@ -1,4 +1,36 @@
-﻿<h2>ナイトブラとは</h2>
+﻿<?php // アフィリにのおすすめを投入 ?>
+[invite_link class="yellow_box" id1="3" id2="4" title="Check!!"][/invite_link]
+
+<p>
+今回は、ナイトブラについてのおすすめを紹介していきます。
+
+そもそもナイトブラって何のために使うの？
+昼用じゃダメ？
+など、基本的なところから説明していきます。
+
+これを読み終わるころにはきっとナイトブラの必要性を感じるでしょう。
+
+そして、今よりも素敵なバストを手に入れることができるはずです！
+
+最後には、私がおすすめする商品をランキング5選で紹介しますので、参考にしてくださいね。
+</p>
+<?php // 合わせて読ませたい記事を入れる ?>
+[kanren class="kanren2" postid="1556"]
+
+[toc heading_levels="2,3"]
+
+<h2>ナイトブラのおすすめ３選。育乳や形を整えてくれるブラって？</h2>
+[aside type="normal"]<strong>こんな人におすすめ！！</strong>
+<ul>
+<li>育乳効果のあるナイトブラを求めている方</li>
+<li>付け心地が楽なナイトブラを求めている方</li>
+<li>形の良いバストをキープしたい方</li>
+</ul>
+[/aside]
+
+
+<h2>ナイトブラとは</h2>
+<p>
 ナイトブラとは、夜などの寝ている間に着用する目的でつくられたブラジャーのことです。
 
 では、なぜ寝ている間だけのために？と思いますよね。
@@ -17,13 +49,24 @@
 安眠性だけでなく、バストの形をよくするのが、ナイトブラの役割といえます。
 
 次で、さらに詳しく説明します。
+</p>
 
 <h2>ナイトブラってなぜ必要なの？</h2>
+<p>
 ナイトブラは眠っている時に使用するブラジャーということは分かったかと思います。
 
-必要性について詳しく説明していきます。
+ここでは、必要性について詳しく説明していきます。
+</p>
+[box class="blue_box" title="この章でわかること"]
+<ol>
+<li>寝ている時間は育乳の時間帯</li>
+<li>快適な睡眠への効果</li>
+<li>昼用との構造の違い</li>
+</ol>
+[/box]
 
 <h3>寝ている時間は育乳の時間帯？</h3>
+<p>
 夜寝ている時間帯の、22時から2時までの4時間はバストが育つもとになる成長ホルモンが分泌されると言われています。
 
 この時間帯に睡眠をとることが、育乳になるのです。
@@ -31,15 +74,17 @@
 そして、この育っている時に、しっかりとバストをキレイない形になるようにホールドする役目として、ナイトブラがあるのです。
 
 美しい形にするには、この時間帯にしっかりとブラジャーでバストの形を整えることが必要なのです。
-
+</p>
 <h3>快適な睡眠への効果</h3>
+<p>
 ブラジャーをしないで寝る人も多く、「ブラジャーをして寝るのは寝苦しい」と思っている方も多いのではないでしょうか？
 
 寝苦しくて、睡眠の質が落ちるのは、本末転倒ですね。
 
 ナイトブラは、着用でのストレスを最小限にするような作りになっていますので、快適な睡眠をサポートします。
-
-<h3>昼用との構造の違い</h3>
+</p>
+<h3>昼用ブラとの構造の違い</h3>
+<p>
 昼は、主に下向きへ重量がバストにかかり、縦方向の揺れが多いです。
 一方夜は、昼のバストにかかる重力の方向とはまるで違い、縦方向に加え横方向の揺れもおこります。
 
@@ -48,10 +93,24 @@
 ですので、昼用のブラジャーとナイトブラではそもそもの構造が違います。
 
 ナイトブラは、睡眠時にバストが揺れる方向への対応や、通気性が高い素材など、睡眠時に適したブラジャーとなっています。
-
+</p>
 
 <h2>ナイトブラの選ぶポイントって？</h2>
+<p>
+ここでは、ナイトブラの選ぶポイントについて説明します。
+
+メリット・デメリットが必ずありますので、どんな目的でナイトブラをするのかを意識することが大切です。
+</p>
+[box class="blue_box" title="この章でわかること"]
+<ol>
+<li>素材について</li>
+<li></li>
+<li></li>
+</ol>
+[/box]
+
 <h3>素材</h3>
+>p
 ナイトブラで使用されている素材は、主に、4つあります。
 それぞれのメリット・デメリットを紹介します。
 
@@ -168,3 +227,258 @@
 
 
 
+
+<h3>5位 HEAVEN Japan ナイトブラ</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+バストアップが期待できるブラを探している人
+</p>
+[tblStart num=5]https://images-na.ssl-images-amazon.com/images/I/61SgLt-9CYL._UL1000_.jpg[/tblStart]
+[tdLevel type=5]付け心地[/tdLevel]
+[tdLevel type=5]デザイン[/tdLevel]
+[tdLevel type=3]価格[/tdLevel]
+[tdLevel type=2]ホールド力[/tdLevel]
+[tdLevel type=3]生地がしっかりしている[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=317][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>デザインが可愛い</li>
+<li>締め付け感がちょうどいい</li>
+<li>バストアップに期待できる</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>大きすぎる人には向いていない</li>
+<li>使用していくと延びる</li>
+<li>サイズが小さく感じる</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_2.jpg" name="20代女性" type="l"]
+"サイズで迷ったので、レビューを参考にしようと思ったのですが、まー自分と同じ胸の方がいないこといないこと。楽天でも鬼のようにレビューをチェックして、Ｍを購入しました。
+結果、ちょうどいい〜〜〜！特に苦しくもなく、ぴたっと胸を抑えつけてくれます。寝る時も全然邪魔じゃないし、なにより可愛いのでテンション上がります。5日ほど使い続けていましたが、毎朝胸に手を添えて、ブラの中に綺麗にしまう作業（？）の時に「あっ前より胸が中心に寄ってる！」というのが分かりました"
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_30_1.jpg" name="30代女性" type="r"]
+ワコールのナイトブラも使ってましたが、こちらを試しに購入。ここまで効果を感じるとは思いませんでした。本当に胸が寄っているし、両脇？部分のお肉がすっきりしたような。。ちゃんと整えてくれたのがわかります。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="317"][/reviewLink]
+
+
+
+<h3>4位 ワコール おやすみナイトブラ</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+バストがあまり大きすぎない人でホールド力が強すぎないブラを探している人
+</p>
+[tblStart num=5]https://images-na.ssl-images-amazon.com/images/I/81B%2Bm7Es2kL._UL1500_.jpg[/tblStart]
+[tdLevel type=5]付け心地[/tdLevel]
+[tdLevel type=3]デザイン[/tdLevel]
+[tdLevel type=3]価格[/tdLevel]
+[tdLevel type=3]ホールド力[/tdLevel]
+[tdLevel type=4]生地がしっかりしている[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=316][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>自然なホールド感</li>
+<li>付け心地抜群</li>
+<li>スティック・リキッドがセットになっているので、隠したい場所によって使い分けることができる</li>
+<li></li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>生地が薄い</li>
+<li>ホールド力が少し弱い</li>
+<li>洗濯すると毛玉がでてくる</li>
+<li></li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_2.jpg" name="20代女性" type="l"]
+良い点:
+優しく自然なホールド感で、締め付け感は全くありません。
+寝るとき気になることもないです。とても良いつけ心地。
+
+悪い点:
+生地が薄いので乳首は透けます。
+また、支える力はそれほどでもないため、横向きに寝るとおっぱいが流れてしまいます。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_1.jpg" name="20代女性" type="r"]
+安かろう悪かろうの類似品で何度か失敗したので、ワコールさんはさすがに安定の高品質で安心して買えます。
+
+ただ難点は、パットはないのでシルエットは出ます。このナイトブラの上に薄いTシャツ一枚で宅急便の対応するのは視線が気になるイメージ（笑）
+それと素材生地の関係上、真夏の使用はかなり汗をかきます。
+真夏以外なら特に問題ないです。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="316"][/reviewLink]
+
+
+<h3>3位 ワコール　ナイトアップブラ</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+寝いている間は極力何も付けたくない方
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/41ThLcUKGwL.jpg[/tblStart]
+[tdLevel type=4]付け心地[/tdLevel]
+[tdLevel type=2]デザイン[/tdLevel]
+[tdLevel type=3]価格[/tdLevel]
+[tdLevel type=5]ホールド力[/tdLevel]
+[tdLevel type=4]生地がしっかりしている[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=240][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>付け心地が楽</li>
+<li>カラーバリエーション豊富</li>
+<li>バストにお肉を集めてくれる</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>デザインがスポブラのようでお洒落感はない</li>
+<li>使い続けていると背中部分の生地が薄くなってくる</li>
+<li>人気のためサイズによっては完売していることがある</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_2.jpg" name="20代女性" type="l"]
+SNSで話題になっていたので、購入しました。
+口コミ通りなぜか何も付けていないときよりもバストが楽です。
+
+こんなに付け心地の良いブラジャーは初めてで驚きました。
+まだ1着しか持っていないので、あと数枚購入したいと思います。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_40_1.jpg" name="40代女性" type="r"]
+寝ている間はノーブラ派でした。
+
+でも年齢を重ねるにつれて、バストが垂れてきたのがきになりこのままだとダメだと思いナイトブラを付けることにしました。
+今までノーブラ派だった私でも、付け心地が良いので全く気になりません。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="240"][/reviewLink]
+
+<h3>2位 ブラデリス　イージーラップコンフォートブラ</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+寝ている間もしっかり胸の形をキープしたい方
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/41X8vBWDS%2BL.jpg[/tblStart]
+[tdLevel type=4]付け心地[/tdLevel]
+[tdLevel type=2]デザイン[/tdLevel]
+[tdLevel type=3]価格[/tdLevel]
+[tdLevel type=5]ホールド力[/tdLevel]
+[tdLevel type=4]生地がしっかりしている[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=239][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>色んな角度からお肉を胸に寄せ集めてくれる</li>
+<li>育乳ブラで人気ナンバーワンブランドのナイトブラ</li>
+<li>寝ている間も胸の形をキープしてくれる</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>デザインが可愛くない</li>
+<li>人気ブランドのため、店舗で試着する場合待ち時間が長いことが多い</li>
+<li>覆う面積が広めなので、夏場は蒸れる可能性がある</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_30_2.jpg" name="30代女性" type="l"]
+寝ている間に、胸のお肉が背中に流れるのが嫌で購入しました。
+
+お肉をしっかりカップに集めてくれて、寝ている間もキープしてくれます。
+付け心地も良くまったく締め付け感もないので、毎日続けられそうでよかったです。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_30_1.jpg" name="30代女性" type="r"]
+貧乳がずっとコンプレックスで、今まで色んなナイトブラを試してきましたが、ブラデリスが一番よかったです。
+
+ナイトブラは締め付けが緩すぎたり、締め付けが強くて苦しかったりしていましたが、ブラデリスは付け心地が良く快適です。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="239"][/reviewLink]
+
+<h3>1位 アンジェリール　ふんわりルームブラ</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+デザインの可愛いナイトブラをつけたい方
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/51LMdOXVcwL.jpg[/tblStart]
+[tdLevel type=4]付け心地[/tdLevel]
+[tdLevel type=5]デザイン[/tdLevel]
+[tdLevel type=3]価格[/tdLevel]
+[tdLevel type=4]ホールド力[/tdLevel]
+[tdLevel type=4]生地がしっかりしている[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=238][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>デザインが可愛い</li>
+<li>ホックが前に付いているので、調節がしやすい</li>
+<li>美容外科のドクターが開発した</li>
+<li>育乳効果がある</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>芸能人のステマが多く、本当に良い商品なのか疑ってしまう</li>
+<li>他社のナイトブラに比べると、デザインがTシャツに響く</li>
+<li>締め付けない設計なので、痩せ型の人は大きく感じる</li>
+<li>レースなので、何度も長く使用しているとレースがダメージを受ける</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_2.jpg" name="20代女性" type="l"]
+憧れているモデルさんが、ブログで紹介しているのを見て購入しました。
+
+胸にしっかりフィットするけど、締め付けもなく付け心地がいいです。
+ふんわりルームブラを付けていると、谷間ができるのがとても嬉しかったです。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_1.jpg" name="20代女性" type="r"]
+ルームブラなので、家でくつろいでいる時と、寝るときはずっと付けています。
+
+元々Cカップだったのですが、今まで付けていたブラがきつくなってきたので、店舗でサイズを測ってもらうと、Eカップになっていて驚きました。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="238"][/reviewLink]
