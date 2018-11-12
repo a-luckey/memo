@@ -1,0 +1,192 @@
+﻿<?php // アフィリにのおすすめを投入 ?>
+[invite_link class="yellow_box" id1="3" id2="4" title="Check!!"][/invite_link]
+
+<h2>色つきリップのおすすめはこれ！自然な発色はどれ？気になる人気ランキングは？</h2>
+<p>
+どうも。<a href="https://twitter.com/a_lucky_123">アラッキー</a>です。
+
+リップってなんのために使ってますか？
+
+唇の保湿のため？潤わせるため？
+
+今ではたくさんの種類がでていますが、保湿以外にも口紅のような色がついているリップなんかもあるんです。
+
+そこで、今回は、発色の効果もある色つきリップのおすすめを紹介していきます！
+
+そもそもリップってなに？リップ〇〇の種類ってちゃんと理解してる？
+そんなリップの基本を知っていると商品選びにも役立ちますよ。
+『<a href="" target="_blank">リップの種類って？どれがおすすめなの？種類と効果を説明します！</a>』を読めばきっと理解できますよ！
+</p>
+[aside type="normal"]<strong>こんな人におすすめ！！</strong>
+<ul>
+<li>なかなか自分に合ったリップを見つけられていない人</li>
+<li>口紅やグロスが苦手でリップで補いたい人</li>
+<li>保湿と発色の両方の効果が期待できるリップを探している人</li>
+</ul>
+[/aside]
+
+<p class="value_money"><span>価格と品質どっちを重要視する？</span></p>
+[aside type="boader custom"]
+<img src="http://shomty.com/wp-content/uploads/img/parts/positionMap/2.jpg" />
+今回紹介する『色づきリップクリーム』は「価格と品質」どちらを重要視したのかをあらわした図です。
+<p class="openBtn"><span class="opneBtn_deco">表示/非表示</span></p>
+<div class="textArea">
+購入する際って、価格と品質のどちらかを重要視するかを知らず知らずに決めていませんか？
+上の図は、今回紹介する内容の基準ですので、同じような基準のあなたにとってはとても参考になること間違いなし！
+</div>
+[/aside]
+
+[toc]
+<h2></h2>
+<h2>『色づきリップクリーム』 ランキング</h2>
+それでは、ランキングを紹介していきます！
+
+<h3>3位 メイベリン　リップクリーム</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+しっかりとした発色を求めている人
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/41LcogINEJL.jpg[/tblStart]
+[tdLevel type=5]発色がしっかりできるか[/tdLevel]
+[tdLevel type=4]手ごろな価格であるか[/tdLevel]
+[tdLevel type=1]保湿力があるのか[/tdLevel]
+[tdLevel type=2]安心して利用できるのか[/tdLevel]
+[tdLevel type=1]落ちやすくないのか[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=4][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>発色がいい</li>
+<li>爽やかな香り</li>
+<li>するする塗ることができる</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>落ちやすい</li>
+<li>潤いが足りない</li>
+<li>透明感はない</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_2.jpg" name="20代女性" type="l"]
+メイベリンのリップは、いつもどれも可愛くて、よく買っていたんですけど、これはとってもスリムなので、口角などにも塗りやすいところが好きです。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_1.jpg" name="20代女性" type="r"]
+色付きリップが欲しくて、メイベリンのリップクリームを購入しました！
+
+しっかり発色してくれるので、ナチュラルメイクの時はこれだけでもいいかなって思います(*^^*)
+また、ミントのいい香りして使いやすいので、リピする予定です
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="4"][/reviewLink]
+
+<h3>2位 MAJOLICA　リップエッセンスバーム</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+保湿力を重視したい人
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/31UyVXl81nL.jpg[/tblStart]
+[tdLevel type=1]発色がしっかりできるか[/tdLevel]
+[tdLevel type=2]手ごろな価格であるか[/tdLevel]
+[tdLevel type=5]保湿力があるのか[/tdLevel]
+[tdLevel type=4]安心して利用できるのか[/tdLevel]
+[tdLevel type=3]落ちやすくないのか[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=3][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>保湿力抜群</li>
+<li>かわいいパッケージ</li>
+<li>自然な色づき</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>少し高い</li>
+<li>色づきが自然すぎて色のつき方がわからない</li>
+<li>すこしべたつく</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_2.jpg" name="20代　女性" type="l"]
+下地として使っています！
+もともとの唇の色が濃いのが気になってたんですけどこれを塗るともとの色を抑えてくれるので口紅の色が綺麗にのります！
+
+塗ると溶ける感じです。
+パールも少し入っています。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_1.jpg" name="20代　女性" type="r"]
+ベビーティントを使用しました。
+スルスルと塗れるのに長時間うるおいが続くように感じます。
+かと言って髪がへばりつくようなベタベタ感も0です。
+
+色はほぼ付かないので保湿用として使っています。
+パケも可愛くていいと思いました！リピします！
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="3"][/reviewLink]
+
+<h3>1位 ニベア　ナチュラルカラーリップ</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+色づきリップに発色を求める人
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/31uVZYzOdFL.jpg[/tblStart]
+[tdLevel type=3]発色がしっかりできるか[/tdLevel]
+[tdLevel type=3]手ごろな価格であるか[/tdLevel]
+[tdLevel type=5]保湿力があるのか[/tdLevel]
+[tdLevel type=5]安心して利用できるのか[/tdLevel]
+[tdLevel type=3]落ちやすくないのか[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=2][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>しっかり発色</li>
+<li>色のバリエーションが多い</li>
+<li>よく知られているブランドだから安心できる</li>
+<li>しっかり保湿</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>落ちやすい</li>
+<li>思っていた色と違うことがある</li>
+<li>逆に発色がよすぎて普段使いができないことも</li>
+<li>オールシーズンには向かない色合い</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_30_2.jpg" name="30代　女性" type="l"]
+口紅やグロスは、ほぼ炎症を起こしてしまうので、カラーリップは有難いです。スルっとした塗り心地でツヤが出て、保湿力もわりと持続性があると感じました。
+
+スモーキーピンクを使用していますが、抑えた色味の大人な雰囲気が気に入っています。季節を問わず使えそうな色ですね。ポーチ用と自宅用に常備しています。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_1.jpg" name="20代　女性" type="r"]
+色があまりつかないんじゃないかなとあまり期待しないで購入してみました。ですが使ってみたら綺麗な色がちゃんとついてくれました！
+
+保湿効果もバッチリでお気に入りの商品です！何本もリピしそうです♪
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="2"][/reviewLink]
