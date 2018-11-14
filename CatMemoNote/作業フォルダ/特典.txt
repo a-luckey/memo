@@ -1,0 +1,24 @@
+﻿<h2></h2>
+<p>
+
+</p>
+[box class="blue_box" title="この章でわかること"]
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+[/box]
+<h3></h3>
+<p>
+
+</p>
+
+<h3></h3>
+<p>
+
+</p>
+<h3></h3>
+<p>
+
+</p>
