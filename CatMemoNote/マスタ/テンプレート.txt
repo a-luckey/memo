@@ -4,6 +4,14 @@
 
 ◆◆◆【タイトル】◆◆◆
 
+
+ーーーー構成下書きーーーーーーーー
+
+
+
+
+ーーーーーーーーーーーーーーーーー
+
 <?php // アフィリにのおすすめを投入 ?>
 [invite_link class="yellow_box" id1="1" id2="2" title="Check!!"][/invite_link]
 
