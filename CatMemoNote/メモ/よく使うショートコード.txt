@@ -22,3 +22,6 @@
 
 // 注意（赤色）
 [aside type="warning"][/aside]
+
+// ボタン（シンプルビッグ）
+[btn class="simple big"][/btn]
