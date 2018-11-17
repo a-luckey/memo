@@ -27,9 +27,13 @@
 [toc heading_levels="2,3"]
 
 <h2></h2>
-<p>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
 
-</p>
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+
+[/voice]
 [box class="blue_box" title="この章でわかること"]
 <ol>
 <li></li>
