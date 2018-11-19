@@ -23,5 +23,10 @@
 // 注意（赤色）
 [aside type="warning"][/aside]
 
+// ボックス
+[box class="blue_box" title="ここにタイトル"]ここにコンテンツを記載[/box]
+[box class="red_box" title="ここにタイトル"]ここにコンテンツを記載[/box]
+[box class="yellow_box" title="ここにタイトル"]ここにコンテンツを記載[/box]
+
 // ボタン（シンプルビッグ）
 [btn class="simple big"][/btn]

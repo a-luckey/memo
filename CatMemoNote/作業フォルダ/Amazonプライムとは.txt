@@ -13,7 +13,7 @@ Amazonプライムとは、アマゾンが提供しているさまざまなサ�
 会員になると、これから紹介するさまざまなサービスが受けることができます。
 
 プライム会員はこちらから、
-// 会員リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
 </p>
 
 <h2>プライム会員の料金は？</h2>
@@ -190,7 +190,8 @@ prime nowとは、注文してから最短で２時間で配送してくれる�
 対象エリアは都心部が中心となっていますので、都心部の方にはとてもおすすめです。
 
 こちらに、prime nowの詳細をのせておきますので、確認してみてください。
-// prime now リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 <h2>【Amazonプライムメリット】観て楽しむ！</h2>
 // イメージ03
@@ -257,15 +258,24 @@ prime nowとは、注文してから最短で２時間で配送してくれる�
 
 30日間の無料お試しだけでもやってみると、ここで言っていることがわかると思いますので、是非、試してみてください！
 
-// 会員リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 <h3>プライムビデオをもっと楽しむ！</h3>
 <p>
 プライムビデオをもっと楽しむおすすめな方法があります！
 
 それは、
-・Fire タブレット　// fireタブレット
-・Fire スティック　// fireスティック
+[box class="yellow_box" title="Fire タブレット"]
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01J6RPOJY/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01J6RPOJY&linkCode=as2&tag=wakana222-22&linkId=3b073aaf187de5af00b7d26832c41630">Fire HD 10 タブレット (10インチHDディスプレイ) 32GB</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01J6RPOJY" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01J94TYJK/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01J94TYJK&linkCode=as2&tag=wakana222-22&linkId=6ed6fd5918ecd6d9b27ca7342f6f6b55">Fire HD 8 タブレット (8インチHDディスプレイ) (第7世代) 32GB</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01J94TYJK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01J90PKEM/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01J90PKEM&linkCode=as2&tag=wakana222-22&linkId=467bfd926b9108cd7a633e307d812537">Fire 7 タブレット (7インチディスプレイ) 8GB</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01J90PKEM" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+[/box]
+
+[box class="yellow_box" title="Fire スティック"]
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01ETRGGYI/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01ETRGGYI&linkCode=as2&tag=wakana222-22&linkId=387aed7b1415bf41c9a4d09ea6547576">Fire TV Stick</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01ETRGGYI" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+[/box]
+
 の二つです。
 
 Fire タブレットは、後程紹介するAmazonミュージックやプライムビデオを端末にダウンロードできて、Amazonのサービスをタブレットで楽しめる専用端末のようなものです。
@@ -373,7 +383,8 @@ Amazon内の説明には、
 
 ですので、プライム会員になり、プライムミュージックを試してみてから、曲数がどうしても必要となってからAmazon Music Unlimited（アンリミテッド）を利用することがおすすめです。
 
-// 会員リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 <h2>【Amazonプライムメリット】読んで楽しむ！</h2>
 // イメージ05
@@ -400,7 +411,12 @@ Amazon内の説明には、
 
 Kindle本を読むには、やっぱりKindleがおすすめなので、合わせて確認してみるといいですよ！
 Kindleはこちら
-// kindle
+[box class="yellow_box" title="ここにタイトル"]
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B0186FESEE/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0186FESEE&linkCode=as2&tag=wakana222-22&linkId=e26d8977e07bb33c8b764114cf782501">Kindle</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B0186FESEE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B00QJDOM6U/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00QJDOM6U&linkCode=as2&tag=wakana222-22&linkId=3d21dcc8e8a7dc6e1c921347dbe560b1">Kindle Paperwhite (第7世代)</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B00QJDOM6U" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B07HD12H6W/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B07HD12H6W&linkCode=as2&tag=wakana222-22&linkId=4ebe787c4b7ec740fa923bbc62450fb2">Kindle Paperwhite 8GB(Newモデル)</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B07HD12H6W" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+[/box]
+
 
 </p>
 
@@ -428,7 +444,8 @@ Kindleはこちら
 
 Kindle Unlimitedもお試しがあるので、試してみるのもありかもしれませんね！
 
-// Kindle Unlimitedリンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/kindle-dbs/hz/signup?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=b59bab70199841a0495b7e769f18f318&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 <h3></h3>
 <p>
@@ -473,7 +490,9 @@ Kindle Unlimitedもお試しがあるので、試してみるのもありかも�
 </p>
 
 <h3>アマゾンファミリーって？</h3>
-// イメージ　※アマゾンファミリーのリンクを張る
+<div style="text-align:center;">
+<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=amazonfamily&banner=14S8EWFKA62XD9HDY3G2&f=ifr&linkID=e771f704b2f55c83b9f6725c0d4c9a1e&t=wakana222-22&tracking_id=wakana222-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</div>
 <p>
 アマゾンファミリーとは、おむつやミルクやおしりふきなど、子育てで必要なアイテムをお得に購入できるサービスのことです。
 
@@ -493,11 +512,13 @@ Kindle Unlimitedもお試しがあるので、試してみるのもありかも�
 
 また、ベビーカーなど高額商品の割引などもありますので、もし、アマゾンで購入を検討しているのであれば、プライム会員になってからの購入が圧倒的に安くいのでおすすめです！
 
-// 会員リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 
 <h3>アマゾンフレッシュって？</h3>
-// アマゾンフレッシュ
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryassocfresh?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=cefedc207d143ec3bae3635ba6cdd5b1&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 <p>
 アマゾンフレッシュとは、野菜や果物、鮮魚、精肉などの食料品などを短時間で配送してくれサービスです。
 
@@ -676,7 +697,8 @@ img09
 
 無料期間がなんと、６か月もあります！！
 これは、もはや登録するしかないでしょ！！！
-// AmazonStudent
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryassocfresh?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=cefedc207d143ec3bae3635ba6cdd5b1&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 
 <h3>家族向けのAmazonプライム家族会員</h3>
@@ -686,7 +708,8 @@ Amazonプライム家族会員とは、同居の家族２人までが家族会�
 ２人で使用すれば、会費が半額になる！といっても過言ではありませんよね。
 
 夫婦や子供たちと一緒になど、是非、家族で使ってみるといいでしょう！
-// 会員リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 <h3>Amazon ベビーレジストリのサンプルボックス</h3>
 <p>
@@ -723,7 +746,8 @@ Amazonプライム家族会員とは、同居の家族２人までが家族会�
 
 気になるところに戻ってチェックして、お得なサービスをしっかり利用してくださいね。
 
-// 会員リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>
 
 <h2>デメリットまとめ</h2>
@@ -788,5 +812,6 @@ Amazonプライム家族会員とは、同居の家族２人までが家族会�
 ではなく、自分が求めているサービスが本当にあるかどうかは、考えた方がいいです。
 
 そのための、無料期間でもありますので、無料期間中にしっかりと検討してくださいね。
-// 会員リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 </p>

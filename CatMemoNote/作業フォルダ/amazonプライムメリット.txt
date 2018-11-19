@@ -6,14 +6,42 @@
 【Amazonプライム会員】本当にお得なの？メリット・デメリットを超分かりやすく解説！
 
 // 会員リンク ⇒を最後に変換する
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 // prime now リンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 // fireタブレット
+[box class="yellow_box" title="ここにタイトル"]
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01J6RPOJY/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01J6RPOJY&linkCode=as2&tag=wakana222-22&linkId=3b073aaf187de5af00b7d26832c41630">Fire HD 10 タブレット (10インチHDディスプレイ) 32GB</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01J6RPOJY" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01J94TYJK/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01J94TYJK&linkCode=as2&tag=wakana222-22&linkId=6ed6fd5918ecd6d9b27ca7342f6f6b55">Fire HD 8 タブレット (8インチHDディスプレイ) (第7世代) 32GB</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01J94TYJK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01J90PKEM/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01J90PKEM&linkCode=as2&tag=wakana222-22&linkId=467bfd926b9108cd7a633e307d812537">Fire 7 タブレット (7インチディスプレイ) 8GB</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01J90PKEM" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+[/box]
+
 // fireスティック
+[box class="yellow_box" title="ここにタイトル"]
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B01ETRGGYI/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B01ETRGGYI&linkCode=as2&tag=wakana222-22&linkId=387aed7b1415bf41c9a4d09ea6547576">Fire TV Stick</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B01ETRGGYI" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+[/box]
+
 // kindle
+[box class="yellow_box" title="ここにタイトル"]
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B0186FESEE/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0186FESEE&linkCode=as2&tag=wakana222-22&linkId=e26d8977e07bb33c8b764114cf782501">Kindle</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B0186FESEE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B00QJDOM6U/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00QJDOM6U&linkCode=as2&tag=wakana222-22&linkId=3d21dcc8e8a7dc6e1c921347dbe560b1">Kindle Paperwhite (第7世代)</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B00QJDOM6U" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+<div>・<a target="_blank" href="https://www.amazon.co.jp/gp/product/B07HD12H6W/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B07HD12H6W&linkCode=as2&tag=wakana222-22&linkId=4ebe787c4b7ec740fa923bbc62450fb2">Kindle Paperwhite 8GB(Newモデル)</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=am2&o=9&a=B07HD12H6W" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+[/box]
+
 // Kindle Unlimitedリンク
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/kindle-dbs/hz/signup?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=b59bab70199841a0495b7e769f18f318&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 アマゾンファミリー
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/gp/family/signup?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=d55880b16bea2d8293395700fda0f553&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 // アマゾンフレッシュ
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryassocfresh?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=cefedc207d143ec3bae3635ba6cdd5b1&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 // AmazonStudent
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryassocfresh?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=cefedc207d143ec3bae3635ba6cdd5b1&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
 ーーーー構成下書きーーーーーーーー
 〇聴く
 オーディブルが１⇒3ヶ月に（保留）
