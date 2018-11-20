@@ -1,0 +1,189 @@
+﻿<?php // アフィリにのおすすめを投入 ?>
+[invite_link class="yellow_box" id1="3" id2="4" title="Check!!"][/invite_link]
+
+<h2>【バレないカラコンおすすめ３選】自然な見た目のカラコンおすすめはどれ？</h2>
+[aside type="normal"]<strong>こんな人におすすめ！！</strong>
+<ul>
+<li>ナチュラルだけど、瞳を大きく見せてくれるカラコンをお探しの方</li>
+<li>医療機関で取り扱いのある、安心して使用できるカラコンを求めている方</li>
+<li>バレないほどナチュラルなカラコンをお探しの方</li>
+</ul>
+[/aside]
+
+<p class="value_money"><span>価格と品質どっちを重要視する？</span></p>
+[aside type="boader custom"]
+<img src="http://shomty.com/wp-content/uploads/img/parts/positionMap/7.jpg" />
+今回紹介する『バレないカラーコンタクト』は「価格と品質」どちらを重要視したのかをあらわした図です。
+<p class="openBtn"><span class="opneBtn_deco">この図ってなに？</span></p>
+<div class="textArea">
+購入する際って、価格と品質のどちらかを重要視するかを知らず知らずに決めていませんか？
+上の図は、今回紹介する内容の基準ですので、同じような基準のあなたにとってはとても参考になること間違いなし！
+</div>
+[/aside]
+[toc]
+
+
+<h2>『バレないカラーコンタクト』 ランキング</h2>
+それでは、ランキングを紹介していきます！
+
+<h3>3位 アキュビューディファイン　ワンデーアキュビューディファインモイスト　ラディアントスウィート</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+付けているかわからないほど自然なカラコンを求めている方
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/41Fsyu4THnL.jpg[/tblStart]
+[tdLevel type=5]バレない度[/tdLevel]
+[tdLevel type=5]付け心地[/tdLevel]
+[tdLevel type=3]コスパ[/tdLevel]
+[tdLevel type=2]購入しやすい[/tdLevel]
+[tdLevel type=3]可愛い瞳になれる[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=129][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>病院で販売している商品なので安心して使用できる</li>
+<li>無料でお試しができる</li>
+<li>レンズ内に保湿成分が含まれているので、瞳に潤いを保ってくれる</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>病院などで販売されているため、ドン・キホーテなどで簡単に手に入れることができない</li>
+<li>直径が小さくかなりナチュラルなので、人によってはつけてもほぼ変わらない</li>
+<li>ディファインのヴィヴィットスタイルは2weekのものがあるが、このカラーはワンデーのみ</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_30_2.jpg" name="30代女性" type="l"]
+もう１０年以上ワンデーアキュビューのコンタクトを使用しています。
+今まで他のメーカーの医療機関で取り扱っているカラコンを使用してきましたが、他のメーカーのカラコンは、自分に合っていなかったようで、全て目が痛くなってしまいました。
+
+しかしワンデーアキュビューのカラコンは全く痛くならないです。
+ラディアントスウィートは、清楚で可愛い瞳になれるのでお気に入りです。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_1.jpg" name="20代女性" type="r"]
+7年前からずっと愛用しています。
+1度もトラブルなどなく、安心して使用できます。
+乾燥もまったく気になりませんし、レンズが柔らかいので目が痛くなることもなく、付け心地が他のカラコンに比べてとっても良いです。
+
+やっぱり医療機関で販売しているだけあるなと思いました。
+ナチュラルなカラコンなので、ナチュラルメイクの人にぴったりだと思います。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="129"][/reviewLink]
+
+<h3>2位 エンジェルカラー　バンビシリーズ　ナチュラルヌード</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+周囲にばれない程度に可愛くなれるカラコンを求めている方
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/51gH68yNHQL.jpg[/tblStart]
+[tdLevel type=4]バレない度[/tdLevel]
+[tdLevel type=4]付け心地[/tdLevel]
+[tdLevel type=3]コスパ[/tdLevel]
+[tdLevel type=5]購入しやすい[/tdLevel]
+[tdLevel type=4]可愛い瞳になれる[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=128][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>UVカット効果がある</li>
+<li>ナチュラルで可愛い瞳になれる</li>
+<li>度数がー10.00まであり幅が広い</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>カラーが暗めのブラウンなので、元々瞳が黒い方はサイトの写真ほど発色しない</li>
+<li>高含水だが、長時間使用すると乾く</li>
+<li>BCが8.5なので、カーブが合わない方もいる</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_2.jpg" name="20代女性" type="l"]
+こちらは名前の通りとってもナチュラルです。
+学生時代ずっとカラコンを付けていて、社会人になっても付けたい。
+けどばれないようにと思いこちらを購入しました。
+
+ナチュラルカラコンを色々試してきましたが、バンビシリーズのナチュラルヌードがわたしには一番合っていると感じました。
+淵がドット柄になっているので、本物の瞳のように自然です。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_10_1.jpg" name="10代女性" type="r"]
+カラコンは大好きなのですが、必ず目が充血してしまい、悩んでいました。
+ドライアイだと思っていたのですが、ナチュラルヌードを付けてみたところ、全く充血しなくなりました。
+
+今まで付けていたカラコンが合っていなかったようです。
+付け心地もよかったけど、見た目もすごくかわいいです。
+黒目が大きくなるのに、裸眼みたいでお気に入りです。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="128"][/reviewLink]
+
+<h3>1位 ラブホリック　ナチュラル</h3>
+<h4><span class="f_yellow">こんな人におすすめ</span></h4>
+<p>
+ナチュラルだけど盛れる明るめのカラコンを求めている方
+</p>
+[tblStart num=5]https://images-fe.ssl-images-amazon.com/images/I/61rGctLvhML.jpg[/tblStart]
+[tdLevel type=4]バレない度[/tdLevel]
+[tdLevel type=4]付け心地[/tdLevel]
+[tdLevel type=3]コスパ[/tdLevel]
+[tdLevel type=4]購入しやすい[/tdLevel]
+[tdLevel type=5]可愛い瞳になれる[/tdLevel]
+[tblEnd][/tblEnd]
+
+[product_link id=127][/product_link]
+<h4 class="margin-bottom--15"><span class="f_yellow f_blue">おすすめポイント</span></h4>
+<div class="bg-white">
+[aside type="boader blue bg-blue"]
+<ul>
+<li>ナチュラルなデザインだけど、14.5ｍｍなのでナチュラルすぎず、自然に可愛い瞳になれる</li>
+<li>ブラウンが濃いブラウンではないので、瞳の色が黒くて悩んでいる子にもにちょうどいいカラー</li>
+<li>付け心地がいい</li>
+<li>ドン・キホーテなど、購入できる場所が多い</li>
+</ul>
+[/aside]
+</div>
+<h4 class="margin-bottom--15"><span class="f_yellow f_red">いまいちポイント</span></h4>
+<div class="bg-white">
+[aside type="boader red bg-red"]
+<ul>
+<li>ばれたくないほど自然なナチュラルカラコンを求めている方には向かない</li>
+<li>ワンデーしかないので、毎日つけたい方は出費がかさむ</li>
+<li>度数がー6.00までなので、視力が悪すぎる人は付けられない</li>
+<li>箱にお洒落感はない</li>
+</ul>
+[/aside]
+</div>
+<h3>《 口コミ 》</h3>
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_10_2.jpg" name="10代女性" type="l"]
+わたしはどちらかというと、元々瞳の色が茶色い方なので、付けてみると自分の瞳のカラーにとっても自然に馴染みました。
+ナチュラルに大きな瞳に見せてくれるカラコンなので、つけていても周囲にばれませんでした。
+
+発色が良く綺麗なブラウンなのもお気に入りです。
+派手過ぎずナチュラルだけど盛れるカラコンだと思います。
+[/voice]
+[voice icon="http://shomty.com/wp-content/uploads/img/parts/review/w_20_1.jpg" name="20代女性" type="r"]
+今までいろんなワンデーのナチュラルカラコンを試してきましたが、やっと自分が気に入ったカラコンに出会えました。
+付けた感じごろごろする感じもないです。
+目が痛くなったり、時間が経って乾くこともありません。
+
+ナチュラルカラコンには珍しい直径14.5㎜なので、ナチュラルに可愛い瞳にしてくれます。
+リピート決定です。
+[/voice]
+<h4><span class="f_yellow">もっと口コミをみる</span></h4>
+[reviewLink id="127"][/reviewLink]
