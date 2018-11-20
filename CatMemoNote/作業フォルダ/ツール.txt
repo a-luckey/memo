@@ -1,0 +1,75 @@
+﻿◆◆◆【 内部リンク設置あり】◆◆◆
+
+◆◆◆【狙うキーワード（3つ）】◆◆◆
+
+◆◆◆【タイトル】◆◆◆
+【中国輸入 必須ツールはこれ！】絶対に必要な3つのツールを紹介！
+
+ーーーー構成下書きーーーーーーーー
+はじめに　
+　初心者こそツールにたよれ！
+　有料は極力使うな！
+　レベルがあがってから有料を使う！
+モノレート
+　モノレートとは
+　登録方法・使い方
+アマゾン計算ツール
+　計算ツールとは
+　登録方法・使い方
+オークファン
+　オークファンとは
+　有料と無料の違い
+　登録方法・使い方
+
+
+
+ーーーーーーーーーーーーーーーーー
+
+<?php // アフィリにのおすすめを投入 ?>
+[invite_link class="yellow_box" id1="1" id2="2" title="Check!!"][/invite_link]
+
+<?php // 序章 ?>
+<p>
+どうも。<a href="https://twitter.com/a_lucky_123">アラッキー</a>です。
+
+
+</p>
+<?php // 合わせて読ませたい記事を入れる ?>
+[kanren class="kanren2" postid="1556"]
+
+[toc heading_levels="2,3"]
+
+<h2></h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+[/box]
+<h3></h3>
+<p>
+
+</p>
+
+<h3></h3>
+<p>
+
+</p>
+<h3></h3>
+<p>
+
+</p>
+
+
+<h2>まとめ</h2>
+<p>
+
+</p>
