@@ -34,7 +34,7 @@
 [voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
 
 [/voice]
-[box class="blue_box" title="ここ章でわかること"]
+[box class="blue_box" title="ここでわかること"]
 <ol>
 <li></li>
 <li></li>
