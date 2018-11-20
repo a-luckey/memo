@@ -1,0 +1,433 @@
+﻿◆◆◆【 内部リンク設置あり】◆◆◆
+
+◆◆◆【狙うキーワード（3つ）】◆◆◆
+
+◆◆◆【タイトル】◆◆◆
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+ーーーー構成下書きーーーーーーーー
+楽天ママ割とは？
+登録条件って？
+特典その１：ママ割ニュース購読
+特典その２：バースデー特典プレゼント
+特典その３：毎月クーポン定期便特典
+特典その４：サンプルボックスのチャンス
+特典その５：その他の特典
+Amazonベビーレジストリとの違いって？
+
+
+ーーーーーーーーーーーーーーーーー
+
+<?php // アフィリにのおすすめを投入 ?>
+[invite_link class="yellow_box" id1="1" id2="2" title="Check!!"][/invite_link]
+
+<?php // 序章 ?>
+<p>
+どうも。<a href="https://twitter.com/a_lucky_123">アラッキー</a>です。
+
+今回は、子育てお役だち情報ですね。
+
+妊娠・出産・育児はとても出費が多いですよね。
+できるだけ安く商品を買いたいし、お得にポイントだって貯めたい！
+
+そんな子育てに向けて、楽天のママ割というサービスがあります。
+
+気になるプレゼントボックスの条件やどんな特典があるかを解説していますので、参考にどうぞ。
+
+また、Amazonからも同じようにベビーレジストリというサービスが開始されていますので、あわせて確認することをおすすめします！！
+</p>
+<?php // 合わせて読ませたい記事を入れる ?>
+[kanren class="kanren2" postid="2366"]
+
+[toc heading_levels="2,3"]
+
+
+<h2>楽天ママ割とは</h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+楽天ママ割って一体なんですか？プレゼントボックスが無料でもらえるって聞いたんですが？
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+ここでは、楽天ママ割について簡単に説明するシシ！ちょっと誤解があるかもシシ・・・
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li>楽天ママ割とは</li>
+<li>入会条件</li>
+<li>ママ割メリット</li>
+</ol>
+[/box]
+<h3>楽天ママ割とは</h3>
+<p>
+楽天ママ割とは、妊娠・子育て中のパパ・ママがさまざまな特典を受けることができるものです。
+
+4つの特典があり、子供情報を登録することで、子供に合った特典を受けることできます。
+
+妊娠・子育て中は、たくさんの出費がありますよね？
+
+ママ割をうまく活用することで、子育てに必要な出費を抑えることにもつながります。
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+
+</p>
+
+<h3>楽天ママ割の入会条件とは</h3>
+<p>
+それでは、入会条件を説明します。
+
+ママ割と聞くと、一見ママだけなの？と思ってしましますよね。
+
+しかし、パパでももちろんＯＫです！
+
+入会条件は、特にありません！
+
+ただし！！！
+
+子育て中のパパ・ママ対象なので、子育て中の方しか特典を受けることができませんので、注意してください。
+
+入会条件はありませんが、特典の条件はあります！
+
+特典の条件は、特典ごとに決められていますので、後ほど説明する、特典の内容のところで説明していきます！
+</p>
+<h3>ママ割のメリット</h3>
+<p>
+特典を説明する前に、簡単に全体のメリットを説明します。
+
+なんといっても、
+国内最大手の楽天市場でのお買い物がお得になることです。
+
+毎月、クーポンが発行されて、子育てに必ず必要なアイテムを楽天市場で購入することでお得に購入できます。
+
+これが最大のメリットですね！
+
+その他にも、無料のサンプルボックスがもらえることもあるので、登録しておいて損はないと思います。
+
+それでは、ここからは、特典内容を説明していきます。
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+
+</p>
+
+<h2>【ママ割特典①】ママ割クーポン定期便</h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+ママ割には、４つの特典があるって聞いたんですけ、どんな特典があるんですか？
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+ここからは、特典別に詳しく説明してくシシ！なるべくわかりやすく説明していくシシ！
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li>ママ割クーポン定期便とは</li>
+<li>条件</li>
+<li>特典が届く時期</li>
+</ol>
+[/box]
+<h3>ママ割クーポン定期便とは</h3>
+<p>
+ママ割クーポン定期便とは、子育て中のママ・パパに必要そうな10数種類の割引クーポンをもらえる特典です。
+
+この特典（クーポン）が、毎月届きます！
+
+しかも、なんと月替わりでクーポン内容が変更されるのがいいです。
+
+お目当てのクーポンが来たときだけ使えばよさそうですね！
+</p>
+
+<h3>条件</h3>
+<p>
+ママ割クーポン定期便の条件は、２つあります。
+
+１つ目は、
+子供のの誕生日（または出産予定日）をmyデータに登録しておくこと。
+
+2つ目は、
+パソコンから、メールマガジン「ママ割ニュース（ママ割からのお知らせ）」を購読できるようにしておくこと。
+
+※登録方法の仕方については、<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >「ママ割登録方法はこちら」</a>を参考にしてみてください。
+</p>
+<h3>特典が届く時期</h3>
+<p>
+ママ割クーポンが届く時期ですが、
+毎月1回、月の上旬あたりメールマガジンと一緒に届きます。
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+
+</p>
+
+
+<h2>【ママ割特典②】ママ割バースデー特典クーポン</h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+バースデー特典クーポンって、もしかして誕生便にもらえるんですか？
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+その通りシシ！もう少し、細かい条件もあるので、解説していくシシ！
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li>ママ割バースデー特典クーポンとは</li>
+<li>条件</li>
+<li>特典が届く時期</li>
+</ol>
+[/box]
+<h3>ママ割バースデー特典クーポンとは</h3>
+<p>
+ママ割バースデー特典クーポンとは、誕生日近くになったらもらえるクーポンのことです。
+
+楽天市場のほとんどで使用できる￥３００円OFFの割引クーポンが届きます。
+
+どんな商品でも使用できるのがいいですよね！
+
+￥３００円もばかになりませんから！
+</p>
+
+<h3>条件</h3>
+<p>
+ママ割バースデー特典クーポンの条件は、３つあります。
+
+１つ目は、
+子供のの誕生日（または出産予定日）をmyデータに登録しておくこと。
+
+2つ目は、
+パソコンから、メールマガジン「ママ割ニュース（ママ割からのお知らせ）」を購読できるようにしておくこと。
+
+3つ目は、
+登録している子供の年齢が5歳以下であること
+
+※登録方法の仕方については、<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >「ママ割登録方法はこちら」</a>を参考にしてみてください。
+
+5歳以下ということは、5歳になるまでの間の5回はもらえるということですね！
+
+全てもらうと
+￥300円 × 5 = ￥1500円
+ですね！なかなかです！
+</p>
+<h3>特典が届く時期</h3>
+<p>
+ママ割バースデー特典クーポンが届く時期は、
+子供の誕生月の前月、中旬～下旬にあたりにクーポンとして届きます。
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+</p>
+
+<h2>【ママ割特典③】ママ割サンプルボックス</h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+このサンプルボックスが一番気になっていました。条件がきになりますね。
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+これは、とても人気のある特典シシ。サンプルボックスの中身のボリュームも結構だシシ！
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li>ママ割サンプルボックスとは</li>
+<li>条件</li>
+<li>特典が届く時期</li>
+<li>サンプルボックスの中身は</li>
+</ol>
+[/box]
+<h3>ママ割サンプルボックスとは</h3>
+<p>
+ママ割サンプルボックスとは、子供の月齢にあわせた内容のボックスがプレゼントされる特典です。
+
+ただし！！！
+
+抽選で毎月150名まで。
+
+とても人気がある特典のため、当選するのがちょっと難しいですね。
+
+しかし、毎月自動的に、応募できるので、ママ割に早めに登録して、できるだけ多く抽選することが秘訣ですね！
+
+また、条件もしっかり確認しておいてくださいね。
+</p>
+
+<h3>条件</h3>
+<p>
+ママ割サンプルボックスの条件は、３つあります。
+
+１つ目は、
+子供のの誕生日（または出産予定日）をmyデータに登録しておくこと。
+
+2つ目は、
+パソコンから、メールマガジン「ママ割ニュース（ママ割からのお知らせ）」を購読できるようにしておくこと。
+
+3つ目は、
+登録している子供の年齢が3歳以下であること
+
+※登録方法の仕方については、<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >「ママ割登録方法はこちら」</a>を参考にしてみてください。
+
+3歳になるまで、特典の条件を満たせば、自動的に応募できますので、早めの登録が必須ですね。
+
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fsamplebox%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fsamplebox%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >今月のプレゼントの中身はこちら</a>
+</p>
+<h3>特典が届く時期</h3>
+<p>
+ママ割サンプルボックスが届く時期は、
+毎月下旬あたりに登録してある住所に届きます。
+</p>
+<h3>サンプルボックスの中身は</h3>
+<p>
+気になるサンプルボックスの中身はこちらから確認できます。
+
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fsamplebox%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fsamplebox%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >今月のサンプルボックス</a>
+
+・マタニティ7か月まで
+・マタニティ8カ月～0歳まで
+・１歳～3歳まで
+
+の3タイプのボックスがあります。
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+</p>
+<h2>【ママ割特典③】ママ割得々キャンペーン</h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+ここまではクーポンでしたけど、すぐお得になれる特典ってないんですか？
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+登録後にすぐ使えるのが、このママ割得々キャンペーンだシシ！
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li>ママ割得々キャンペーンとは</li>
+<li>条件</li>
+<li>特典が届く時期</li>
+<li>サンプルボックスの中身は</li>
+</ol>
+[/box]
+<h3>ママ割得々キャンペーンとは</h3>
+<p>
+ママ割得々キャンペーンとは、登録後すぐに、お買い物や楽天グループサービスなどがお得になる特典です。
+
+随時、キャンペーン内容は変更しますので、定期的にチェックすることがおすすめです。
+
+お買い物以外にも、美容サロンがお得になるキャンペーンまで幅広くやっています。
+
+特に、
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Fsuperdeal%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Fsuperdeal%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >楽天スーパーDEAL</a>とおむつのキャンペーンはとてもおすすめですね！
+</p>
+
+<h3>条件</h3>
+<p>
+ママ割得々キャンペーンの条件は、１つのみです。
+
+１つ目は、
+子供のの誕生日（または出産予定日）をmyデータに登録しておくこと。
+
+※登録方法の仕方については、<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2Fprogram%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >「ママ割登録方法はこちら」</a>を参考にしてみてください。
+
+</p>
+<h3>毎月随時</h3>
+<p>
+ママ割得々キャンペーンは、
+随時毎月更新されていますので、定期的なチェックをおすすめします。
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+</p>
+<h2>Amazonベビーレジストリとの違い</h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+楽天ママ割に対抗してか知らないですけど、Amazonでも同じようなサービスがあるって聞いたんですけど・・・
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+実は、Amazonでもベビーレジストリといって、子育てを応援するサービスがあるシシ！違いについて解説していくシシ！
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li>Amazonベビーレジストリとは</li>
+<li>ママ割とベビーレジストリ違いは</li>
+<li>どっちがおすすめか</li>
+</ol>
+[/box]
+<h3>Amazonベビーレジストリとは</h3>
+<p>
+amazonの説明には、
+[aside type="normal"]
+ベビーレジストリとは、出産、育児に必要なベビー用品やマタニティ用品をリストにして公開できるサービスです。個人的なお買い物リストとしても、家族やお友達へのほしい物リストとしても利用可能です。
+[/aside]
+と説明があります。
+
+ちょっとわかりづらいので、こちらで詳しく解説してみました。
+[kanren class="kanren2" postid="2333"]
+</p>
+
+<h3>ママ割とベビーレジストリの違いは</h3>
+<p>
+ママ割とベビーレジストリの違いですが、目的は同じだと思います。
+
+要は、妊娠中から子育てまでの方を対象に、サービスしますよ！！
+
+ということですね。
+
+しかし、中身はかなり違うので、大きな違いだけをとりあげます。
+
+【違いその①：プレゼントボックスは、抽選 or 必ずプレゼント】
+ママ割では、プレゼントボックスは抽選でしたが、ベビーレジストリでは、プライム会員ならば誰でも受け取ることができます。
+
+プレゼントボックスって結構ありがたいので、是非とも欲しいですよね？
+
+ベビーレジストの場合は、プライム会員になる必要があって、お金かかるんじゃ？と思われるかもしれませんが、30日無料期間がもうけられていますので、その期間中に受け取って退会すれば実質無料となります。
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+
+とはいっても、実際にはプライム会員めちゃくちゃいいので、入会がおすすめです。
+こちらでまとめていますので、見ないと損だと思います。
+[kanren class="kanren2" postid="2366"]
+
+【違い②：用途が違う】
+ママ割はどちらかというと「お買い物」を便利におこなうという感じですね。
+
+一方、ベビーレジストリは、「出産の管理用」という用途が強い気がします。
+
+ママ割とベビーレジストリを比べると、結構違いがあります。
+
+</p>
+<h3>どっちがおすすめか</h3>
+<p>
+どっちがおすすめか！
+
+これは、絶対に、「両方！！！！」
+
+先ほど、違いについて説明しましたが、サービス内容は、ほぼ違います。
+
+どちらもそれぞれいいところがあるので、両方ともうまく活用することが、圧倒敵におすすめです！
+
+楽天のママ割のキャンペーンやクーポンを確認しつつ、ベビーレジストリで必要なものを管理。
+そして、大きな買い物などは、ベビーレジストリの特典クーポンとママ割のクーポンを比較して安いほうを使う！
+
+子育ては、なにかと出費がかさみますので、できる限りお得なサービスはうまく活用していくことが大切ですね！
+
+[btn class="simple big"]
+<a href="https://hb.afl.rakuten.co.jp/hgc/14f85975.8b50e5c3.14f85976.bff8e7ef/?pc=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F&m=https%3A%2F%2Fevent.rakuten.co.jp%2Ffamily%2F" target="_blank" rel="nofollow" style="word-wrap:break-word;"  >ママ割はこちら</a>
+[/btn]
+[btn class="simple big"]<a target="_blank" href="https://www.amazon.co.jp/tryprimefree?&_encoding=UTF8&tag=wakana222-22&linkCode=ur2&linkId=1eae3890592dcc3478e4a2b03930f6db&camp=247&creative=1211">30日間無料体験を試してみる</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=wakana222-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />[/btn]
+</p>
+
+<h2>まとめ</h2>
+<p>
+僕は、はじめ楽天ママ割を、プレゼントボックスが誰でももらえると思っていましたが、実は抽選と知り、がっかりしたのを覚えています。
+
+同じようにがっかりした方がいたんじゃないでしょうか？
+
+しかし、抽選は無料で3歳まではチャンスがあるので、登録しない手はないでしょう。
+
+また、プレゼントボックスが欲しいならAmazonベビーレジストリでも同じようなプレゼントボックスがあるので、そちらもおすすめです。
+
+最後のほうでも説明しましたが、やはり、ママ割とベビーレジストリの登録はしておいて損ではないと思います。
+
+ショッピングサイト国内最大手の2社が出しているサービスですので、ネットでお買い物をする際はどちかを選ぶのではないでしょうか？
+</p>
