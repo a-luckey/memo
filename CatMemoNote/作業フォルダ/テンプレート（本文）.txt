@@ -1,0 +1,28 @@
+﻿<h2></h2>
+[voice icon="/wp-content/uploads/2018/10/icon.jpg" name="アラッキー" type="l original"]
+
+[/voice]
+
+[voice icon="/wp-content/uploads/2018/11/inosen.jpg" name="イノシ先生" type="r grn"]
+
+[/voice]
+[box class="blue_box" title="ここでわかること"]
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+[/box]
+<h3></h3>
+<p>
+
+</p>
+
+<h3></h3>
+<p>
+
+</p>
+<h3></h3>
+<p>
+
+</p>
